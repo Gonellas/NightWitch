@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,28 +5,29 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private float _initialLifeTime;
-
     private float _currentLifeTime;
-
     [SerializeField] private float _speed;
-
     private GameObject enemy;
+    public Player player;
 
     private void Start()
     {
-        enemy = GameObject.FindGameObjectWithTag("Enemy");
+        player = FindObjectOfType<Player>();
+        enemy = GameObject.FindGameObjectWithTag("Enemy"); // = SelectedEnemy
     }
 
     void Update()
     {
-        Vector3 moveDir = (enemy.transform.position - transform.position).normalized;
-
-        transform.position += moveDir * _speed * Time.deltaTime;
+        if (player != null && player.ClosestEnemy != null)
+        {
+            Vector3 moveDir = (player.ClosestEnemy.transform.position - transform.position).normalized;
+            transform.position += moveDir * _speed * Time.deltaTime;
+        }
 
         _currentLifeTime -= Time.deltaTime;
 
         if (_currentLifeTime > 0) return;
-        
+
         BulletFactory.Instance.ReturnObjectToPool(this);
     }
 
@@ -41,7 +41,7 @@ public class Bullet : MonoBehaviour
         b.Reset();
         b.gameObject.SetActive(true);
     }
-    
+
     public static void TurnOff(Bullet b)
     {
         b.gameObject.SetActive(false);
