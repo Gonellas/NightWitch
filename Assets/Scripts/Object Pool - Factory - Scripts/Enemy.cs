@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool movingRight = true;
+    private float timer = 0f;
+    private float speed = 1f;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        timer += Time.deltaTime;
+
+        if (timer <= 1f)
+        {
+            if (movingRight)
+                transform.Translate(Vector3.right * Time.deltaTime * speed);
+            else
+                transform.Translate(Vector3.left * Time.deltaTime * speed);
+        }
+        else if (timer <= 2f)
+        {
+            if (movingRight)
+                transform.Translate(Vector3.left * Time.deltaTime * speed);
+            else
+                transform.Translate(Vector3.right * Time.deltaTime * speed);
+        }
+        else
+        {
+            timer = 0f;
+            movingRight = !movingRight;
+        }
     }
 }

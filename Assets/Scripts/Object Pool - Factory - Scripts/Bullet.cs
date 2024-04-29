@@ -11,9 +11,19 @@ public class Bullet : MonoBehaviour
 
     [SerializeField] private float _speed;
 
+    private GameObject enemy;
+
+    private void Start()
+    {
+        enemy = GameObject.FindGameObjectWithTag("Enemy");
+    }
 
     void Update()
     {
+        Vector3 moveDir = (enemy.transform.position - transform.position).normalized;
+
+        transform.position += moveDir * _speed * Time.deltaTime;
+
         _currentLifeTime -= Time.deltaTime;
 
         if (_currentLifeTime > 0) return;
