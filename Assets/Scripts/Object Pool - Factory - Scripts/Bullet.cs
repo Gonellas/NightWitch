@@ -9,6 +9,8 @@ public class Bullet : MonoBehaviour
 
     private float _currentLifeTime;
 
+    [SerializeField] private float _speed;
+
 
     void Update()
     {
