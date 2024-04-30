@@ -10,10 +10,12 @@ public class Bullet : MonoBehaviour
     private GameObject enemy;
     public Player player;
 
+    private GameObject collidedEnemy;
+
     private void Start()
     {
         player = FindObjectOfType<Player>();
-        enemy = GameObject.FindGameObjectWithTag("Enemy"); // = SelectedEnemy
+        enemy = GameObject.FindGameObjectWithTag("Enemy");
     }
 
     void Update()
