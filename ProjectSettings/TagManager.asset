@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Mid
+    uniqueID: 3487581239
+    locked: 0
