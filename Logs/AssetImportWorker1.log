@@ -186,3 +186,2352 @@ Received Import Request.
 Start importing Assets/Animations/Player/GroundAttack using Guid(b56e5959cd9763949adfffcbe53b530f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71d0d6fa36709941f251c5b11e214664') in 0.002725 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1759.448739 seconds.
+  path: Assets/Art/Player/Iddle/Iddle_Left.png
+  artifactKey: Guid(90f332b2531c29340b5d4f597e4cb2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Iddle/Iddle_Left.png using Guid(90f332b2531c29340b5d4f597e4cb2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97009db50c97c8c9ac80a7b7cba1573') in 0.062808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 12.709141 seconds.
+  path: Assets/Art/Player/Iddle/Iddle_Down.png
+  artifactKey: Guid(d5d59ad513f0c444d839b62f19d19cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Iddle/Iddle_Down.png using Guid(d5d59ad513f0c444d839b62f19d19cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2d71c7f7f6902ec64dd7b93fca61d2') in 0.015477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Player/Iddle/Iddle_Up.png
+  artifactKey: Guid(7ddc5c88f0063b6428d962598769d04a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Iddle/Iddle_Up.png using Guid(7ddc5c88f0063b6428d962598769d04a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '233da6bbce03e31fe6eaf1de29a9d2f3') in 0.015043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Da Vinci\4to Cuatrimestre\Juego Motores 2 - Modelos 1\Motores2_Modelos1\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Da Vinci\4to Cuatrimestre\Juego Motores 2 - Modelos 1\Motores2_Modelos1\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.675 seconds
+Refreshing native plugins compatible for Editor in 2.27 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.886 seconds
+Domain Reload Profiling: 1559ms
+	BeginReloadAssembly (150ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (455ms)
+		LoadAssemblies (283ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (228ms)
+			TypeCache.Refresh (224ms)
+				TypeCache.ScanAssembly (212ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (886ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (418ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (256ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 2.35 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4036 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (34.8 KB). Loaded Objects now: 4540.
+Memory consumption went from 143.4 MB to 143.3 MB.
+Total: 4.555200 ms (FindLiveObjects: 0.351500 ms CreateObjectMapping: 0.334200 ms MarkObjects: 3.743700 ms  DeleteObjects: 0.124500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 593.903961 seconds.
+  path: Assets/Art/Player/Walk/Walk_Left.png
+  artifactKey: Guid(70bb899485413fe4b84b4efa6bc00633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Walk/Walk_Left.png using Guid(70bb899485413fe4b84b4efa6bc00633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baf923dc9d2ade7b3b6f465f0749e323') in 0.090507 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 17.190713 seconds.
+  path: Assets/Art/Player/Walk/Walk_Left.png
+  artifactKey: Guid(70bb899485413fe4b84b4efa6bc00633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Walk/Walk_Left.png using Guid(70bb899485413fe4b84b4efa6bc00633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1359736ce2a71f9e25785476196e7493') in 0.014436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Player/Walk/Walk_Right.png
+  artifactKey: Guid(27b0aa6f45364de4ab1951d5acb99c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Walk/Walk_Right.png using Guid(27b0aa6f45364de4ab1951d5acb99c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7639885727b92ce9263c365f92edd631') in 0.016023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3070.813690 seconds.
+  path: Assets/Art/Player/Ice Attack/Ice_Left.png
+  artifactKey: Guid(5ec5bc0a632e2c341bc5ac7f77915d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ice Attack/Ice_Left.png using Guid(5ec5bc0a632e2c341bc5ac7f77915d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce947e41ec3e43f37e5e5961b7d8187') in 0.078885 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 45.488884 seconds.
+  path: Assets/Art/Player/Ice Attack/Ice_Left.png
+  artifactKey: Guid(5ec5bc0a632e2c341bc5ac7f77915d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ice Attack/Ice_Left.png using Guid(5ec5bc0a632e2c341bc5ac7f77915d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7e8a49b94f9b0f3f5e5075305e6de8') in 0.014697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Player/Ice Attack/Ice_Right.png
+  artifactKey: Guid(0a6d7e822b17d484da87ca4fb38e6796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ice Attack/Ice_Right.png using Guid(0a6d7e822b17d484da87ca4fb38e6796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b5a628fbc5244b975ba506a403f40eb') in 0.013910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5658.375627 seconds.
+  path: Assets/Art/Player/Fire Attack/GroundAttack_Left.png
+  artifactKey: Guid(1af545c30987fa6479510a9bb4f7539d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Fire Attack/GroundAttack_Left.png using Guid(1af545c30987fa6479510a9bb4f7539d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ac0a8c085d316cd2aa867ff266f47a') in 0.069836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Art/Player/Fire Attack/GroundAttack_Right.png
+  artifactKey: Guid(d3e5b83e9c7ad97448cedf3a7dffd073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Fire Attack/GroundAttack_Right.png using Guid(d3e5b83e9c7ad97448cedf3a7dffd073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a27b171b8606d8b5aa16bbb02d91243') in 0.018186 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 9.621610 seconds.
+  path: Assets/Art/Player/Fire Attack/GroundAttack_Left.png
+  artifactKey: Guid(1af545c30987fa6479510a9bb4f7539d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Fire Attack/GroundAttack_Left.png using Guid(1af545c30987fa6479510a9bb4f7539d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec89c363c7798431c03c78f6afe7c2f2') in 0.014714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Player/Fire Attack/GroundAttack_Up.png
+  artifactKey: Guid(66a395ebf48e2fb409000321c6e50f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Fire Attack/GroundAttack_Up.png using Guid(66a395ebf48e2fb409000321c6e50f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f902c0194d1c921f6a49e71c02037fd') in 0.015723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 25.119348 seconds.
+  path: Assets/Art/Player/Fire Attack/Fire_Left.png
+  artifactKey: Guid(76974263fc45e634ea0da284cc3987c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Fire Attack/Fire_Left.png using Guid(76974263fc45e634ea0da284cc3987c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccbf324fb581f128b792eb214e348b5a') in 0.016803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Player/Fire Attack/Fire_Right.png
+  artifactKey: Guid(ecf389449aa76574aa6db20e1f22d124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Fire Attack/Fire_Right.png using Guid(ecf389449aa76574aa6db20e1f22d124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f373d271c5527553c2c65b47f85d6618') in 0.016750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 10.595448 seconds.
+  path: Assets/Art/Player/Fire Attack/Fire_Left.png
+  artifactKey: Guid(76974263fc45e634ea0da284cc3987c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Fire Attack/Fire_Left.png using Guid(76974263fc45e634ea0da284cc3987c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fec73f06552ae525cfacb79e646a983') in 0.035811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Art/Player/Fire Attack/Fire_Up.png
+  artifactKey: Guid(7db8671941462524eb9701009b4e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Fire Attack/Fire_Up.png using Guid(7db8671941462524eb9701009b4e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '274b191601ea40918911ff293b5adbbd') in 0.016819 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5338.212132 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_0.asset
+  artifactKey: Guid(f538240184ac2414a8bb710494522dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_0.asset using Guid(f538240184ac2414a8bb710494522dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '155e7d23218097b0e50ff1d6790c55a3') in 0.240316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_20.asset
+  artifactKey: Guid(b75f56f86bea72e4a93a8f10f4b32ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_20.asset using Guid(b75f56f86bea72e4a93a8f10f4b32ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bbe97cce2891bbfb1dd39c51c639d7f') in 0.012411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_25.asset
+  artifactKey: Guid(52a21e07e47d4ab4db44ebb74c64dbc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_25.asset using Guid(52a21e07e47d4ab4db44ebb74c64dbc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36682fe96a90da11acd56ff4c147a238') in 0.016130 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_34.asset
+  artifactKey: Guid(f697b2b08b2e9924db75fc39a97c4499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_34.asset using Guid(f697b2b08b2e9924db75fc39a97c4499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f54356fc2b5e4920916b786310a8dd') in 0.013766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_3.asset
+  artifactKey: Guid(9bc396fa9f368ef4b9708990dc111496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_3.asset using Guid(9bc396fa9f368ef4b9708990dc111496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302fcdc8d9d4510fa09ac7f0b6374b08') in 0.014296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_27.asset
+  artifactKey: Guid(c8b6d8d521dab7c4db63cae837a8f45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_27.asset using Guid(c8b6d8d521dab7c4db63cae837a8f45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ae5b91764023f75fe3d3b102216882') in 0.014459 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_4.asset
+  artifactKey: Guid(c3a53a5535850b84bb364ea18b8ae204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_4.asset using Guid(c3a53a5535850b84bb364ea18b8ae204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c224e49c3d1b0ca2e9cdeed31c73035') in 0.013722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_17.asset
+  artifactKey: Guid(2f8a221a3cbf2bc44917dea974fc4083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_17.asset using Guid(2f8a221a3cbf2bc44917dea974fc4083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4a2bba5d30945ac1addca5a3aae33d8') in 0.012670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_29.asset
+  artifactKey: Guid(01531052327ae2a48a0f034aec7f54f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_29.asset using Guid(01531052327ae2a48a0f034aec7f54f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbebc15e36c4d94bb12712e1b2b08467') in 0.014692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_21.asset
+  artifactKey: Guid(98651b3fadb09dc42b04271ab7a40cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_21.asset using Guid(98651b3fadb09dc42b04271ab7a40cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8830944e3c594d43dec5fc778b54c575') in 0.009208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_7.asset
+  artifactKey: Guid(dc7df9485cef637478f40f6a384aa46b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_7.asset using Guid(dc7df9485cef637478f40f6a384aa46b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458749aeb65410edd626ed7f79dfb4e8') in 0.013376 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_42.asset
+  artifactKey: Guid(5a4fb7802d8fdb44d85b334af7795e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_42.asset using Guid(5a4fb7802d8fdb44d85b334af7795e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4273ee296795e9d0904cb47d02655191') in 0.015350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_37.asset
+  artifactKey: Guid(3214e967887aba04ab3ebea26c87d73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_37.asset using Guid(3214e967887aba04ab3ebea26c87d73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba53ecd0b01769741e2b133a762072da') in 0.012776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_44.asset
+  artifactKey: Guid(766c828c0e908984a960b98e3722d80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_44.asset using Guid(766c828c0e908984a960b98e3722d80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e302448ba7fcfc3cfc68e593a3ef0f14') in 0.013593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_33.asset
+  artifactKey: Guid(37c71d2230202074a8ca4e8b0f71520a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_33.asset using Guid(37c71d2230202074a8ca4e8b0f71520a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc363d0183210f6082868da3380df1b0') in 0.013477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_19.asset
+  artifactKey: Guid(703338d0afdf902459583deed602a85b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_19.asset using Guid(703338d0afdf902459583deed602a85b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf354641a9b8cc6e40eecab71ff28c55') in 0.006920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_18.asset
+  artifactKey: Guid(465da1a53cceb7840bb304cc12629add) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_18.asset using Guid(465da1a53cceb7840bb304cc12629add) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f00040e45d77c30e9bced278c9f48273') in 0.012485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_10.asset
+  artifactKey: Guid(874be406180466949b5aafd1eeb0e8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_10.asset using Guid(874be406180466949b5aafd1eeb0e8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88ee9e95c47a405b2261a4aabdcdff6c') in 0.013436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_14.asset
+  artifactKey: Guid(8788509c64a2b6a448b3a8c4359063b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_14.asset using Guid(8788509c64a2b6a448b3a8c4359063b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be00651538d589f7fa82a1542ed77f85') in 0.007287 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_22.asset
+  artifactKey: Guid(fb75152bf3453654fa599b756d42d7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_22.asset using Guid(fb75152bf3453654fa599b756d42d7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8338102db01dbc2a9cdf13f702bc1d3f') in 0.011896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_38.asset
+  artifactKey: Guid(16a33af62e71e1042a477f83f342b496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_38.asset using Guid(16a33af62e71e1042a477f83f342b496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e9b90783ed7c9cb8d60dd5d91bae45') in 0.008879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_5.asset
+  artifactKey: Guid(016e0a2d3ea549c4985cad6b71a61b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_5.asset using Guid(016e0a2d3ea549c4985cad6b71a61b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0abb8becf26ed75c90d7e546feed18a1') in 0.012139 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_40.asset
+  artifactKey: Guid(257e7d0ee4bcabc43806748685bb01df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_40.asset using Guid(257e7d0ee4bcabc43806748685bb01df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b464e98f8ce30833de57abd57cab79ed') in 0.013192 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_8.asset
+  artifactKey: Guid(1ce61516343494f439a60f9fe88e1d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_8.asset using Guid(1ce61516343494f439a60f9fe88e1d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6515e64f063352d1fe79f33065e57ab4') in 0.017575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_28.asset
+  artifactKey: Guid(4851034b5b3992e4e86a7659a775ee9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_28.asset using Guid(4851034b5b3992e4e86a7659a775ee9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7904c71aa95584db1f6622d7d5ca139f') in 0.009063 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_6.asset
+  artifactKey: Guid(22cdd146f539e054391e0be0a15fff19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_6.asset using Guid(22cdd146f539e054391e0be0a15fff19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86b359bd69d2771b82f4f60831db6e3') in 0.013921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_9.asset
+  artifactKey: Guid(71d8e6b393a1ac14791e6026187de3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_9.asset using Guid(71d8e6b393a1ac14791e6026187de3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01a85f981981dc4bd0f0b4557fecb0b7') in 0.012995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_32.asset
+  artifactKey: Guid(89421dd4b42d2054f94c20f1e7ce599d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_32.asset using Guid(89421dd4b42d2054f94c20f1e7ce599d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f4f861d18a9e2adc303851d73e7f89') in 0.007798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_11.asset
+  artifactKey: Guid(87ff314e74c3c6c41b72e1352bdc9d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_11.asset using Guid(87ff314e74c3c6c41b72e1352bdc9d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec9d0b0886d1d035ccba36a9181fcfe') in 0.016358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_36.asset
+  artifactKey: Guid(3e411684c94357941b4d349ff7fd095d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_36.asset using Guid(3e411684c94357941b4d349ff7fd095d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879911a51120383417116531d7a62db7') in 0.007922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_43.asset
+  artifactKey: Guid(615eb8da0fb95c343919bbb3d0aee144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_43.asset using Guid(615eb8da0fb95c343919bbb3d0aee144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bbf8359b42be6230b61fb58abc44b03') in 0.014131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_24.asset
+  artifactKey: Guid(3f2b08c9e677e5d41bad099594a73062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_24.asset using Guid(3f2b08c9e677e5d41bad099594a73062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a190a53313e1d7a1ac19cca0496877ae') in 0.012985 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_41.asset
+  artifactKey: Guid(96ac7fc40640a204a87c787357ca2143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_41.asset using Guid(96ac7fc40640a204a87c787357ca2143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43734e3686472485d04dc0c26b92c74') in 0.013298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_35.asset
+  artifactKey: Guid(4ae23eefa93455c4282cdddf9186f2da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_35.asset using Guid(4ae23eefa93455c4282cdddf9186f2da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed120ff2c164ffb7e0094374380d4d57') in 0.014363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_46.asset
+  artifactKey: Guid(b49de0485e22c2944abe813167331da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_46.asset using Guid(b49de0485e22c2944abe813167331da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ead795f9de27cac7230877e8afa37c') in 0.013398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_31.asset
+  artifactKey: Guid(accb9a2a78f3f4c41b7a652e30c49beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_31.asset using Guid(accb9a2a78f3f4c41b7a652e30c49beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dd6178a82a9c8ffae1fc3a4ac931e15') in 0.014210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_15.asset
+  artifactKey: Guid(e6ad4d7fa91ce154b9410f2c19b5e971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_15.asset using Guid(e6ad4d7fa91ce154b9410f2c19b5e971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54d81cfd925497f755f53a2c63a0457') in 0.008688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1.asset
+  artifactKey: Guid(c04d6591c101e424f9182b88de9a1c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1.asset using Guid(c04d6591c101e424f9182b88de9a1c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b150ff3fbf6bf8a4178db15819ae3e') in 0.012655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_13.asset
+  artifactKey: Guid(68ca1092a4cbda641a0a5be9bb5d2ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_13.asset using Guid(68ca1092a4cbda641a0a5be9bb5d2ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '653598717f1818f6fb7ab1377194932d') in 0.014083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_16.asset
+  artifactKey: Guid(813c49f9483040f4783e7e5ff17fd594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_16.asset using Guid(813c49f9483040f4783e7e5ff17fd594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5341d20f82f62075ff77298e546a65c') in 0.007787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_26.asset
+  artifactKey: Guid(de9489400749de746a8b28eac72bd61a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_26.asset using Guid(de9489400749de746a8b28eac72bd61a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64dedad9066af1cc802b5e74a5d48c78') in 0.014630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_12.asset
+  artifactKey: Guid(9af9a7753d1c81547b7f035f06d560f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_12.asset using Guid(9af9a7753d1c81547b7f035f06d560f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a06945528a39f948bccf0740c91dd3') in 0.007794 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_30.asset
+  artifactKey: Guid(2ba10cd685ab9574caa6825ff7ae5edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_30.asset using Guid(2ba10cd685ab9574caa6825ff7ae5edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75374b54a60bc16ef6fabad1b8f743b4') in 0.008581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_2.asset
+  artifactKey: Guid(d6609c7a3dd8fe24d93923a414d7796a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_2.asset using Guid(d6609c7a3dd8fe24d93923a414d7796a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d35c52d1e551881c3d7b462cdca3b6b') in 0.013855 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_45.asset
+  artifactKey: Guid(55a6e675294011742b295acdd226b12b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_45.asset using Guid(55a6e675294011742b295acdd226b12b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aacc2247bb5f1facf6dac5ebcb45293a') in 0.012752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_39.asset
+  artifactKey: Guid(28c866c7582e53c4e9bb5523d0babf12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_39.asset using Guid(28c866c7582e53c4e9bb5523d0babf12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fb44042e8484ec8438ecd527c92f324') in 0.013373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_23.asset
+  artifactKey: Guid(5eeb23cd86970704e907938cb8aa284f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_23.asset using Guid(5eeb23cd86970704e907938cb8aa284f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf8773b01a7aa0dd2e33b2c4279971b') in 0.012902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.517138 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_48.asset
+  artifactKey: Guid(730e7165916963c41b9220b4ce8d2705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_48.asset using Guid(730e7165916963c41b9220b4ce8d2705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58adfb818ecb63e8a61c16a062d970d5') in 0.013817 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_58.asset
+  artifactKey: Guid(f06abc4d8c0fb4e4f918469d9f8b0fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_58.asset using Guid(f06abc4d8c0fb4e4f918469d9f8b0fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '382536e573e70eb9012701bbad0ecf48') in 0.013026 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_54.asset
+  artifactKey: Guid(a867e876a92f38a48995c821f21e904d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_54.asset using Guid(a867e876a92f38a48995c821f21e904d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f2f9daf156f26de57fe037ccfd2c6f') in 0.012859 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_52.asset
+  artifactKey: Guid(ba2eb174bfac7154bbac5a30c7caf736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_52.asset using Guid(ba2eb174bfac7154bbac5a30c7caf736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '282b2804b5955462617c53a4a95538f6') in 0.013946 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_59.asset
+  artifactKey: Guid(d9dc15c47d960434cbd3b86697dffb85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_59.asset using Guid(d9dc15c47d960434cbd3b86697dffb85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17406201da6c7cdda97f6580b5bd03ff') in 0.008078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_53.asset
+  artifactKey: Guid(33e4af43befd9fe4f9982dd09b7a484a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_53.asset using Guid(33e4af43befd9fe4f9982dd09b7a484a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62870d456603a578b53bbf737389545') in 0.013566 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_57.asset
+  artifactKey: Guid(635570e028d7f7c42a14e99e6be480ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_57.asset using Guid(635570e028d7f7c42a14e99e6be480ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '448015593c6e3b9301953ea96b0ab61b') in 0.007965 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_50.asset
+  artifactKey: Guid(992c86c135e5fa3449f85f72043ff664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_50.asset using Guid(992c86c135e5fa3449f85f72043ff664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6794cc8d5f19e023e45af4f44eca2faa') in 0.012970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.161340 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_64.asset
+  artifactKey: Guid(4fa6f422e1385574aacf54b40d9ef1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_64.asset using Guid(4fa6f422e1385574aacf54b40d9ef1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '866b071d4e5a0871c0db7be18e1ba953') in 0.008484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_73.asset
+  artifactKey: Guid(7892c6b9461edd74b86d42d3b751d135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_73.asset using Guid(7892c6b9461edd74b86d42d3b751d135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0062a08df444a4348e44c151ad37a7e9') in 0.012720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_76.asset
+  artifactKey: Guid(84c61f027ea20294191930b793473d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_76.asset using Guid(84c61f027ea20294191930b793473d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdc18fa95dba3c6ec02c0391cae18cce') in 0.014269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_66.asset
+  artifactKey: Guid(b114ac8bb67396e47b7bb4636df7aec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_66.asset using Guid(b114ac8bb67396e47b7bb4636df7aec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '428e60c373bf1fcb24fa1801be691c2f') in 0.008284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_69.asset
+  artifactKey: Guid(049b253b2675f0247872722fcf692594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_69.asset using Guid(049b253b2675f0247872722fcf692594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06b3ec982cf24321205e9c921eeecf62') in 0.007691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_78.asset
+  artifactKey: Guid(c8bf7c5726cc3b545b323ff263687e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_78.asset using Guid(c8bf7c5726cc3b545b323ff263687e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cdb6a26517bc70cd20a31731e23407b') in 0.008232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_70.asset
+  artifactKey: Guid(1340b7dc7ad071f46a6fdddfe46faed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_70.asset using Guid(1340b7dc7ad071f46a6fdddfe46faed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2def239821f1a213c45c53133319a08f') in 0.008635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_82.asset
+  artifactKey: Guid(88840fef6537bf645981d8790082b71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_82.asset using Guid(88840fef6537bf645981d8790082b71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa883fc32ef9d5d250e38b0edaf637bd') in 0.012096 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_88.asset
+  artifactKey: Guid(dfe1fb42d9eb5ff43984d3bcb898367b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_88.asset using Guid(dfe1fb42d9eb5ff43984d3bcb898367b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3480bf13de424ba46219cfb76573a54') in 0.012801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_90.asset
+  artifactKey: Guid(60449b9bc33d8594abd312bcf4671776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_90.asset using Guid(60449b9bc33d8594abd312bcf4671776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7aadba16627ead45f1d4a3439d8d76f') in 0.008217 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_81.asset
+  artifactKey: Guid(545b464947a83d64cb35085e68451f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_81.asset using Guid(545b464947a83d64cb35085e68451f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dbabd900a4304c687765ec2b26a7f87') in 0.008039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_86.asset
+  artifactKey: Guid(554e0d2bcc8c1c242af32457f6639caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_86.asset using Guid(554e0d2bcc8c1c242af32457f6639caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29d636951639ecdce30d2c11873994d') in 0.010757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_87.asset
+  artifactKey: Guid(b5dddb51e1825304daa1d2c55278160c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_87.asset using Guid(b5dddb51e1825304daa1d2c55278160c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a3e397f5957913efdc2f2241703c48') in 0.016445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_93.asset
+  artifactKey: Guid(9f8034e89cf704642b70db929dcfa065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_93.asset using Guid(9f8034e89cf704642b70db929dcfa065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab5df4d76fbb821c26f1a11458083385') in 0.015274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_92.asset
+  artifactKey: Guid(eb8e8bddb441caf4b931ee21048aabad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_92.asset using Guid(eb8e8bddb441caf4b931ee21048aabad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb481073a92881ad8513800b0e66f79') in 0.014757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.273876 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_97.asset
+  artifactKey: Guid(818191cabb809d844aafcf350b71066a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_97.asset using Guid(818191cabb809d844aafcf350b71066a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc6b14ab8195bfbd6c662e7dc7c8bf9c') in 0.013102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_102.asset
+  artifactKey: Guid(8e70d131afe9fde41bf1ae7b946f6f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_102.asset using Guid(8e70d131afe9fde41bf1ae7b946f6f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dfc83795a9f9c20610868f48b658cf3') in 0.010682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_149.asset
+  artifactKey: Guid(5a5756ba032a9714cba645926ee2f501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_149.asset using Guid(5a5756ba032a9714cba645926ee2f501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0001e87868aebee121e2d18bd6dba15e') in 0.016538 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_121.asset
+  artifactKey: Guid(3f2f34a659186a0488273744d961354a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_121.asset using Guid(3f2f34a659186a0488273744d961354a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd76c0993fde465369df9050710b4db') in 0.009378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_135.asset
+  artifactKey: Guid(75a8fc80d67ec4f41836f1b14c42a0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_135.asset using Guid(75a8fc80d67ec4f41836f1b14c42a0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e8b47dc2dbc0e102234101ef0776d4') in 0.013525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_130.asset
+  artifactKey: Guid(c97883329bc29e9499f9e3f3074a9e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_130.asset using Guid(c97883329bc29e9499f9e3f3074a9e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2da36b8f51b25ca1c9a26f83b4770155') in 0.015014 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_152.asset
+  artifactKey: Guid(f385b7582601ee34a907c4e65dd713ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_152.asset using Guid(f385b7582601ee34a907c4e65dd713ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a83c8c40ac09c918cc65d798bbda29c') in 0.015400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_105.asset
+  artifactKey: Guid(b475dec9fda6c4043a4dd5945b392f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_105.asset using Guid(b475dec9fda6c4043a4dd5945b392f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9081b0c3a76e45dd4f22ee2c79ba3157') in 0.012164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_137.asset
+  artifactKey: Guid(f5db8e376fda2814d82a0cb4dd78733b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_137.asset using Guid(f5db8e376fda2814d82a0cb4dd78733b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748e6a3bacb3050528ca653d8d5a566a') in 0.014925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_138.asset
+  artifactKey: Guid(a27bc94701166904bb2e5fd16b8c92f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_138.asset using Guid(a27bc94701166904bb2e5fd16b8c92f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '991c124b80f220105257aaeb2ad47bd3') in 0.036862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_111.asset
+  artifactKey: Guid(7fd26c02c0da24e4bb7812657327a7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_111.asset using Guid(7fd26c02c0da24e4bb7812657327a7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fac8d1ab0bcbd54d6e2ddaa04e4483d5') in 0.016040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_101.asset
+  artifactKey: Guid(69ad5655a79d8dc4586315ef8b0a86b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_101.asset using Guid(69ad5655a79d8dc4586315ef8b0a86b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0fabfc30aff8ab5ac2939e0287041e5') in 0.014145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_136.asset
+  artifactKey: Guid(5a7303e3b83253047839e54cdf961e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_136.asset using Guid(5a7303e3b83253047839e54cdf961e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee4fa8f4e9f050c5cd9d306f52554ecb') in 0.013955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_131.asset
+  artifactKey: Guid(797b4a0378e953842867f384753cc02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_131.asset using Guid(797b4a0378e953842867f384753cc02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e719dc5981db4509bf752b96fface27') in 0.015557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_151.asset
+  artifactKey: Guid(013ecded02df38a44a3a984374ab19a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_151.asset using Guid(013ecded02df38a44a3a984374ab19a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45923c426be7c5d237b6fe8f377cb69c') in 0.015077 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.032361 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_161.asset
+  artifactKey: Guid(77c770565f61ece4bb138f1787e91d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_161.asset using Guid(77c770565f61ece4bb138f1787e91d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa700a6134d048efe3ca52a017d4139') in 0.014582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_174.asset
+  artifactKey: Guid(cf2e531c9e3f19e40bcdb1076a81e1e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_174.asset using Guid(cf2e531c9e3f19e40bcdb1076a81e1e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1ac31d343490a63628cf4ab824f078') in 0.016499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_165.asset
+  artifactKey: Guid(5e91680c313711d40a1110b6b3f394e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_165.asset using Guid(5e91680c313711d40a1110b6b3f394e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb00e9119983a600824c2b2521dd502') in 0.008377 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_190.asset
+  artifactKey: Guid(407be8dc66edc984ab11f296af0002d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_190.asset using Guid(407be8dc66edc984ab11f296af0002d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeda2beea0d840c312a2f39b7c9e182a') in 0.014006 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_193.asset
+  artifactKey: Guid(4d168d646497a504bae1b7784bb0f01a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_193.asset using Guid(4d168d646497a504bae1b7784bb0f01a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c9f6f268d9e587852eac02e8568f22') in 0.022114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_203.asset
+  artifactKey: Guid(56f02242e036e2e4fac644984ea187c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_203.asset using Guid(56f02242e036e2e4fac644984ea187c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5926d1bd54aa8d018abfa2d67b1e9f6') in 0.015237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_214.asset
+  artifactKey: Guid(7de7892f78f511e4dab11768e93de89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_214.asset using Guid(7de7892f78f511e4dab11768e93de89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9e5e559ea6282fe32fd42d53d814b9b') in 0.014456 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_210.asset
+  artifactKey: Guid(c435aa593793ee64786083606d8b5565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_210.asset using Guid(c435aa593793ee64786083606d8b5565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7372acd19d4350a97ad8a96a8d2dd5') in 0.016261 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_208.asset
+  artifactKey: Guid(872dcecef31040149af9d1d266f222cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_208.asset using Guid(872dcecef31040149af9d1d266f222cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d8eb51f3e76a89b0e000706595536e2') in 0.013612 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_205.asset
+  artifactKey: Guid(17d7d663b144f064fb1fa88d9c6e995c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_205.asset using Guid(17d7d663b144f064fb1fa88d9c6e995c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '067e2e876e073aaf0893c054fb272df8') in 0.020486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_179.asset
+  artifactKey: Guid(21c201f6e8afd8549ad123f34724a66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_179.asset using Guid(21c201f6e8afd8549ad123f34724a66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca56ac1259b5056521158a9c23565d9') in 0.015163 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_209.asset
+  artifactKey: Guid(70cc033d84d34f64099cf4b35dab1842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_209.asset using Guid(70cc033d84d34f64099cf4b35dab1842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae029d36d442b61a5c590de411003beb') in 0.015046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_186.asset
+  artifactKey: Guid(173727514373acc4c9423fd8d9353eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_186.asset using Guid(173727514373acc4c9423fd8d9353eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5816673c5f14042f7facaddafd3c3140') in 0.013847 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_172.asset
+  artifactKey: Guid(85d39eba0575e4b45a88903e224b6078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_172.asset using Guid(85d39eba0575e4b45a88903e224b6078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb5a25b025a5af31e0799399e5a6b0ed') in 0.015008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_217.asset
+  artifactKey: Guid(815581d9cdde99449914ec07b4347562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_217.asset using Guid(815581d9cdde99449914ec07b4347562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f9980e7593bad887b6d4840ca73ecc5') in 0.020240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_171.asset
+  artifactKey: Guid(07360c0c803b1ec4d9a85535254ac12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_171.asset using Guid(07360c0c803b1ec4d9a85535254ac12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5f7eb86d04ec7bbe558c554f01a1457') in 0.025374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_196.asset
+  artifactKey: Guid(26ac301abf1106342a91a5706307e47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_196.asset using Guid(26ac301abf1106342a91a5706307e47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be257824edf94d001540eed6455c7f0f') in 0.013726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.932819 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_225.asset
+  artifactKey: Guid(72682f90202dd40419f3c82cee286aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_225.asset using Guid(72682f90202dd40419f3c82cee286aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2cdf862d689f148b753b9cae0ec710') in 0.014755 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_235.asset
+  artifactKey: Guid(0a7b66d2ff871244088adc7ba3c1fe67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_235.asset using Guid(0a7b66d2ff871244088adc7ba3c1fe67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd945e69dfce1b911f02662e1fc9f8697') in 0.015668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_280.asset
+  artifactKey: Guid(32162979940176a4dbd4437bff014b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_280.asset using Guid(32162979940176a4dbd4437bff014b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952dfce84d2c96c594be07d5f4478346') in 0.013656 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_453.asset
+  artifactKey: Guid(b6977b906e354234eb5cb62c7d5fd163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_453.asset using Guid(b6977b906e354234eb5cb62c7d5fd163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce772529b27fb950ce596637862e205') in 0.013786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_768.asset
+  artifactKey: Guid(69a04391a267fcd478934dc6a60d97b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_768.asset using Guid(69a04391a267fcd478934dc6a60d97b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9822b6435b913d7890dcc908c5a73937') in 0.020818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_283.asset
+  artifactKey: Guid(1d0a90792cf2d404b9b277e1d381854f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_283.asset using Guid(1d0a90792cf2d404b9b277e1d381854f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd1158b55abde608a94f2061d4bda693') in 0.045992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1058.asset
+  artifactKey: Guid(39bb055849ad3f546ad6ef3937d32b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1058.asset using Guid(39bb055849ad3f546ad6ef3937d32b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66660f28d0111ebf5ad24124bf37c92b') in 0.018627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_471.asset
+  artifactKey: Guid(5258c55e3a70196408ed28e37455b166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_471.asset using Guid(5258c55e3a70196408ed28e37455b166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b15ba505b69ee0dbb8335e5656de42') in 0.013992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_257.asset
+  artifactKey: Guid(6ed11c7b2494ce8429cf5c7570100337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_257.asset using Guid(6ed11c7b2494ce8429cf5c7570100337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6c3aa927ff718bd950814875f1d2fc0') in 0.016447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_436.asset
+  artifactKey: Guid(8d59f398fcca3cb48b9f934d541699fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_436.asset using Guid(8d59f398fcca3cb48b9f934d541699fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c1f8c8dadeb2cc9c76f8046fdafb10') in 0.011866 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_800.asset
+  artifactKey: Guid(64fbd69fbe10fe147bb1e4efd2a53252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_800.asset using Guid(64fbd69fbe10fe147bb1e4efd2a53252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8636efddf5f7ce92bf7cd86058a96dc') in 0.013315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_783.asset
+  artifactKey: Guid(eef8dde1081d70046b2ef9a714f353e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_783.asset using Guid(eef8dde1081d70046b2ef9a714f353e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a84b713e3788fda22863bd7afadab114') in 0.011724 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_435.asset
+  artifactKey: Guid(9a2e0c993a91f234c82ae6349ceb37eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_435.asset using Guid(9a2e0c993a91f234c82ae6349ceb37eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f60ffa4481c1467c3f4c6ca8a7d18ae0') in 0.015386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_790.asset
+  artifactKey: Guid(c5d5789d33c2aa247b2124e124effcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_790.asset using Guid(c5d5789d33c2aa247b2124e124effcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52eb925c0fc4125d0fea435d3b5d613e') in 0.014225 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1059.asset
+  artifactKey: Guid(64a6feaa6d0e29e4ebe042bc3d794c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1059.asset using Guid(64a6feaa6d0e29e4ebe042bc3d794c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2316bb664aaed096b294fe921fa680cb') in 0.015539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_254.asset
+  artifactKey: Guid(623435f10c1e7214ea3924b324e73fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_254.asset using Guid(623435f10c1e7214ea3924b324e73fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9d19e4e17627fd19c576d4af016bc9') in 0.014934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1056.asset
+  artifactKey: Guid(35b78cb330150fd4bb4d4b60b62fdaec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1056.asset using Guid(35b78cb330150fd4bb4d4b60b62fdaec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fcf5800433c5ba77a9525ff364e35f9') in 0.012473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_804.asset
+  artifactKey: Guid(b09ce1f0cc73eaf44871997521ff99e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_804.asset using Guid(b09ce1f0cc73eaf44871997521ff99e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ad075652fa3865c77c0c8b5a0c7428') in 0.017232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_465.asset
+  artifactKey: Guid(70936ec085835bd488aa191aa511ec15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_465.asset using Guid(70936ec085835bd488aa191aa511ec15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85fe3adec2d533489f491b79750e063') in 0.014787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_269.asset
+  artifactKey: Guid(0d35dc21955873a4b9c3b0bde7225f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_269.asset using Guid(0d35dc21955873a4b9c3b0bde7225f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '182fa244ce711c4ef352bd72b95123ba') in 0.015031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_792.asset
+  artifactKey: Guid(25c6d7bf06ef6c744a40e2f5447c7151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_792.asset using Guid(25c6d7bf06ef6c744a40e2f5447c7151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39e2169787462784685cad9ee0847dd') in 0.014731 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_456.asset
+  artifactKey: Guid(a63440052468d5e48bad9ef13d7a3057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_456.asset using Guid(a63440052468d5e48bad9ef13d7a3057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e1334bf62736a74b7075ce3fe3aaec') in 0.016216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_261.asset
+  artifactKey: Guid(e20866b5c0ec3be40b1b0d521fe6d4a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_261.asset using Guid(e20866b5c0ec3be40b1b0d521fe6d4a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dd7ab340e0fea00e3892f5300a6c296') in 0.012557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1049.asset
+  artifactKey: Guid(b8a9f5a0d1aa3d347a960c6f9d256020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1049.asset using Guid(b8a9f5a0d1aa3d347a960c6f9d256020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b206ffcb03752a4b0d15c0b669f11881') in 0.016105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_472.asset
+  artifactKey: Guid(29dc502c6df3d9a41a5e7385e266eaed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_472.asset using Guid(29dc502c6df3d9a41a5e7385e266eaed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f952c46f340b87d780852c09cdaf5481') in 0.016589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1052.asset
+  artifactKey: Guid(1ab4e88db55c46c49943c76f18d07831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1052.asset using Guid(1ab4e88db55c46c49943c76f18d07831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e569c9e80437be0e6702bdd6b7c6bf') in 0.014127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_447.asset
+  artifactKey: Guid(ef4c7ee62e479f345b8d14330ded423b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_447.asset using Guid(ef4c7ee62e479f345b8d14330ded423b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be5a7ea05ae791857652125781c1fcb2') in 0.017504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_450.asset
+  artifactKey: Guid(b7da6f71b669c034fa6c1d00339a714f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_450.asset using Guid(b7da6f71b669c034fa6c1d00339a714f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2872710042640c1a640d87aaea0428fe') in 0.014470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1045.asset
+  artifactKey: Guid(24b045bceb21b9647bf8666496b55bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1045.asset using Guid(24b045bceb21b9647bf8666496b55bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1260752ec059d99e006dafcddf826e9') in 0.013619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_775.asset
+  artifactKey: Guid(8c6809040c1b9684e99545c0eb1e5bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_775.asset using Guid(8c6809040c1b9684e99545c0eb1e5bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01324eb6c859ff2834ea5599325b8371') in 0.014067 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_789.asset
+  artifactKey: Guid(91b733a129a3a4f4b9cf7fd850bcdfa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_789.asset using Guid(91b733a129a3a4f4b9cf7fd850bcdfa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5317d8849b9133ea6d89f30649750663') in 0.017393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_284.asset
+  artifactKey: Guid(5d209df19876b4b4fbe9659a14e7694c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_284.asset using Guid(5d209df19876b4b4fbe9659a14e7694c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d873d13324732d1ce61f67294558f7') in 0.013912 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_449.asset
+  artifactKey: Guid(96efb135d2e9ad34eac5c05f6f303f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_449.asset using Guid(96efb135d2e9ad34eac5c05f6f303f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '759bd22c107589c6be4b2804b9fd640d') in 0.015065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_811.asset
+  artifactKey: Guid(4bfc7b82a21381f4d9e2159f86aa4dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_811.asset using Guid(4bfc7b82a21381f4d9e2159f86aa4dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9e134546cc6c75c64485266c3767096') in 0.013513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_808.asset
+  artifactKey: Guid(019d253fd68e012479d7a7c71b107fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_808.asset using Guid(019d253fd68e012479d7a7c71b107fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f291c56854db765d326e85aa4e122f8') in 0.015959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_266.asset
+  artifactKey: Guid(2c9cf8d6a99ac71409a87a2937e3b9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_266.asset using Guid(2c9cf8d6a99ac71409a87a2937e3b9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82ba75b1105709bcc62bb7cab04dfddd') in 0.014755 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_477.asset
+  artifactKey: Guid(82064f5f8bec98340a0f95151f62c2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_477.asset using Guid(82064f5f8bec98340a0f95151f62c2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb37fee1a5000a5436815686e7b9246') in 0.015878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_457.asset
+  artifactKey: Guid(3420c305ad7cbd448877041ca6a1375f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_457.asset using Guid(3420c305ad7cbd448877041ca6a1375f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2736858b9138004b62b8f92f849c7259') in 0.012786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_780.asset
+  artifactKey: Guid(74dda1eae8c0b1f45be43b2d4b4064d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_780.asset using Guid(74dda1eae8c0b1f45be43b2d4b4064d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90710b03a3bfc33f7bc76e81a02dbaf4') in 0.015236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1048.asset
+  artifactKey: Guid(f245089d433a5af4b9d599c3687b12f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1048.asset using Guid(f245089d433a5af4b9d599c3687b12f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4246b2eccac2fd973ed21c8c06a8f69') in 0.015435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_983.asset
+  artifactKey: Guid(f80bd74ea9ff6c44687d230ca8d5bd7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_983.asset using Guid(f80bd74ea9ff6c44687d230ca8d5bd7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4f8ad9f4efa3c7872a2abb1d51aae3') in 0.013669 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1002.asset
+  artifactKey: Guid(985d6140d7e25734ba3665d10194883d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1002.asset using Guid(985d6140d7e25734ba3665d10194883d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4597553b148651b76deea338eccff046') in 0.015546 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1022.asset
+  artifactKey: Guid(7ba802e37ec6e7d48983ae8dac47f6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1022.asset using Guid(7ba802e37ec6e7d48983ae8dac47f6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eee954b60df0cedb1e0e26fe1cb8bef') in 0.016714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_763.asset
+  artifactKey: Guid(317b9485f062a2341b12836d479605b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_763.asset using Guid(317b9485f062a2341b12836d479605b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d21f550e0f962751aa43a82043582a1') in 0.014409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_304.asset
+  artifactKey: Guid(21694bd86929398429c3c4d10940c75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_304.asset using Guid(21694bd86929398429c3c4d10940c75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fae43183680ae1621bbaf483a9074d8') in 0.017229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1014.asset
+  artifactKey: Guid(a784fec73327979449d8c64e28378685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1014.asset using Guid(a784fec73327979449d8c64e28378685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf7f849c8116a350f08413282859979') in 0.017250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_761.asset
+  artifactKey: Guid(6144ea7b0d116914585f16a58f412dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_761.asset using Guid(6144ea7b0d116914585f16a58f412dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52257c5acdce510d16cfce883f2ae933') in 0.015451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_992.asset
+  artifactKey: Guid(df6ab5ae05293a440a9528ba8c947926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_992.asset using Guid(df6ab5ae05293a440a9528ba8c947926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83e98cd9681fe70537295c5550152274') in 0.013478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_975.asset
+  artifactKey: Guid(610cca520ae52624cb0c79ced73c54ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_975.asset using Guid(610cca520ae52624cb0c79ced73c54ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5aced80cd5a961885ba72c914f5baed') in 0.016825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_346.asset
+  artifactKey: Guid(5321e859a222bc64d96502a8c0397456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_346.asset using Guid(5321e859a222bc64d96502a8c0397456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7428c1c6c970f79893eb0062d312b38') in 0.013852 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1021.asset
+  artifactKey: Guid(6258dd2c4adcbc94598ecc3a97e099a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1021.asset using Guid(6258dd2c4adcbc94598ecc3a97e099a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6491a9cf0d1760a4957fe31fe58584d') in 0.013677 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_302.asset
+  artifactKey: Guid(0c90939514129e541a907d31e0757d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_302.asset using Guid(0c90939514129e541a907d31e0757d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9026197e6aaf300124b8b579db7fa678') in 0.012339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_974.asset
+  artifactKey: Guid(e1c0f3da01cd2354694274deb3368b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_974.asset using Guid(e1c0f3da01cd2354694274deb3368b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecff36c07d93fd8dc75c99b11770cbda') in 0.020509 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1000.asset
+  artifactKey: Guid(9b382352fb83be747a24eccb43807f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1000.asset using Guid(9b382352fb83be747a24eccb43807f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1803d88befe62843df8406ff65b17da') in 0.017797 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_976.asset
+  artifactKey: Guid(9569d4e2deeec6c458de5c3eac5213d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_976.asset using Guid(9569d4e2deeec6c458de5c3eac5213d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b70827e2338f0ac576fd9dd8b22d036e') in 0.011234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_347.asset
+  artifactKey: Guid(0d588ae00a5c6c844988766df40ad378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_347.asset using Guid(0d588ae00a5c6c844988766df40ad378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cea0338b684b23a367d2634212d50b2') in 0.015036 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_754.asset
+  artifactKey: Guid(b3ac6e5c382134049a120924e7682018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_754.asset using Guid(b3ac6e5c382134049a120924e7682018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdffc0e59fe44b221b4412440640d19c') in 0.013942 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_333.asset
+  artifactKey: Guid(19c201ade33cec149a9f01cf8e025c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_333.asset using Guid(19c201ade33cec149a9f01cf8e025c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df2d29ed9d6549faff7032b5c2997269') in 0.014445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_316.asset
+  artifactKey: Guid(8a09a2885a0e47943bc5fa82db482584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_316.asset using Guid(8a09a2885a0e47943bc5fa82db482584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20351bb5e229d5f7676cd259ec44cfb6') in 0.014745 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_345.asset
+  artifactKey: Guid(2d0261cd53ad767409f1682ba90e122f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_345.asset using Guid(2d0261cd53ad767409f1682ba90e122f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05857ea22ada49789c283086d011ff7a') in 0.009677 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_326.asset
+  artifactKey: Guid(da10bf600a2490341b50f5f04a3175a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_326.asset using Guid(da10bf600a2490341b50f5f04a3175a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f93e71dc2af3433e2bd790c31161e799') in 0.013093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_318.asset
+  artifactKey: Guid(ad91bfba354f54443a0b057a2d25e8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_318.asset using Guid(ad91bfba354f54443a0b057a2d25e8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a9d9f0a0fd8b7dbd2102eda5eba2095') in 0.020584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_322.asset
+  artifactKey: Guid(a0daec8bbeeef024c81f690a299f8dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_322.asset using Guid(a0daec8bbeeef024c81f690a299f8dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4c6b62fe3a00d7ae54b572cc1948f0') in 0.015600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1018.asset
+  artifactKey: Guid(7f4a3da86c2600a42962099111f1c560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1018.asset using Guid(7f4a3da86c2600a42962099111f1c560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915461a55054f479cee3ec58a9b6b3c3') in 0.016033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_996.asset
+  artifactKey: Guid(90cb8efcaeaaac24fa42662449d48fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_996.asset using Guid(90cb8efcaeaaac24fa42662449d48fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a575e0266572412e1ccadcb16980366') in 0.015695 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_997.asset
+  artifactKey: Guid(ad57598025de78742b2f4b0254157e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_997.asset using Guid(ad57598025de78742b2f4b0254157e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922c80234a5ed44ce68d9b0f2aa400ee') in 0.016813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_1001.asset
+  artifactKey: Guid(6ca91c61aadad3b4694140046c259c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_1001.asset using Guid(6ca91c61aadad3b4694140046c259c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39201c2b9af70f8ca22aee0082098ec1') in 0.015822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_470.asset
+  artifactKey: Guid(c9750f642756da141b80b7053cdc313d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_470.asset using Guid(c9750f642756da141b80b7053cdc313d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc48022862b576807c633579b1f1455') in 0.016358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_244.asset
+  artifactKey: Guid(53bf0b0f8e1c6a645a2964a71dc0c01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_244.asset using Guid(53bf0b0f8e1c6a645a2964a71dc0c01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bad589e94447ccb31c4d7f0ba294e39') in 0.015529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_306.asset
+  artifactKey: Guid(507cd7eb3345f50499402ab7802dd5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_306.asset using Guid(507cd7eb3345f50499402ab7802dd5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '830d8c0d8dd3398a82a5bfb30d48010b') in 0.020925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_977.asset
+  artifactKey: Guid(e7de90030f5a8fc4cb6f25091cde1d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_977.asset using Guid(e7de90030f5a8fc4cb6f25091cde1d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8cd68e852c36089847ecb34df3b4d3a') in 0.014514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_321.asset
+  artifactKey: Guid(cae77f3dcc8b62140ae64d376e8b7b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_321.asset using Guid(cae77f3dcc8b62140ae64d376e8b7b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a883efe0f17e4ad18f40b534b8cdb94') in 0.013796 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Terrain_1_776.asset
+  artifactKey: Guid(daf4f588c9edc394a85acddec9f34473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Terrain_1_776.asset using Guid(daf4f588c9edc394a85acddec9f34473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '545dfa3474bb93aa7929c126f61fadf5') in 0.013643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.347981 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2.asset
+  artifactKey: Guid(83a5ba6903c920c42997ab664f0fc95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2.asset using Guid(83a5ba6903c920c42997ab664f0fc95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec7f7c6eff6a70b066b980012984cb83') in 0.001953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_5.asset
+  artifactKey: Guid(0fa13fd72caf1674e8eac83aec2f1ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_5.asset using Guid(0fa13fd72caf1674e8eac83aec2f1ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e0ba45ed6716aefda9fecaa7101f2a8') in 0.001700 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_11.asset
+  artifactKey: Guid(7fcc644608741934f990cf6459fa1fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_11.asset using Guid(7fcc644608741934f990cf6459fa1fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '751b77ce751134a6a0aeb03026bd55b8') in 0.001542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_13.asset
+  artifactKey: Guid(36116339029ad014284d186c1b967f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_13.asset using Guid(36116339029ad014284d186c1b967f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b63b72411d3bd6e56f85032ae7ee8a77') in 0.001246 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.006696 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_17.asset
+  artifactKey: Guid(7976baf3b417e09458dff06058a72e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_17.asset using Guid(7976baf3b417e09458dff06058a72e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dab26b5880873c6fcdea2f4cba9b2e5e') in 0.001975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_34.asset
+  artifactKey: Guid(ede4fd8c6ac65d941b942dfbdf620be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_34.asset using Guid(ede4fd8c6ac65d941b942dfbdf620be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d09e648d0b70661c71fdf36f454c79') in 0.001755 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_36.asset
+  artifactKey: Guid(485c8ac62c81ca54fbff20e833c3928d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_36.asset using Guid(485c8ac62c81ca54fbff20e833c3928d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28b6ab46cfb0cf104e1201db40678cbe') in 0.001615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_23.asset
+  artifactKey: Guid(9da6c6b040ee0024d8a0d6217d04ae9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_23.asset using Guid(9da6c6b040ee0024d8a0d6217d04ae9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b4bacbc108287ab2286c7794c2b601') in 0.001527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_22.asset
+  artifactKey: Guid(f6776adc6dffea541a34ebf74dcc61d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_22.asset using Guid(f6776adc6dffea541a34ebf74dcc61d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89a9c8012962e92e6b4feb3c6599d927') in 0.001837 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_28.asset
+  artifactKey: Guid(762c9628377bdc448a5ebcb0dd69f282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_28.asset using Guid(762c9628377bdc448a5ebcb0dd69f282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff7fb4519adf95d3fceee65f6c2bb88c') in 0.001504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_41.asset
+  artifactKey: Guid(2cde9035ffeabd344bdd614d322f7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_41.asset using Guid(2cde9035ffeabd344bdd614d322f7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04b5d1b4856ddedf96eb8c7cdb4fa11e') in 0.001270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_29.asset
+  artifactKey: Guid(4faeede512b6214449114225ef834917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_29.asset using Guid(4faeede512b6214449114225ef834917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '070797d0a853364010086ecc969b701e') in 0.002371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_42.asset
+  artifactKey: Guid(a350762af44aee94c9dc1d853b8c30f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_42.asset using Guid(a350762af44aee94c9dc1d853b8c30f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea61e82c7eeb266128421982d9ad516') in 0.001763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.706642 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_66.asset
+  artifactKey: Guid(f5bd0bae3ff28fa45a19656993efdb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_66.asset using Guid(f5bd0bae3ff28fa45a19656993efdb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56d65de892bcebd850327473bb32edd') in 0.002007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_108.asset
+  artifactKey: Guid(c66d2e1463deae644b175574f4c547f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_108.asset using Guid(c66d2e1463deae644b175574f4c547f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2455b52442a9919451ce6a0f800a82e5') in 0.002188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_98.asset
+  artifactKey: Guid(ccf903cee25760546a2298cddca3c6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_98.asset using Guid(ccf903cee25760546a2298cddca3c6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6187772208a3cb865363ccd68e52e54b') in 0.001680 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_89.asset
+  artifactKey: Guid(93438a9adffeeee409b9e74ca5a1b790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_89.asset using Guid(93438a9adffeeee409b9e74ca5a1b790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '184e140b614b977fca5fda29deb439ee') in 0.002688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_110.asset
+  artifactKey: Guid(e603edd3c90de9348baec762b6c3338d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_110.asset using Guid(e603edd3c90de9348baec762b6c3338d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7bd15b3678d9379107526bc84d818ba') in 0.002478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_91.asset
+  artifactKey: Guid(a9ca3ec5028da9241bed96cb29f5e33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_91.asset using Guid(a9ca3ec5028da9241bed96cb29f5e33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84e8607b1b7be74f2e330142514e752') in 0.001703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_73.asset
+  artifactKey: Guid(5dff590342bf0334b81948c7e37eb88f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_73.asset using Guid(5dff590342bf0334b81948c7e37eb88f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbef91f63cc31c10e19c67769e9150f5') in 0.001462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_90.asset
+  artifactKey: Guid(5f5d84d6e35d8634b9d3e8763b827020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_90.asset using Guid(5f5d84d6e35d8634b9d3e8763b827020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0d4565fa1a63483e0f1d8b3249f5d12') in 0.001521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_105.asset
+  artifactKey: Guid(d531a7be2e40c2945812054217efa0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_105.asset using Guid(d531a7be2e40c2945812054217efa0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7cfdea844a50e4e211156b9156f770b') in 0.001711 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_97.asset
+  artifactKey: Guid(27c5513c01b79ec46b14ccba36d45456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_97.asset using Guid(27c5513c01b79ec46b14ccba36d45456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1400d1ef7f1cff580ef55938f4918ea1') in 0.001635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_245.asset
+  artifactKey: Guid(0f7cc850b179a5b42b7f07b2c5a18730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_245.asset using Guid(0f7cc850b179a5b42b7f07b2c5a18730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cdddd4a8ae1d44e1613d49dc84c1c33') in 0.002204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_240.asset
+  artifactKey: Guid(84888fdec5f262a42b2a5118f827b31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_240.asset using Guid(84888fdec5f262a42b2a5118f827b31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e45b6309317432bf47917cff2ee9f5') in 0.001849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_579.asset
+  artifactKey: Guid(6dd51536397617448b02f441df59b212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_579.asset using Guid(6dd51536397617448b02f441df59b212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd72ec007d937c674e5c03ceadba3868c') in 0.001810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_232.asset
+  artifactKey: Guid(fd5c20d437892e3409604bb84136366e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_232.asset using Guid(fd5c20d437892e3409604bb84136366e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b3f5253df95c816e3404a4bd9fc541d') in 0.001702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_588.asset
+  artifactKey: Guid(1bbe565032c15294c853899c5b1d744a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_588.asset using Guid(1bbe565032c15294c853899c5b1d744a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8d6e448ee7eb2108d9575c8a078243f') in 0.001506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_582.asset
+  artifactKey: Guid(8d2698e95ae512541878a81c1d7efa48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_582.asset using Guid(8d2698e95ae512541878a81c1d7efa48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bca78a3beb88c5b8b358a22cde17eb0') in 0.001790 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_227.asset
+  artifactKey: Guid(925d51afe59134c488210ebcee2f932d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_227.asset using Guid(925d51afe59134c488210ebcee2f932d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'becefd4205edfd6b32c480efb0c07318') in 0.001887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_576.asset
+  artifactKey: Guid(7ae3b70d48ed58e46ba90bedcb78cc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_576.asset using Guid(7ae3b70d48ed58e46ba90bedcb78cc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec8cbfd79aefc34de3df7e0d93acf5d') in 0.002023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_226.asset
+  artifactKey: Guid(2a16a592172b59a42a8c517a3e7691c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_226.asset using Guid(2a16a592172b59a42a8c517a3e7691c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '681c7ce4b843131557aa1aa359ddda88') in 0.001857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_569.asset
+  artifactKey: Guid(3ca3e183ccf44dd4eb7db991450225f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_569.asset using Guid(3ca3e183ccf44dd4eb7db991450225f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc9b128ccd05f9f4fae81133bc8bc2f') in 0.002365 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_216.asset
+  artifactKey: Guid(cb44c50aa2f5ff448b6721a584889965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_216.asset using Guid(cb44c50aa2f5ff448b6721a584889965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe272bf2a56dde4f69a5c91848ede5d') in 0.002775 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_595.asset
+  artifactKey: Guid(6a7b8cde6d0c3c645bbf72ab5e5d75ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_595.asset using Guid(6a7b8cde6d0c3c645bbf72ab5e5d75ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c450f0b552de869edea6c46c3621bdfa') in 0.001585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_580.asset
+  artifactKey: Guid(6eb807ef33252044dbc91c94eecd7fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_580.asset using Guid(6eb807ef33252044dbc91c94eecd7fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd588de1cfa127e96f5a08d608e666fc') in 0.001503 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_608.asset
+  artifactKey: Guid(9f20ce06a1b4e134ab4f77d5b6ea8ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_608.asset using Guid(9f20ce06a1b4e134ab4f77d5b6ea8ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c0503b68a68f8b1be9459fb7333d4d') in 0.001682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_607.asset
+  artifactKey: Guid(a020646de7323be4b96f0eea2f4348c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_607.asset using Guid(a020646de7323be4b96f0eea2f4348c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e307cbcaf71565ccf6f0366bf90556') in 0.003004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1135.asset
+  artifactKey: Guid(b4b7afcb413c972449a321713ad1d773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1135.asset using Guid(b4b7afcb413c972449a321713ad1d773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1b1cb049bb081b4710f58ba41a9ab96') in 0.001716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1132.asset
+  artifactKey: Guid(24ad6614b723d6e47aed82ac9b31c5d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1132.asset using Guid(24ad6614b723d6e47aed82ac9b31c5d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca2ee3a0f66d7c43213506ef47ccc0f8') in 0.001991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_601.asset
+  artifactKey: Guid(6fca82142540dae4f9f9c6b9d8d60c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_601.asset using Guid(6fca82142540dae4f9f9c6b9d8d60c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e4ecb587e31637c055ac022dc403f7e') in 0.001703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1125.asset
+  artifactKey: Guid(3f677af71dd915a4cb9e5e6c90a0c288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1125.asset using Guid(3f677af71dd915a4cb9e5e6c90a0c288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edeff30223f2a079282176dfdeea2272') in 0.001623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1130.asset
+  artifactKey: Guid(815c52eb558706940aab7f44b2d0ec55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1130.asset using Guid(815c52eb558706940aab7f44b2d0ec55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff070c6721e7faab6eb124944220053') in 0.001758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_566.asset
+  artifactKey: Guid(4c37c3b04afffe34c9dbc217678791c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_566.asset using Guid(4c37c3b04afffe34c9dbc217678791c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06b9501c0ef4a1381a8835a045c2a45a') in 0.002413 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_584.asset
+  artifactKey: Guid(76ff853e753259949bf62cdb90580e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_584.asset using Guid(76ff853e753259949bf62cdb90580e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '849db67d27b2eddbc1ecd12238581eb6') in 0.001466 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_217.asset
+  artifactKey: Guid(9446461f7adf0604d9c3eeb15c944c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_217.asset using Guid(9446461f7adf0604d9c3eeb15c944c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c8e8ee6d298e44ee477482e52839ca') in 0.001559 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_583.asset
+  artifactKey: Guid(0f1884088ffe75442854fadd28bcbb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_583.asset using Guid(0f1884088ffe75442854fadd28bcbb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a5d963352a31ea10f7c4000fe0a0d0a') in 0.001688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_574.asset
+  artifactKey: Guid(1524d77ba76af6843a4c41e0c0601006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_574.asset using Guid(1524d77ba76af6843a4c41e0c0601006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd54f9a80637c23ff74081b1bbcd6376') in 0.001697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1157.asset
+  artifactKey: Guid(97f92a9e8080247498e92869bfd06d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1157.asset using Guid(97f92a9e8080247498e92869bfd06d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e161f4d5e4bdfe4b98661f2d59b8403') in 0.002577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1619.asset
+  artifactKey: Guid(7cc1b461b565d3c4fba21e1e690ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1619.asset using Guid(7cc1b461b565d3c4fba21e1e690ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90cbb6c5ac656ee2a87fd03418434b34') in 0.002776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1628.asset
+  artifactKey: Guid(295bab4e69b66e04f89fccd7529b91a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1628.asset using Guid(295bab4e69b66e04f89fccd7529b91a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75dba631094318137d5541d5589568f5') in 0.001342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1620.asset
+  artifactKey: Guid(91bacc31920c1d04cb9bfcc942eb1db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1620.asset using Guid(91bacc31920c1d04cb9bfcc942eb1db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7488816ea28f9027b1b08c582f6fea3') in 0.001170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1148.asset
+  artifactKey: Guid(428c856a67aeeb2418a5165b1f3bf5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1148.asset using Guid(428c856a67aeeb2418a5165b1f3bf5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458fd81b6ffb1f4d5e52f64b1e9821fe') in 0.001240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1649.asset
+  artifactKey: Guid(586a702856eb2224c8350152be56767c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1649.asset using Guid(586a702856eb2224c8350152be56767c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b683c8160359848cc29e68a1971ce31') in 0.002527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1652.asset
+  artifactKey: Guid(0ec2adb47d38cc644856c298891e0726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1652.asset using Guid(0ec2adb47d38cc644856c298891e0726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd211d1617fd2081ce3384878739753ad') in 0.002845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1906.asset
+  artifactKey: Guid(6b21b19fe140aff4b8b29d04e4852124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1906.asset using Guid(6b21b19fe140aff4b8b29d04e4852124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052a62cae9f23374ad51b6507302107b') in 0.001579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1904.asset
+  artifactKey: Guid(a769121f3bb52574288d71e2346179f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1904.asset using Guid(a769121f3bb52574288d71e2346179f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c478e03e5f21b633190578533167e8a') in 0.001895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1915.asset
+  artifactKey: Guid(99b5568221fcbe04386084492c38eaa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1915.asset using Guid(99b5568221fcbe04386084492c38eaa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7d79257ce6fd5447dd0a048901bbd6b') in 0.001675 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1156.asset
+  artifactKey: Guid(5ff783dd44f44984683028a7a3b46865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1156.asset using Guid(5ff783dd44f44984683028a7a3b46865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5785ffdd3206b06c426b78c54146293') in 0.002128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1627.asset
+  artifactKey: Guid(727f40140ddc2b64e9654d4b454f3700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1627.asset using Guid(727f40140ddc2b64e9654d4b454f3700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567584f071cfc8cb975c5dbdea8e6074') in 0.002266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1650.asset
+  artifactKey: Guid(6eca004e29fbd694ab23e6617dde302e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1650.asset using Guid(6eca004e29fbd694ab23e6617dde302e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28c58e19644dbe3031efa052ff6e317b') in 0.002886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1912.asset
+  artifactKey: Guid(b0b5066e8308f8b4ba4ded289a8c4054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1912.asset using Guid(b0b5066e8308f8b4ba4ded289a8c4054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c09f8f30d799b8193e3f451420c753eb') in 0.002047 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1154.asset
+  artifactKey: Guid(c3b926abbff5ee34f8bd0848e6c43fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1154.asset using Guid(c3b926abbff5ee34f8bd0848e6c43fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4537eb975f44869fe3dc8acf7c113dc5') in 0.001522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1147.asset
+  artifactKey: Guid(0c58ee373968db14fa9e942db78d8b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1147.asset using Guid(0c58ee373968db14fa9e942db78d8b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a537c6edbb2c33c8c2503f34e5dd04') in 0.001636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1631.asset
+  artifactKey: Guid(6b47d133d8ec10c44a6aac11710319b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1631.asset using Guid(6b47d133d8ec10c44a6aac11710319b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c13c62fdb0cec5cb80e3d04fc2233cd6') in 0.001419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1626.asset
+  artifactKey: Guid(5aec216a40968a24598ce803989a0dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1626.asset using Guid(5aec216a40968a24598ce803989a0dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a8e3045e017d4392730c73c344bf84b') in 0.001473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1142.asset
+  artifactKey: Guid(9ae9374927cc30a4cbea23994ad0aac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1142.asset using Guid(9ae9374927cc30a4cbea23994ad0aac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb9d8bee6d2f98bd6220c022d73380c7') in 0.001806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1920.asset
+  artifactKey: Guid(8ae8ff29a79435c4e8291a842bbc080c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1920.asset using Guid(8ae8ff29a79435c4e8291a842bbc080c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '963f97db75bb39460891cf6036689bec') in 0.001800 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_563.asset
+  artifactKey: Guid(b92ebb7eb316f864baac9b27785b963e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_563.asset using Guid(b92ebb7eb316f864baac9b27785b963e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726367a95d4326b0b2cf029e4c06a158') in 0.001870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1905.asset
+  artifactKey: Guid(dc1ff1f48c9863b4490e1f3aaed3f51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1905.asset using Guid(dc1ff1f48c9863b4490e1f3aaed3f51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4983062b63d674c3deabb7df05e5e8c') in 0.001664 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1155.asset
+  artifactKey: Guid(ef46cd6ecffe9314995db583d96055b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1155.asset using Guid(ef46cd6ecffe9314995db583d96055b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1323630c6b6fd6ed45e01fc86c40c69f') in 0.001772 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_86.asset
+  artifactKey: Guid(4e56b29d23fe66f4291e71c006ec8f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_86.asset using Guid(4e56b29d23fe66f4291e71c006ec8f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e31e1ebd0b19cb8224528f68ce4bc51') in 0.001469 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1634.asset
+  artifactKey: Guid(fcdb3f1caba761a49a8de9c80ec8e72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1634.asset using Guid(fcdb3f1caba761a49a8de9c80ec8e72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915003407a6dd4776495a6a991cbad19') in 0.001992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_585.asset
+  artifactKey: Guid(f21fc259a3bed5f418bb79e77593d56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_585.asset using Guid(f21fc259a3bed5f418bb79e77593d56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2e30d24283217ef067bc849807c1484') in 0.001504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1616.asset
+  artifactKey: Guid(d7e228defbb994144a21349c6f621380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1616.asset using Guid(d7e228defbb994144a21349c6f621380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa10c2d771b1d953ade121363980cd4b') in 0.001716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_83.asset
+  artifactKey: Guid(6e2115d74ccb0674c80668929cbf848f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_83.asset using Guid(6e2115d74ccb0674c80668929cbf848f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d11bcda8718c930daf668fdae17e530') in 0.002140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2500.asset
+  artifactKey: Guid(d5c7273f33f289b47925fdabe22b6e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2500.asset using Guid(d5c7273f33f289b47925fdabe22b6e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c9226b00a2ca96c80c6d638b2dfb2c') in 0.001736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1928.asset
+  artifactKey: Guid(c13b7068d979ebd479b408cd1240bed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1928.asset using Guid(c13b7068d979ebd479b408cd1240bed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '310bcbf6d086f9e61c369bb67ba41292') in 0.001550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1930.asset
+  artifactKey: Guid(32ed3c75620cd5945854a1d74f3fecdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1930.asset using Guid(32ed3c75620cd5945854a1d74f3fecdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9845ef3292af8375c7313ca2be2f4f6d') in 0.001564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1950.asset
+  artifactKey: Guid(3c7b88c91642f09429d13fe116d7c842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1950.asset using Guid(3c7b88c91642f09429d13fe116d7c842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8ec2c758915ee0e00a07ac617ed1b9f') in 0.001409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2525.asset
+  artifactKey: Guid(26094a82c912e9f47814a4a65f344b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2525.asset using Guid(26094a82c912e9f47814a4a65f344b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd53e1b7e3a71558a730cd1eda727a99c') in 0.001862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1940.asset
+  artifactKey: Guid(cb1d8ff9c53785440948c68bb15cbbeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1940.asset using Guid(cb1d8ff9c53785440948c68bb15cbbeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2daf17c96c32cd41ac285274616fd587') in 0.002269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2507.asset
+  artifactKey: Guid(dee8d28c3aa7fed46a00b98f261b4443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2507.asset using Guid(dee8d28c3aa7fed46a00b98f261b4443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98adcfc72ab6fd2a9d33edada2abd6a1') in 0.002474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1952.asset
+  artifactKey: Guid(d4cc198e5a5fe0444b857dc0181a5b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1952.asset using Guid(d4cc198e5a5fe0444b857dc0181a5b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb819b02c9a225b4bb48329cbc90b928') in 0.001654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2504.asset
+  artifactKey: Guid(be9a25af958c9ec4e98cb067368e6381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2504.asset using Guid(be9a25af958c9ec4e98cb067368e6381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b401a88b14ce791253ac77aa7bd5ca') in 0.001695 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2503.asset
+  artifactKey: Guid(bc9e5d2524049ea4da99a7bda39efb38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2503.asset using Guid(bc9e5d2524049ea4da99a7bda39efb38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d72c8d37b2a695a44cbab2e51517757') in 0.002144 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2516.asset
+  artifactKey: Guid(df39c8ccf01c09949b013d6d20b8ae8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2516.asset using Guid(df39c8ccf01c09949b013d6d20b8ae8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88f6747190d066eba42b466df2bd6edf') in 0.001465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2511.asset
+  artifactKey: Guid(e5e119325b66f624fbddbd630ea6752e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_2511.asset using Guid(e5e119325b66f624fbddbd630ea6752e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f39bd3dfcbc7b0f1a27675605d97f8') in 0.002410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1152.asset
+  artifactKey: Guid(6b6f7324107c42d4dbe3c6c772197d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1152.asset using Guid(6b6f7324107c42d4dbe3c6c772197d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '145abc2d2f0bd66fcd43fa1eb486365d') in 0.001581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1945.asset
+  artifactKey: Guid(1494dc7295dcf994189e0519bfce8bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1945.asset using Guid(1494dc7295dcf994189e0519bfce8bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e8d9f72668be6a34ccbaa0a818db64') in 0.001731 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_84.asset
+  artifactKey: Guid(0da7f2505ad9d5649b5c89cbca36f174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_84.asset using Guid(0da7f2505ad9d5649b5c89cbca36f174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0cc3a1c4c5fcc59dbc1639907b7c68c') in 0.001698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1926.asset
+  artifactKey: Guid(8ebb6fbb780526b4d80ccbb3e4f7000b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_1926.asset using Guid(8ebb6fbb780526b4d80ccbb3e4f7000b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64e903c4bcff8992d1447c32c1236c14') in 0.001920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_249.asset
+  artifactKey: Guid(89f42a72c9fc3804f8c8dea24d1cfd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Map 1/Terrain/Trees/Terrain_2_249.asset using Guid(89f42a72c9fc3804f8c8dea24d1cfd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed32da871e7063402285161a787a741') in 0.001826 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
