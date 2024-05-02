@@ -23,6 +23,14 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject trail;
     private GameObject currentTrail;
 
+    Animator _animator;
+
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+        JoystickController.MoveEvent += UpdateAnimations;
+    }
+
 
 
     void Update()
@@ -125,5 +133,27 @@ public class Player : MonoBehaviour
         }
 
         ClosestEnemy = closestEnemy;
+    }
+
+    void UpdateAnimations(Vector2 movement)
+    {
+        if(movement.magnitude > 0)
+        {
+            _animator.SetBool("isWalking", true);
+            _animator.SetFloat("HAx", movement.x);
+            _animator.SetFloat("VAx", movement.y);
+        }
+        else
+        {
+            _animator.SetBool("isWalking", false);
+
+            _animator.SetFloat("HAx", 0f);
+            _animator.SetFloat("VAx", 0f);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        JoystickController.MoveEvent -= UpdateAnimations;
     }
 }

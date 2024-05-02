@@ -103,6 +103,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\Pool.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\Enemy.cs" />
+    <Compile Include="Assets\_Scripts\Player\PlayerView.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\EnemyFactory.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
