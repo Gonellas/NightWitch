@@ -11677,14 +11677,14 @@ RectTransform:
   m_GameObject: {fileID: 439502412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0757816, y: 3.1326568, z: 1}
+  m_LocalScale: {x: 1.0757816, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 716021620}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -0.18336391}
+  m_AnchoredPosition: {x: -0.000061035156, y: -0}
   m_SizeDelta: {x: -10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &439502414
@@ -11838,6 +11838,10 @@ PrefabInstance:
     - target: {fileID: 5069904872697450956, guid: 468c57f4052c0d5488a0b9e9c46cdf4f, type: 3}
       propertyPath: m_Name
       value: A
+      objectReference: {fileID: 0}
+    - target: {fileID: 6875660964660805934, guid: 468c57f4052c0d5488a0b9e9c46cdf4f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7510856467675125205, guid: 468c57f4052c0d5488a0b9e9c46cdf4f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14331,7 +14335,15 @@ PrefabInstance:
     - target: {fileID: 263711569852571671, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: lifeCanvas
       value: 
-      objectReference: {fileID: 464427640}
+      objectReference: {fileID: 0}
+    - target: {fileID: 263711569852571671, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: canTakeDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 263711569852571671, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: currentHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1656062731857384801, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: m_Name
       value: Player
@@ -14351,6 +14363,10 @@ PrefabInstance:
     - target: {fileID: 2890990192930538153, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: m_Offset.y
       value: -0.48343027
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890990192930538153, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3120616589769662607, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: m_Color.b
@@ -14418,6 +14434,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7823313111116748607, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449546529175523540, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449546529175523540, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449546529175523540, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449546529175523540, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9103397559962139841, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}

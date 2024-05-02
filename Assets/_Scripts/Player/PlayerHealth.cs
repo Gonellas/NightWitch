@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,8 +6,6 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] Slider _healthBar;
     [SerializeField] float _maxHealth = 100;
-
-    public GameObject lifeCanvas;
 
     public float currentHealth;
     public bool canTakeDamage;
@@ -18,29 +15,16 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         currentHealth = _maxHealth;
-
-        if (lifeCanvas != null)
-        {
-            Debug.Log("Canvas encontrado. Pertenece a: " + lifeCanvas.name);
-        }
-        else
-        {
-            Debug.LogWarning("El canvas no está asignado. Asegúrate de asignar el canvas en el inspector.");
-        }       
-    }
-
-    private void Update()
-    {
-        UpdateHealthBar();     
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            canTakeDamage = true;
             currentHealth -= damage;
             Debug.Log("Vida restante" + " " + currentHealth);
-
+            UpdateHealthBar();
         }
     }
 
@@ -48,11 +32,8 @@ public class PlayerHealth : MonoBehaviour
     {
         if (canTakeDamage)
         {
-            currentHealth = Mathf.Max(0, currentHealth);
-            _healthBar.value = (float)currentHealth / _maxHealth;
+            _healthBar.value = currentHealth - damage;
         }
         else canTakeDamage = false;
     }
-
-
 }
