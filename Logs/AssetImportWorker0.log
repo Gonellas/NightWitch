@@ -15,7 +15,7 @@ D:/Da Vinci/4to Cuatrimestre/Juego Motores 2 - Modelos 1/Motores2_Modelos1
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58630
+50285
 Successfully changed project path to: D:/Da Vinci/4to Cuatrimestre/Juego Motores 2 - Modelos 1/Motores2_Modelos1
 D:/Da Vinci/4to Cuatrimestre/Juego Motores 2 - Modelos 1/Motores2_Modelos1
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/Da Vinci/4to Cuatrimestre/Juego Motores 2 - Modelos 1/Motores2_Modelos1
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [29744] Host "[IP] 192.168.100.219 [Port] 0 [Flags] 2 [Guid] 685755792 [EditorId] 685755792 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-5NPJSP3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [19784] Host "[IP] 192.168.100.219 [Port] 0 [Flags] 2 [Guid] 3982088399 [EditorId] 3982088399 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-5NPJSP3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [29744] Host "[IP] 192.168.100.219 [Port] 0 [Flags] 2 [Guid] 685755792 [EditorId] 685755792 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-5NPJSP3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19784] Host "[IP] 192.168.100.219 [Port] 0 [Flags] 2 [Guid] 3982088399 [EditorId] 3982088399 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-5NPJSP3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 6.57 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 7.09 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -69,47 +69,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56124
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008720 seconds.
-- Loaded All Assemblies, in  0.277 seconds
+Registered in 0.008516 seconds.
+- Loaded All Assemblies, in  0.314 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 234 ms
+Android Extension - Scanning For ADB Devices 225 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.501 seconds
-Domain Reload Profiling: 777ms
+- Finished resetting the current domain, in  0.515 seconds
+Domain Reload Profiling: 827ms
 	BeginReloadAssembly (74ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (28ms)
+	RebuildCommonClasses (30ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (114ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
 		LoadAssemblies (72ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (109ms)
-			TypeCache.Refresh (108ms)
-				TypeCache.ScanAssembly (99ms)
+		AnalyzeDomain (139ms)
+			TypeCache.Refresh (138ms)
+				TypeCache.ScanAssembly (128ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (501ms)
+	FinalizeReload (515ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (456ms)
+		SetupLoadedEditorAssemblies (459ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (330ms)
-			SetLoadedEditorAssemblies (3ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (83ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
+			ProcessInitializeOnLoadAttributes (85ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,52 +119,52 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Da Vinci\4to Cuatrimestre\Juego Motores 2 - Modelos 1\Motores2_Modelos1\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Da Vinci\4to Cuatrimestre\Juego Motores 2 - Modelos 1\Motores2_Modelos1\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.588 seconds
-Refreshing native plugins compatible for Editor in 2.41 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.626 seconds
+Refreshing native plugins compatible for Editor in 2.20 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.487 seconds
-Domain Reload Profiling: 1073ms
-	BeginReloadAssembly (109ms)
+Domain Reload Profiling: 1110ms
+	BeginReloadAssembly (114ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (406ms)
-		LoadAssemblies (205ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (428ms)
+		LoadAssemblies (225ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (253ms)
-			TypeCache.Refresh (233ms)
-				TypeCache.ScanAssembly (220ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (3ms)
+		AnalyzeDomain (254ms)
+			TypeCache.Refresh (232ms)
+				TypeCache.ScanAssembly (219ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (4ms)
 	FinalizeReload (487ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (350ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (62ms)
-			ProcessInitializeOnLoadAttributes (226ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (224ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 3.28 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.48 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4062 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 63 unused Assets / (60.5 KB). Loaded Objects now: 4530.
 Memory consumption went from 150.5 MB to 150.5 MB.
-Total: 3.184300 ms (FindLiveObjects: 0.242800 ms CreateObjectMapping: 0.100100 ms MarkObjects: 2.720700 ms  DeleteObjects: 0.119800 ms)
+Total: 3.127400 ms (FindLiveObjects: 0.272100 ms CreateObjectMapping: 0.204300 ms MarkObjects: 2.538900 ms  DeleteObjects: 0.110700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,1217 +180,105 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 34387.207678 seconds.
-  path: Assets/Art/Map/Map 1
-  artifactKey: Guid(f9a88588bc82ada43a63261e1a9e0704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1 using Guid(f9a88588bc82ada43a63261e1a9e0704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c4e1654cd5b25371d4bd541c3f9325c') in 0.002819 seconds
+  Time since last request: 3850.005437 seconds.
+  path: Assets/Art/Player/Iddle
+  artifactKey: Guid(bedc9931821692b4ab8eb6b7a4ab829a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Iddle using Guid(bedc9931821692b4ab8eb6b7a4ab829a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '570270ba6fcbf091ddc9ad754813e28b') in 0.002526 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_43.asset
-  artifactKey: Guid(66c3f95aab93a714b971884248d901ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_43.asset using Guid(66c3f95aab93a714b971884248d901ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dea60425beede105cf9d47fb8044bbd') in 0.079659 seconds
+  Time since last request: 9.495533 seconds.
+  path: Assets/Art/Player/Walk
+  artifactKey: Guid(645081c2d7372c04db4c26ab0d838039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Walk using Guid(645081c2d7372c04db4c26ab0d838039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1448c1569f32c261bdd1cb6d2e9b549c') in 0.000373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.332086 seconds.
+  path: Assets/Art/Player/Ground Attack
+  artifactKey: Guid(ebfa8ca9f73bc6c4593df74e68669ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ground Attack using Guid(ebfa8ca9f73bc6c4593df74e68669ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f90d9f8ef15445df8d20da8401265f6') in 0.000318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 20.513340 seconds.
+  path: Assets/Art/Player/Ground Attack/GroundAttack_Down.png
+  artifactKey: Guid(d1c7780ab72259e4682d150acf3a1f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ground Attack/GroundAttack_Down.png using Guid(d1c7780ab72259e4682d150acf3a1f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e45678ee38b0dd3346166cc94b228a2') in 0.067185 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_42.asset
-  artifactKey: Guid(230ac85c45ce7814b883945df169ba06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_42.asset using Guid(230ac85c45ce7814b883945df169ba06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '440fcb8809751a2c49e1282b4f8961d0') in 0.014204 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.559800 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_46.asset
-  artifactKey: Guid(b8507d11f67cc874ba6eedac127d6453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_46.asset using Guid(b8507d11f67cc874ba6eedac127d6453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907d1292e69088654b99c2e20407b0d5') in 0.011909 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_48.asset
-  artifactKey: Guid(65e4f6b230cdd5943abd198e39dc5650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_48.asset using Guid(65e4f6b230cdd5943abd198e39dc5650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80a67700e48fcad1145294ab1d82063c') in 0.010867 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_50.asset
-  artifactKey: Guid(7b4f3f60715f21847a6e1491ecf724a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_50.asset using Guid(7b4f3f60715f21847a6e1491ecf724a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce786fb61e3d1c33eb21adecf4a004e2') in 0.011869 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_52.asset
-  artifactKey: Guid(06d180ddee9fc0a4db748fa742ad9224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_52.asset using Guid(06d180ddee9fc0a4db748fa742ad9224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce42fb511701dae2bf83e6be751d736') in 0.012656 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_57.asset
-  artifactKey: Guid(e72251d1a5d58a64aad2e361ac016038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_57.asset using Guid(e72251d1a5d58a64aad2e361ac016038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64857de149fc3deff3d8966225ca8743') in 0.012951 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_58.asset
-  artifactKey: Guid(924f7dac8c7e37b41aa059bf074fcfe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_58.asset using Guid(924f7dac8c7e37b41aa059bf074fcfe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ff9b823facaef87c05f5d9aadb5d1c') in 0.010310 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_60.asset
-  artifactKey: Guid(8111810cca9aaa94497f672d2efcf6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_60.asset using Guid(8111810cca9aaa94497f672d2efcf6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae58be42454ca01ac77898703ec8bfef') in 0.011817 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_63.asset
-  artifactKey: Guid(9d4786b0a24de27449b47e670ef240fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_63.asset using Guid(9d4786b0a24de27449b47e670ef240fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84cdc9e0a13c532b7f6853c10beed188') in 0.013770 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_65.asset
-  artifactKey: Guid(e89633e761bf6fe49888f0d97127b14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_65.asset using Guid(e89633e761bf6fe49888f0d97127b14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee7d22522fd808cd080c910e2c6b5fde') in 0.011325 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.034710 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_71.asset
-  artifactKey: Guid(b44fee129b9d0bd4fafc6ad2f1c80f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_71.asset using Guid(b44fee129b9d0bd4fafc6ad2f1c80f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac05b5abcdb4e014482ee7cb20c101bc') in 0.024962 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_74.asset
-  artifactKey: Guid(35015f26b26176d4388e2faa0f203509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_74.asset using Guid(35015f26b26176d4388e2faa0f203509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249f7e17f7e46bd2a971aef8c18de71a') in 0.010981 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.313740 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_76.asset
-  artifactKey: Guid(7c7d2a5ff15bbe24ea862541554dddbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_76.asset using Guid(7c7d2a5ff15bbe24ea862541554dddbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6da36dce4f2e829d25ce6a563fc41c') in 0.011259 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.010484 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_78.asset
-  artifactKey: Guid(edc9114a963011b4887d7c85c82c05a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_78.asset using Guid(edc9114a963011b4887d7c85c82c05a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd338885f9ba5308bb4d26597155c1146') in 0.010804 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.014148 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_80.asset
-  artifactKey: Guid(b35ac97098d05144ea41a872fe702884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_80.asset using Guid(b35ac97098d05144ea41a872fe702884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b7a4a2890a0db075a7695005c18653') in 0.011647 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.003594 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_83.asset
-  artifactKey: Guid(86e9e1b4f94e85641935736b476a25c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_83.asset using Guid(86e9e1b4f94e85641935736b476a25c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4890ee18982b731012727a79ea091223') in 0.011816 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.003957 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_86.asset
-  artifactKey: Guid(89743c1a8ce9d704eb5f46cd36a0e840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_86.asset using Guid(89743c1a8ce9d704eb5f46cd36a0e840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7700d3bbe1d1f91d1fdf99a1e9c36055') in 0.011972 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.003360 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_89.asset
-  artifactKey: Guid(086eaf23294381740acd139c97431206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_89.asset using Guid(086eaf23294381740acd139c97431206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaa8d845c4921a2991afdb58736c7137') in 0.011274 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.005055 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_91.asset
-  artifactKey: Guid(73f4e4885c8353844af95c7278ac7c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_91.asset using Guid(73f4e4885c8353844af95c7278ac7c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3169c71a55c2209811230df143efff4f') in 0.011562 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.004688 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_94.asset
-  artifactKey: Guid(dccd2abc113d14044b01a455a7700341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_94.asset using Guid(dccd2abc113d14044b01a455a7700341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2077bfdf2ad13322d41f6193a3bc86') in 0.012909 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.002184 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_97.asset
-  artifactKey: Guid(4f80b12b5fa1fc14f9b57df469f1966b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_97.asset using Guid(4f80b12b5fa1fc14f9b57df469f1966b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89207df7b962c1db74b312d122ba4e8') in 0.011827 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.004038 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_100.asset
-  artifactKey: Guid(081ed88e5ac08294baa7e4f8eddd5016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_100.asset using Guid(081ed88e5ac08294baa7e4f8eddd5016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75770742ef2215f206bf12e8ebd596f1') in 0.011369 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.004118 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_103.asset
-  artifactKey: Guid(8f636c4eb19353f449b7863f8243d121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_103.asset using Guid(8f636c4eb19353f449b7863f8243d121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b01438344ae00944c6791ea75f5c76') in 0.011761 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.017419 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_107.asset
-  artifactKey: Guid(02bbc8169eebd9c418baf1d26361eead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_107.asset using Guid(02bbc8169eebd9c418baf1d26361eead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80d55e44527358b031241cf87fa16482') in 0.011625 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.020121 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_110.asset
-  artifactKey: Guid(cfacafee470540c4b90f0bf6640df914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_110.asset using Guid(cfacafee470540c4b90f0bf6640df914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '682f92c51d5c91b6e0b2d3425c2208fd') in 0.011154 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.004975 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_113.asset
-  artifactKey: Guid(e4a466440ee131644aee3c382c8ec2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_113.asset using Guid(e4a466440ee131644aee3c382c8ec2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a2329222cdd9d52a51b39528f05a4b5') in 0.011095 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.006314 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_116.asset
-  artifactKey: Guid(0fcb399657cf31b49b080d31242590a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_116.asset using Guid(0fcb399657cf31b49b080d31242590a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ced9973a6f882ac9347e56702494dd') in 0.012058 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.003844 seconds.
-  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_119.asset
-  artifactKey: Guid(6f85a2dfa6026f542978d049160ab4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_119.asset using Guid(6f85a2dfa6026f542978d049160ab4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '189fe4d933ee7fdc03e6ff962da2e670') in 0.013371 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 99.324054 seconds.
-  path: Assets/Art/Map/Map 1/11_Camping_32x32.png
-  artifactKey: Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/11_Camping_32x32.png using Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19e4ba53245dae9227983a4e82bc7dbb') in 0.030899 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 14.309861 seconds.
-  path: Assets/Art/Map/Map 1/11_Camping_32x32.png
-  artifactKey: Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/11_Camping_32x32.png using Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd612e4cc7bddf680a2e9f213ab785038') in 0.015001 seconds
+  Time since last request: 14.564819 seconds.
+  path: Assets/Art/Player/Ground Attack/GroundAttack_Down.png
+  artifactKey: Guid(d1c7780ab72259e4682d150acf3a1f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ground Attack/GroundAttack_Down.png using Guid(d1c7780ab72259e4682d150acf3a1f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8da43bfa3a954aa45a25c2b005d330a') in 0.015611 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 8.483891 seconds.
-  path: Assets/Art/Map/Map 1/11_Camping_32x32.png
-  artifactKey: Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/11_Camping_32x32.png using Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec9125a685c6b93e82524d32cc461835') in 0.015001 seconds
+  Time since last request: 23.578841 seconds.
+  path: Assets/Art/Player/Ground Attack/GroundAttack_Down.png
+  artifactKey: Guid(d1c7780ab72259e4682d150acf3a1f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ground Attack/GroundAttack_Down.png using Guid(d1c7780ab72259e4682d150acf3a1f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d90c291a8892388673cd78a3d411261') in 0.033261 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 14
 ========================================================================
 Received Import Request.
-  Time since last request: 111.656694 seconds.
-  path: Assets/Art/Map/Map 1/11_Camping_32x32.png
-  artifactKey: Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/11_Camping_32x32.png using Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a9ad21ecc3224ca6884588c1629224') in 5.927194 seconds
+  Time since last request: 22.419488 seconds.
+  path: Assets/Art/Player/Ground Attack/GroundAttack_Down.anim
+  artifactKey: Guid(fb3c018f765b75946bbc0480288d88c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ground Attack/GroundAttack_Down.anim using Guid(fb3c018f765b75946bbc0480288d88c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a274746608c003f3d613b12f42f18ff9') in 0.000922 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4623
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 205.602640 seconds.
-  path: Assets/Art/Map/Map 1/11_Camping_32x32.png
-  artifactKey: Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/11_Camping_32x32.png using Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '710e4cc0978f918a79c549072b1383d4') in 5.510708 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4623
-========================================================================
-Received Import Request.
-  Time since last request: 44.068381 seconds.
-  path: Assets/Art/Map/Map 1/11_Camping_32x32.png
-  artifactKey: Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/11_Camping_32x32.png using Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a7fc3b4b450550c005a0bd36c54099') in 5.867455 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4623
-========================================================================
-Received Import Request.
-  Time since last request: 27.752890 seconds.
-  path: Assets/Art/Map/Map 1/11_Camping_32x32.png
-  artifactKey: Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/11_Camping_32x32.png using Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e05e577fe905292a8b4aa14fa5c9d5e') in 5.426957 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4623
-========================================================================
-Received Import Request.
-  Time since last request: 6.389340 seconds.
-  path: Assets/Art/Map/Map 1/11_Camping_32x32.png
-  artifactKey: Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/11_Camping_32x32.png using Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c1804053f11261f9d513cf31f20695') in 6.826385 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4623
-========================================================================
-Received Import Request.
-  Time since last request: 6.913475 seconds.
-  path: Assets/Art/Map/Map 1/11_Camping_32x32.png
-  artifactKey: Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/11_Camping_32x32.png using Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0377c3bfd9b63f0b7368205e86131bf0') in 5.799790 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4623
-========================================================================
-Received Import Request.
-  Time since last request: 10.315439 seconds.
-  path: Assets/Art/Map/Map 1/11_Camping_32x32.png
-  artifactKey: Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/11_Camping_32x32.png using Guid(2796f7b5e1ca39749b7f3a2345390830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '064a52c989993e89a57d5c48e796347a') in 6.126520 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4623
-========================================================================
-Received Import Request.
-  Time since last request: 108.374999 seconds.
-  path: Assets/Art/Map/Map 1/11_Camping_48x48.png
-  artifactKey: Guid(68c5cc0ac381ea04d98423c50ab138d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/11_Camping_48x48.png using Guid(68c5cc0ac381ea04d98423c50ab138d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce41cb42e6e8250cbbd9735ab552be5') in 0.022079 seconds
+  Time since last request: 225.291041 seconds.
+  path: Assets/Art/Player/Ground Attack/GroundAttack_Up.png
+  artifactKey: Guid(9b55c030ef45afd4fb3c286a1cad0f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ground Attack/GroundAttack_Up.png using Guid(9b55c030ef45afd4fb3c286a1cad0f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e61924037c87c24dff8976ba5e43893') in 0.016511 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 7.682627 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_0.asset
-  artifactKey: Guid(7d83b019ba984804bb9414ac41669a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_0.asset using Guid(7d83b019ba984804bb9414ac41669a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd688447f1f6094cccf061d3950fed07') in 0.001907 seconds
+  Time since last request: 10.980828 seconds.
+  path: Assets/Art/Player/Ground Attack/GroundAttack_Up.png
+  artifactKey: Guid(9b55c030ef45afd4fb3c286a1cad0f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ground Attack/GroundAttack_Up.png using Guid(9b55c030ef45afd4fb3c286a1cad0f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84825a8203a5fbe6cdce6eed52a372c6') in 0.013513 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.005093 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4.asset
-  artifactKey: Guid(dd259794efec86343a6dfdc5df364789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4.asset using Guid(dd259794efec86343a6dfdc5df364789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aedaf956f40b0c5bbfd661b020b31f1c') in 0.001882 seconds
+  Time since last request: 4.538233 seconds.
+  path: Assets/Art/Player/Ground Attack/GroundAttack_Up.png
+  artifactKey: Guid(9b55c030ef45afd4fb3c286a1cad0f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ground Attack/GroundAttack_Up.png using Guid(9b55c030ef45afd4fb3c286a1cad0f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b14b35c262fbaf1908a10e06cdc129e') in 0.039900 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 15
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3.asset
-  artifactKey: Guid(550ffae3723acfc4297eaaca395d74bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3.asset using Guid(550ffae3723acfc4297eaaca395d74bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd558a7580b08f6ebc8a2067d495238b1') in 0.001485 seconds
+  Time since last request: 297.481109 seconds.
+  path: Assets/Art/Player/Ground Attack/GroundAttack_Right 1.png
+  artifactKey: Guid(2a2a3f0e1a186db458ae5fd8ab776653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ground Attack/GroundAttack_Right 1.png using Guid(2a2a3f0e1a186db458ae5fd8ab776653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ed90482007888b82bda66da8506750') in 0.018221 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004892 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_8.asset
-  artifactKey: Guid(39e9f70bcf9ebab4f9061a4db321fec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_8.asset using Guid(39e9f70bcf9ebab4f9061a4db321fec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4130d3102f23e858c972b86824379b6') in 0.002048 seconds
+  Time since last request: 22.655213 seconds.
+  path: Assets/Art/Player/Ground Attack/GroundAttack_Right 1.png
+  artifactKey: Guid(2a2a3f0e1a186db458ae5fd8ab776653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ground Attack/GroundAttack_Right 1.png using Guid(2a2a3f0e1a186db458ae5fd8ab776653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4b832368f84211d5996b0aade815166') in 0.014026 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2.asset
-  artifactKey: Guid(b001dfae83e34f64581841b3bff054a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2.asset using Guid(b001dfae83e34f64581841b3bff054a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd1edb7b245a9632104f482d10d4c43') in 0.001794 seconds
+  Time since last request: 19.844487 seconds.
+  path: Assets/Art/Player/Ground Attack/GroundAttack_Right 1.png
+  artifactKey: Guid(2a2a3f0e1a186db458ae5fd8ab776653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Player/Ground Attack/GroundAttack_Right 1.png using Guid(2a2a3f0e1a186db458ae5fd8ab776653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eac2b3c7b80c938ba157b9d389ef021') in 0.035198 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_11.asset
-  artifactKey: Guid(92fc2295c1023334e88196df8f2bb854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_11.asset using Guid(92fc2295c1023334e88196df8f2bb854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec4c880aac4073860c307a57311463e0') in 0.001590 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_16.asset
-  artifactKey: Guid(c6919ffabb555fd4c9b987b140d236d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_16.asset using Guid(c6919ffabb555fd4c9b987b140d236d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8988abb07a00e07ef5b2b93c09c4ca') in 0.001317 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_15.asset
-  artifactKey: Guid(1c4b56e0f9b74694f97e8b3368a1a6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_15.asset using Guid(1c4b56e0f9b74694f97e8b3368a1a6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50225161a80abf0465b0af72ee628e91') in 0.001373 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_23.asset
-  artifactKey: Guid(880439010114245488f91d05473e8d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_23.asset using Guid(880439010114245488f91d05473e8d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640d2e4cf1659fa874ca5b08dea02172') in 0.001804 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_27.asset
-  artifactKey: Guid(ea8913a8465a2484c9bf97446510da47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_27.asset using Guid(ea8913a8465a2484c9bf97446510da47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce13f1d43a4236d956773c7cf57ff947') in 0.001843 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_29.asset
-  artifactKey: Guid(4930bb185d3312846a23ddaff2492478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_29.asset using Guid(4930bb185d3312846a23ddaff2492478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c50a0ce4714160828f3d57dcd94a94') in 0.001578 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_26.asset
-  artifactKey: Guid(34ec91132990af349953c91e30b1f33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_26.asset using Guid(34ec91132990af349953c91e30b1f33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2613b375bb4c46842333c930ec6af8b') in 0.002476 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_35.asset
-  artifactKey: Guid(276779af2ae4cff48ad80f9870acadec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_35.asset using Guid(276779af2ae4cff48ad80f9870acadec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2705b08553bedd5a019dd7464ccca9d6') in 0.002376 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_38.asset
-  artifactKey: Guid(db237fe654a0a8f4998096264f2c9bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_38.asset using Guid(db237fe654a0a8f4998096264f2c9bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6da25c7542d1fa9525d709e9ccfc1743') in 0.001761 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_40.asset
-  artifactKey: Guid(55384e54ad62d9f49b1ac12f5e65d011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_40.asset using Guid(55384e54ad62d9f49b1ac12f5e65d011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7958ca7ac15118d3a7b30fa9dc9b56c5') in 0.001800 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_34.asset
-  artifactKey: Guid(13b3ce67ddedd924dac5dc965fb0f176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_34.asset using Guid(13b3ce67ddedd924dac5dc965fb0f176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d157d894aa5165178be6967646ef49b') in 0.002246 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_43.asset
-  artifactKey: Guid(52709b4d7829bbc45a89c79859193245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_43.asset using Guid(52709b4d7829bbc45a89c79859193245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b74587ac8f4fd9759bc5109ad1eab2') in 0.002301 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_19.asset
-  artifactKey: Guid(9c1fcaefa978c4947818ae0b85085482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_19.asset using Guid(9c1fcaefa978c4947818ae0b85085482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cacc64d107c4a819b0bc04d63b071690') in 0.002483 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_30.asset
-  artifactKey: Guid(98cdac4369b4ebc47a45d2b93189676d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_30.asset using Guid(98cdac4369b4ebc47a45d2b93189676d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a94830ff4b5216e698a310e9ea2124e') in 0.001574 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_12.asset
-  artifactKey: Guid(220b5f22420fb0e4591cc18865b53ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_12.asset using Guid(220b5f22420fb0e4591cc18865b53ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2e35766f482fbd92d14aa68985906e5') in 0.001610 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_41.asset
-  artifactKey: Guid(675193b5692ab7c49ae3ae8d78c43297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_41.asset using Guid(675193b5692ab7c49ae3ae8d78c43297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e3d5a5195a9239212e2d049245f5583') in 0.001752 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_17.asset
-  artifactKey: Guid(5efe4b546d391c7419108c2fbf0ade11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_17.asset using Guid(5efe4b546d391c7419108c2fbf0ade11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66643bd8039af90f9952691e4a432a3b') in 0.001780 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_9.asset
-  artifactKey: Guid(466b8007b1cc36a4fbab1583a0efc3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_9.asset using Guid(466b8007b1cc36a4fbab1583a0efc3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a41e5c084f1df49d4abece22d9f6132') in 0.001924 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_7.asset
-  artifactKey: Guid(a357b743ec0811240909d9090951e374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_7.asset using Guid(a357b743ec0811240909d9090951e374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac3e0ffc2d0eb5ae51f7726783a62cf6') in 0.001358 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_14.asset
-  artifactKey: Guid(f5f2781db9aca6b49ac31df9f9916e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_14.asset using Guid(f5f2781db9aca6b49ac31df9f9916e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7396b51f74ea25ed0c1e87beacf86f14') in 0.001236 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_5.asset
-  artifactKey: Guid(9315fc35041a59843832211ac4e3ba74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_5.asset using Guid(9315fc35041a59843832211ac4e3ba74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c0469cc384f0e06f0d9925b155dc29') in 0.001147 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 4.064218 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_47.asset
-  artifactKey: Guid(49699faf10a3bef4893b1ba717e56bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_47.asset using Guid(49699faf10a3bef4893b1ba717e56bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece2a4565f55a6fa499f9a1c607f3dc6') in 0.002916 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_57.asset
-  artifactKey: Guid(e610fb4e070e2a24db842596bbf4744c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_57.asset using Guid(e610fb4e070e2a24db842596bbf4744c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9efe353d426c7371660c77ecbe01abcc') in 0.002387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_65.asset
-  artifactKey: Guid(0a7ca09ec4825ef49bb60aa3a167d7b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_65.asset using Guid(0a7ca09ec4825ef49bb60aa3a167d7b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c28d7a1c3b7607293c3f67fceccb2be') in 0.002416 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_53.asset
-  artifactKey: Guid(66f06ba162b26bc4cbbec82a9fd8949d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_53.asset using Guid(66f06ba162b26bc4cbbec82a9fd8949d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '754617381200c38a109f02ba26ffb07f') in 0.002421 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_58.asset
-  artifactKey: Guid(1c7dc494ac2107e43a694a1db5300d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_58.asset using Guid(1c7dc494ac2107e43a694a1db5300d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ead4ba85245502dcf4930f0339909d60') in 0.001766 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_50.asset
-  artifactKey: Guid(ee62db94ab82fd84abec8ab8727b0891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_50.asset using Guid(ee62db94ab82fd84abec8ab8727b0891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b548b2d51f50f9f05a8675faece92b44') in 0.001470 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_67.asset
-  artifactKey: Guid(01c78b1b7f8644f4caae8013cbbfb090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_67.asset using Guid(01c78b1b7f8644f4caae8013cbbfb090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2016edf0ef16ec74ad6dfb7cd197561') in 0.001462 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_71.asset
-  artifactKey: Guid(d6d6b359f14daa04580d08d77081aa79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_71.asset using Guid(d6d6b359f14daa04580d08d77081aa79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '326859ac1150085f428d105d00f71e17') in 0.001554 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_74.asset
-  artifactKey: Guid(12c8f2de31fbb2448abbb50a67054b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_74.asset using Guid(12c8f2de31fbb2448abbb50a67054b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6172241a256f4f6f17c6a913379756e') in 0.001570 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_70.asset
-  artifactKey: Guid(626ca222b801afc4fb4825dcf12b2307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_70.asset using Guid(626ca222b801afc4fb4825dcf12b2307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb70aec50f3205b7c222fd1ee48b962') in 0.001592 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_75.asset
-  artifactKey: Guid(616d013c26a94dd4cb6742dc4f07df46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_75.asset using Guid(616d013c26a94dd4cb6742dc4f07df46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adead7151d415eebef7c8ce0188ae1ba') in 0.002682 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_54.asset
-  artifactKey: Guid(a05b895cc820cbf42b43aeb0eb2e3d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_54.asset using Guid(a05b895cc820cbf42b43aeb0eb2e3d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87be9b16bc486e4418e36e19907c1b12') in 0.002529 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.008149 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_543.asset
-  artifactKey: Guid(91f5d81669b3165459c7af676639b067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_543.asset using Guid(91f5d81669b3165459c7af676639b067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea5aa73c6058011e7a363985524d2de') in 0.001614 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_547.asset
-  artifactKey: Guid(967802ac39e266442b59bc230bc0fde0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_547.asset using Guid(967802ac39e266442b59bc230bc0fde0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9482b659ed0a6dc4fa4816f42b4ee26f') in 0.001700 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.002620 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_551.asset
-  artifactKey: Guid(8c881f65721e9c048ab8d294ff6acec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_551.asset using Guid(8c881f65721e9c048ab8d294ff6acec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94bfa29c48d0a372721f778c12fcb3f1') in 0.001579 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_556.asset
-  artifactKey: Guid(36860fc9587b771499bcb201f253823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_556.asset using Guid(36860fc9587b771499bcb201f253823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952b998fa817c21042465aed5d6edd91') in 0.001552 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_555.asset
-  artifactKey: Guid(6184c1c2704208e49bd0b7503e42ba89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_555.asset using Guid(6184c1c2704208e49bd0b7503e42ba89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdf7a5e0832d67eb8daf508c2c009613') in 0.001735 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.004328 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_563.asset
-  artifactKey: Guid(1dad4e5a9d1c1b945aadb58dfea21cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_563.asset using Guid(1dad4e5a9d1c1b945aadb58dfea21cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '861f730873faab81c1a907b5fb43d017') in 0.001691 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_567.asset
-  artifactKey: Guid(1d3e1dda6d524df4a899785470352d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_567.asset using Guid(1d3e1dda6d524df4a899785470352d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62895e29652ddf501c41b604613270fa') in 0.001578 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_571.asset
-  artifactKey: Guid(d190515c8b3344a4cad95ec92bc01023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_571.asset using Guid(d190515c8b3344a4cad95ec92bc01023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ade4702584b2641b82de328defed1ed') in 0.001450 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.002895 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_574.asset
-  artifactKey: Guid(dfa52228ca9bd9d4798d76776a80618a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_574.asset using Guid(dfa52228ca9bd9d4798d76776a80618a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e96246df231d0346ce10c4adc8d7e3d') in 0.001556 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_578.asset
-  artifactKey: Guid(a692a2c6d90994d45bea3586467356b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_578.asset using Guid(a692a2c6d90994d45bea3586467356b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706da71d0b84722d4501cb0bf6694eb7') in 0.001504 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.002790 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_583.asset
-  artifactKey: Guid(b1f669199958d64428ca6f0884160f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_583.asset using Guid(b1f669199958d64428ca6f0884160f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f361f6da12f73b1ee726306bc0bd18c') in 0.001678 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.011156 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1952.asset
-  artifactKey: Guid(30622356469c6714698db4610adbee67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1952.asset using Guid(30622356469c6714698db4610adbee67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '965b5e073156610a32f99615af6c59d8') in 0.001648 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1959.asset
-  artifactKey: Guid(02a90fdf0e97bb349ae69800943b92d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1959.asset using Guid(02a90fdf0e97bb349ae69800943b92d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b57bc857d5a7b9a9fc447566ec22dfa3') in 0.001825 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1958.asset
-  artifactKey: Guid(402a7ae42f3df3a4ab61f773878cbbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1958.asset using Guid(402a7ae42f3df3a4ab61f773878cbbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d0ae709b8080e5dd6f9730c706134aa') in 0.001491 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.002404 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1963.asset
-  artifactKey: Guid(ac6ca7d00b3ccdb4a804814edd9fe589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1963.asset using Guid(ac6ca7d00b3ccdb4a804814edd9fe589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b613050acaefcb2960847c4eb647c0b1') in 0.001496 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1967.asset
-  artifactKey: Guid(2524ff327dc9553449ee7a385d1b4e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1967.asset using Guid(2524ff327dc9553449ee7a385d1b4e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e11d28ccc3831e35d64c0713fec9c9ba') in 0.002401 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.001609 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1972.asset
-  artifactKey: Guid(ff6a1e445cef26b49a76936251db5093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1972.asset using Guid(ff6a1e445cef26b49a76936251db5093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf5e20e611b1fa495c920a38d8ff081') in 0.001628 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1976.asset
-  artifactKey: Guid(3bb3b68687733c94b8f1d009b745f5b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1976.asset using Guid(3bb3b68687733c94b8f1d009b745f5b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8596a79caff99869da0b86e55d295803') in 0.001660 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1980.asset
-  artifactKey: Guid(cd644cac7d92f0249b11d8e8f5a49bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1980.asset using Guid(cd644cac7d92f0249b11d8e8f5a49bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0450475b7181e4613c9c32fb120a9222') in 0.001585 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.003848 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1983.asset
-  artifactKey: Guid(087cc7c12e085114bb47070eba56e271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1983.asset using Guid(087cc7c12e085114bb47070eba56e271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fed8e7c3eab2d8544140d2c1e9569a7') in 0.001772 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1990.asset
-  artifactKey: Guid(ae7f46b71474a8d4f9084971eddd04a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1990.asset using Guid(ae7f46b71474a8d4f9084971eddd04a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2560f4fad21ff97bc6e9d5c58431296') in 0.001756 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1992.asset
-  artifactKey: Guid(5b98e6f0d61ae67498ed5735e3f1f38e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1992.asset using Guid(5b98e6f0d61ae67498ed5735e3f1f38e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2d9f0c1746a2744ec333c9397dbd10') in 0.001560 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1993.asset
-  artifactKey: Guid(47ffae532e6b6e243b5af21b20eb42ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1993.asset using Guid(47ffae532e6b6e243b5af21b20eb42ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010857b39c9b1a567f73aecd660879b6') in 0.001260 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.002526 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1995.asset
-  artifactKey: Guid(107f5cfdf53cc274c9565b90123392e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_1995.asset using Guid(107f5cfdf53cc274c9565b90123392e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cf22a2b7d2461d701ef155c29176e8d') in 0.001750 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.006779 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2821.asset
-  artifactKey: Guid(cda93c2c1af1f4b49af80fbe41f8b4e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2821.asset using Guid(cda93c2c1af1f4b49af80fbe41f8b4e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab247bf01eaf746aff4723fca9cd74e4') in 0.001584 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2826.asset
-  artifactKey: Guid(1771c8cb030774d40af3bca9a1b7e731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2826.asset using Guid(1771c8cb030774d40af3bca9a1b7e731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e4506ffc43c628ad8afd1621b7fb66') in 0.002009 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2829.asset
-  artifactKey: Guid(09b587b84e6d1544fb2f50fe8591012e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2829.asset using Guid(09b587b84e6d1544fb2f50fe8591012e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7b312af6861c99575b6a786c6a4a8f9') in 0.001502 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.002742 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2832.asset
-  artifactKey: Guid(62f3250bd5a954c4e8c0f39aba3e3c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2832.asset using Guid(62f3250bd5a954c4e8c0f39aba3e3c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccfd3938c4babc94d060ba48a94439e4') in 0.001649 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2836.asset
-  artifactKey: Guid(aa52844ed96b94c4a9e99402d0f0029d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2836.asset using Guid(aa52844ed96b94c4a9e99402d0f0029d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b5f073f932a12ede870505abcb4966') in 0.001491 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000732 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2839.asset
-  artifactKey: Guid(b7c31345245e8b24c8f77e62180bcc5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2839.asset using Guid(b7c31345245e8b24c8f77e62180bcc5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccb256ee145ad98c6313c91ebd593719') in 0.001325 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000591 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2841.asset
-  artifactKey: Guid(f110bbb63d3f458499bd5374c46a2aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2841.asset using Guid(f110bbb63d3f458499bd5374c46a2aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0eab579da0701e0bf71a323f22b0d4a') in 0.001459 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2845.asset
-  artifactKey: Guid(0eedfdddee3010244a64fd6b29bc6f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2845.asset using Guid(0eedfdddee3010244a64fd6b29bc6f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6cce9efd2acfbfe1db50e7b4cb95eb0') in 0.001557 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.003499 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2849.asset
-  artifactKey: Guid(112571acdb17d364d8411e3c08f61cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2849.asset using Guid(112571acdb17d364d8411e3c08f61cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b91e8d9754a9882b2c4620f7423d1f7') in 0.001659 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2855.asset
-  artifactKey: Guid(6f17b562c24e2e849a51b25f81a22c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2855.asset using Guid(6f17b562c24e2e849a51b25f81a22c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f52e0ffc5883eca582d5d6b97ef0e587') in 0.002022 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2857.asset
-  artifactKey: Guid(0cb7ea3158b04c5448741483088358f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2857.asset using Guid(0cb7ea3158b04c5448741483088358f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9899381d8c292ab7144c449b77b64087') in 0.001462 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.002638 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2861.asset
-  artifactKey: Guid(006fac84b03038d4da2d4fc8709366a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_2861.asset using Guid(006fac84b03038d4da2d4fc8709366a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa09df033bd62dd55409ae931f0240d') in 0.001469 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.011209 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3377.asset
-  artifactKey: Guid(48bbad59267ced84f8a33e1d0afee64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3377.asset using Guid(48bbad59267ced84f8a33e1d0afee64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87e1ff50af32f6704eee75e56ece7b1a') in 0.001560 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3382.asset
-  artifactKey: Guid(84bed8e574524c143a8d05ba36b64f7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3382.asset using Guid(84bed8e574524c143a8d05ba36b64f7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c2885d0397770b6c48c95e6d3b4887b') in 0.001501 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.003807 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3386.asset
-  artifactKey: Guid(989bd2839a1e4d44eb6900b94a95b2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3386.asset using Guid(989bd2839a1e4d44eb6900b94a95b2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd54e37b51ea585408a49420c5fc9551e') in 0.001545 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3390.asset
-  artifactKey: Guid(011ffaaa29208e440988a8cd68552e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3390.asset using Guid(011ffaaa29208e440988a8cd68552e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8c0bf305747a9e3630bde511016332') in 0.001510 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3394.asset
-  artifactKey: Guid(77dbdb147149f434eb13bb3ed8036270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3394.asset using Guid(77dbdb147149f434eb13bb3ed8036270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d124fe741518c8dc0e8bd6d335739f') in 0.001464 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.002867 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3397.asset
-  artifactKey: Guid(b2838df1d2646fd4785bf18090c45d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3397.asset using Guid(b2838df1d2646fd4785bf18090c45d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9683a9b82315723a1ffdf1306dfece') in 0.001758 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3401.asset
-  artifactKey: Guid(711266c148bb85d4195be42bbfdc148e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3401.asset using Guid(711266c148bb85d4195be42bbfdc148e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abe6817e9769cb6ea7df24fffd048729') in 0.001713 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.003950 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3407.asset
-  artifactKey: Guid(fa0578229dd413246ab915fa583fa908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3407.asset using Guid(fa0578229dd413246ab915fa583fa908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482dd1ca43728f94fd4f2224c6aa5902') in 0.001687 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3412.asset
-  artifactKey: Guid(2077111b2e1cff24ba595301bf3c7ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3412.asset using Guid(2077111b2e1cff24ba595301bf3c7ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82099bbe8a9901bcbb5c34b5ca15702b') in 0.001702 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.003867 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3417.asset
-  artifactKey: Guid(29c7aba9fc6776b429b848db81f57ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3417.asset using Guid(29c7aba9fc6776b429b848db81f57ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b19b122df2d9f414c705a89026ed6e2a') in 0.001677 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.010954 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3962.asset
-  artifactKey: Guid(2a07ef2d2d3786d4889c379858b85369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3962.asset using Guid(2a07ef2d2d3786d4889c379858b85369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c37ce212a034915485b74a44be13f8') in 0.001591 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3967.asset
-  artifactKey: Guid(9576cb9e92e7fc6459da5e02325f7f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3967.asset using Guid(9576cb9e92e7fc6459da5e02325f7f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ede5485e2e8ccce10d6e542ea50eaf7c') in 0.001476 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.001822 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3970.asset
-  artifactKey: Guid(031bc429fdfb67c43921c058a3eb27d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3970.asset using Guid(031bc429fdfb67c43921c058a3eb27d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae46e93734ae990db4321541593d25eb') in 0.002933 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3975.asset
-  artifactKey: Guid(26a900421fc785641bfd1b790ebb754c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3975.asset using Guid(26a900421fc785641bfd1b790ebb754c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd1aeb1d70720df3d01ba7fd1a7f175c') in 0.001584 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3978.asset
-  artifactKey: Guid(18c19bf146987b34aa4c34c5034b6193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3978.asset using Guid(18c19bf146987b34aa4c34c5034b6193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7ac8b341549f6b588e17f383b152708') in 0.001494 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3981.asset
-  artifactKey: Guid(1c1ea110451e0ff41b9a3f3bf22acbd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3981.asset using Guid(1c1ea110451e0ff41b9a3f3bf22acbd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fbf65744c39dc793d4b76bca25abd7c') in 0.001350 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.003577 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3984.asset
-  artifactKey: Guid(341885713197b4b4b9177ce7045c467c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3984.asset using Guid(341885713197b4b4b9177ce7045c467c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dfbd89ac5749195fd0047f44cc65f60') in 0.002003 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3988.asset
-  artifactKey: Guid(517369c5e56e0a04582a5ddfc181c1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3988.asset using Guid(517369c5e56e0a04582a5ddfc181c1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dc7662c17fe83412a41995bb5ecefd1') in 0.001597 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3993.asset
-  artifactKey: Guid(db51ca2e01ac0024ebc1ac766c8a8f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3993.asset using Guid(db51ca2e01ac0024ebc1ac766c8a8f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '273a6dd4fc22072bc01cfb41b68d922f') in 0.001527 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.003075 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3996.asset
-  artifactKey: Guid(055a36e6deb01ba42807fde000f04894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_3996.asset using Guid(055a36e6deb01ba42807fde000f04894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0986159259f5f56e0c92f9fa16816e37') in 0.001510 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4003.asset
-  artifactKey: Guid(9f53053930f32a344a65f2322335ead2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4003.asset using Guid(9f53053930f32a344a65f2322335ead2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8852faf5348a3b1641b74d352bd73c08') in 0.001503 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4005.asset
-  artifactKey: Guid(fbbb361ad88f7264bb742bd0ca15ada6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4005.asset using Guid(fbbb361ad88f7264bb742bd0ca15ada6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040632e50790c6fc763161dcdf576bb6') in 0.001476 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.011307 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4517.asset
-  artifactKey: Guid(731713e9d34c1af42bb3997ab4c3a66d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4517.asset using Guid(731713e9d34c1af42bb3997ab4c3a66d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f82dde4a0ee8ee1163fb47a2db7e5a9e') in 0.001682 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4521.asset
-  artifactKey: Guid(e6442a22434cc1242acf1af88f44faef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4521.asset using Guid(e6442a22434cc1242acf1af88f44faef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bce33741b4a2b822800b698db889b2cc') in 0.001980 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.003624 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4527.asset
-  artifactKey: Guid(d9501bf1e9531cf4bb35b749bf9f4830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4527.asset using Guid(d9501bf1e9531cf4bb35b749bf9f4830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd3139ce9bb5ee2c943c54c48bef1d90') in 0.001547 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4531.asset
-  artifactKey: Guid(8c01dedae741ab64dae7c99a05c594f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4531.asset using Guid(8c01dedae741ab64dae7c99a05c594f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73adf455bc1a2f9268d96d785435f1db') in 0.001571 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.003368 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4536.asset
-  artifactKey: Guid(b04eef71f98f0a542afabc9cc5b572fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4536.asset using Guid(b04eef71f98f0a542afabc9cc5b572fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc85112ce8475f0d580ebe967a62fea') in 0.001562 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4541.asset
-  artifactKey: Guid(115cff1102a54ba48b590b973fac9965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4541.asset using Guid(115cff1102a54ba48b590b973fac9965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d437687efc506002fa17f41e3f5f91') in 0.001663 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4544.asset
-  artifactKey: Guid(b7b5c28a673d5664b932b83b5312e305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4544.asset using Guid(b7b5c28a673d5664b932b83b5312e305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ae0fc05e358b0de3ed5bb01902487c') in 0.002010 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000578 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4546.asset
-  artifactKey: Guid(4cafd5235c426fd48877e1ad2c783017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4546.asset using Guid(4cafd5235c426fd48877e1ad2c783017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6228c5632520141be8d5b7cac26d17a0') in 0.001447 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000075 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4550.asset
-  artifactKey: Guid(67c77a0b83955ed448161a6b3ad7aed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4550.asset using Guid(67c77a0b83955ed448161a6b3ad7aed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7259465807532710b0112b6fdc51f51') in 0.001423 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4552.asset
-  artifactKey: Guid(0dbb2ab9c216e73459b6c95dc0593ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4552.asset using Guid(0dbb2ab9c216e73459b6c95dc0593ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0091dc5dadca297111f536c52e7a99df') in 0.001443 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.003421 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4557.asset
-  artifactKey: Guid(ee22b4a1ca7780f49a30c74d90ad6863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4557.asset using Guid(ee22b4a1ca7780f49a30c74d90ad6863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38226aaddea498a0e5e30e1fb15312d3') in 0.001709 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.011629 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4607.asset
-  artifactKey: Guid(92806f77978632b4e873b456b04ca99b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4607.asset using Guid(92806f77978632b4e873b456b04ca99b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23239287237313b4689615e8b5d78782') in 0.001527 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4612.asset
-  artifactKey: Guid(a57fb1812f0ea974298302eb9032b170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4612.asset using Guid(a57fb1812f0ea974298302eb9032b170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b431713aac59457d8213b65fa198d44') in 0.001438 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.004632 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4617.asset
-  artifactKey: Guid(7f12fdb737ede3d45a0581aa93d1b8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/11_Camping_32x32_4617.asset using Guid(7f12fdb737ede3d45a0581aa93d1b8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec08792caa926472b69787b219490719') in 0.001638 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Art/Map/Map 1/Terrain/Terrain_Full.prefab
-  artifactKey: Guid(307425d984eaabc4ea10b1f6fac16faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Map/Map 1/Terrain/Terrain_Full.prefab using Guid(307425d984eaabc4ea10b1f6fac16faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01fe2263839b6e97ba046e2a4deea747') in 1.646545 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4631
+Number of asset objects unloaded after import = 15

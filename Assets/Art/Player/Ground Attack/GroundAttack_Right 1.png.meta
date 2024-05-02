@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c1cf6d82ad6fc1147948e35f13181ba6
+guid: 2a2a3f0e1a186db458ae5fd8ab776653
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,12 +123,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_0
+      name: GroundAttack_Right 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,40 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cb5e2e6c179ff4499ab2d04edd50343
-      internalID: -212909564
+      spriteID: b3fa0e914f3506d4698c08339e74872d
+      internalID: -1721505492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4ddb6bd641e41b4eb9079ff2778fc38
-      internalID: 1635191428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_2
+      name: GroundAttack_Right 1_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -179,40 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a904ff04f185941459afbc2f24c17f37
-      internalID: 74060046
+      spriteID: 1bc0d7970b326154a963a58cd68e31eb
+      internalID: 1270721082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d7d84095ba4a6f40924c5b63c000f82
-      internalID: 828529827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_4
+      name: GroundAttack_Right 1_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,40 +179,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f858ab0620b041743be81b87014869d2
-      internalID: 278960118
+      spriteID: 1383756a32fa0344ba2d1e6581e29a0e
+      internalID: 1688925073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dacc683a157ab4c4490e582c2dead480
-      internalID: -517563282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_6
+      name: GroundAttack_Right 1_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -263,40 +200,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec17b889efd58fc45ac1cc9c1a2dbfe5
-      internalID: 1199680712
+      spriteID: 6e777f9853c6f664ca6e32fe8499c618
+      internalID: -1660703585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e898ce52e10cbd542aa50de082131bf5
-      internalID: -565320310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_8
+      name: GroundAttack_Right 1_4
       rect:
         serializedVersion: 2
         x: 256
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -305,40 +221,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04de033caf7fb0f4982f7e8783e2366f
-      internalID: 1701412871
+      spriteID: e887f712dc72dfc4db3ef9ddc7c4b76a
+      internalID: -1118547738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f0b29d64dc98d2479ea73c1fa181a88
-      internalID: -1868439855
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_10
+      name: GroundAttack_Right 1_5
       rect:
         serializedVersion: 2
         x: 320
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -347,40 +242,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bac7bed4be7c45e4c829959df1ee1354
-      internalID: 1255548679
+      spriteID: bcac55ea4a5d37d458296b1a4ef3c141
+      internalID: 148542342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7504ec154a917d0419268fbbd84de792
-      internalID: -378656153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BrujaDer_GolpeTierra-Sheet_12
+      name: GroundAttack_Right 1_6
       rect:
         serializedVersion: 2
         x: 384
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -389,8 +263,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af62aae4bb6f12f48be693b5694bf7e3
-      internalID: -1801620993
+      spriteID: 0c06c356dfe42f84f9ce7ad73dcacfe9
+      internalID: 1922086557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Right 1_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9739ebfcd092741bb1ec763d9cb401
+      internalID: 1969002707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Right 1_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf9c75e0c2be644485215d7019d37d2
+      internalID: 1729418653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Right 1_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84f06f6c512b0e46bf06ad41aa6ad3d
+      internalID: 2061046202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Right 1_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88782d0ef46111479adb672c60b5bb0
+      internalID: 376333407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Right 1_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83751ed5fd4d9794bb0fb16f06d2f3a6
+      internalID: -230478208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Right 1_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b719c721c915a7d40b7d5a367be07e02
+      internalID: -1157960516
       vertices: []
       indices: 
       edges: []
@@ -406,19 +406,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BrujaDer_GolpeTierra-Sheet_0: -212909564
-      BrujaDer_GolpeTierra-Sheet_1: 1635191428
-      BrujaDer_GolpeTierra-Sheet_10: 1255548679
-      BrujaDer_GolpeTierra-Sheet_11: -378656153
-      BrujaDer_GolpeTierra-Sheet_12: -1801620993
-      BrujaDer_GolpeTierra-Sheet_2: 74060046
-      BrujaDer_GolpeTierra-Sheet_3: 828529827
-      BrujaDer_GolpeTierra-Sheet_4: 278960118
-      BrujaDer_GolpeTierra-Sheet_5: -517563282
-      BrujaDer_GolpeTierra-Sheet_6: 1199680712
-      BrujaDer_GolpeTierra-Sheet_7: -565320310
-      BrujaDer_GolpeTierra-Sheet_8: 1701412871
-      BrujaDer_GolpeTierra-Sheet_9: -1868439855
+      GroundAttack_Right 1_0: -1721505492
+      GroundAttack_Right 1_1: 1270721082
+      GroundAttack_Right 1_10: 376333407
+      GroundAttack_Right 1_11: -230478208
+      GroundAttack_Right 1_12: -1157960516
+      GroundAttack_Right 1_2: 1688925073
+      GroundAttack_Right 1_3: -1660703585
+      GroundAttack_Right 1_4: -1118547738
+      GroundAttack_Right 1_5: 148542342
+      GroundAttack_Right 1_6: 1922086557
+      GroundAttack_Right 1_7: 1969002707
+      GroundAttack_Right 1_8: 1729418653
+      GroundAttack_Right 1_9: 2061046202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
