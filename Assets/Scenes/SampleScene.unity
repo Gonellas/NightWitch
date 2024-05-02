@@ -20620,7 +20620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2890990192930538153, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: m_Size.x
-      value: 0.62056327
+      value: 0.63812935
       objectReference: {fileID: 0}
     - target: {fileID: 2890990192930538153, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: m_Size.y
@@ -20628,7 +20628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2890990192930538153, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: m_Offset.x
-      value: -0.44423532
+      value: 0.0037073493
       objectReference: {fileID: 0}
     - target: {fileID: 2890990192930538153, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: m_Offset.y
@@ -20638,6 +20638,18 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3120616589769662607, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: m_Size.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120616589769662607, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120616589769662607, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 760197956, guid: d571908980a02d344b39e2817cedd3c4, type: 3}
     - target: {fileID: 3120616589769662607, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -20652,6 +20664,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3120616589769662607, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120616589769662607, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4807856562073986382, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 29865ab3c96d4ff4c96cd9ed44481fec
+guid: 90f332b2531c29340b5d4f597e4cb2bd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WalkDown_Witch_0
+      name: Iddle_Left_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ede9ded09b84884eb795a9b941971e6
-      internalID: -1929880859
+      spriteID: 078cd43169104d842bc7e55a68124109
+      internalID: 426445098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkDown_Witch_1
+      name: Iddle_Left_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 446f13bfe2671c64d8d7f75d73466692
-      internalID: 1523950884
+      spriteID: 1907d93e058ffed4783a1d876b4b28e9
+      internalID: 1478877408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkDown_Witch_2
+      name: Iddle_Left_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93c46c75230c6d24ba31c3953e413d4a
-      internalID: -85353309
+      spriteID: b68db5c467bfe474c8b1369bf092f327
+      internalID: -1701699910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkDown_Witch_3
+      name: Iddle_Left_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bb5ede46afb07346a2e6f0bbdf7f6fe
-      internalID: -834202602
+      spriteID: 19b0a6a445d953345b360d0233a4eafc
+      internalID: 1166199027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkDown_Witch_4
+      name: Iddle_Left_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c6e7632ee4509c4da067550fa14ca6d
-      internalID: 124779098
+      spriteID: c82de83deabbbfd49b23f22139d115aa
+      internalID: 1115899396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkDown_Witch_5
+      name: Iddle_Left_5
       rect:
         serializedVersion: 2
         x: 160
@@ -242,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c1de6f78dad1049a594f9c05641343
-      internalID: -474354438
+      spriteID: c65955fd518fcd1429717fceaca33b8e
+      internalID: 1884251601
       vertices: []
       indices: 
       edges: []
@@ -259,12 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WalkDown_Witch_0: -1929880859
-      WalkDown_Witch_1: 1523950884
-      WalkDown_Witch_2: -85353309
-      WalkDown_Witch_3: -834202602
-      WalkDown_Witch_4: 124779098
-      WalkDown_Witch_5: -474354438
+      Iddle_Left_0: 426445098
+      Iddle_Left_1: 1478877408
+      Iddle_Left_2: -1701699910
+      Iddle_Left_3: 1166199027
+      Iddle_Left_4: 1115899396
+      Iddle_Left_5: 1884251601
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

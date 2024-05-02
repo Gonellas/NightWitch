@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e722283b559edd4c81bcb4bb3065b50
+guid: 7ddc5c88f0063b6428d962598769d04a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bruja_Izq_Iddle-Sheet_0
+      name: Iddle_Up_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54a25d8666d14d04ebb7819f7faba643
-      internalID: -130272970
+      spriteID: fabf52ee902fd8f40a0f8e25f92a93e4
+      internalID: -1007071675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bruja_Izq_Iddle-Sheet_1
+      name: Iddle_Up_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0c07010dcc83144787a5f01f99c0875
-      internalID: 366531554
+      spriteID: 2df475e9d9cbbf4419a12d7e98a3d73b
+      internalID: 852992923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bruja_Izq_Iddle-Sheet_2
+      name: Iddle_Up_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cec719dd86c24bb4f9e0f28f2397744d
-      internalID: -483804947
+      spriteID: 69df3273d1e135244834eb9c7b930f9a
+      internalID: -878572432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bruja_Izq_Iddle-Sheet_3
+      name: Iddle_Up_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b1ead2076b138e4e9906e0d2c3064f2
-      internalID: 1753289483
+      spriteID: 55c50bbe12b7e8a4e8e739949978a279
+      internalID: -1841188033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bruja_Izq_Iddle-Sheet_4
+      name: Iddle_Up_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 862cb75685638324fb4380bb5baf02a0
-      internalID: -1575966826
+      spriteID: e5c0488cae7b545428a1fd61f9f50aa1
+      internalID: 953261369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bruja_Izq_Iddle-Sheet_5
+      name: Iddle_Up_5
       rect:
         serializedVersion: 2
         x: 160
@@ -242,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a00814af849111488d11223c45729f9
-      internalID: -2003503568
+      spriteID: f24221ad58f730349843d60ef63903de
+      internalID: -561132396
       vertices: []
       indices: 
       edges: []
@@ -259,12 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bruja_Izq_Iddle-Sheet_0: -130272970
-      Bruja_Izq_Iddle-Sheet_1: 366531554
-      Bruja_Izq_Iddle-Sheet_2: -483804947
-      Bruja_Izq_Iddle-Sheet_3: 1753289483
-      Bruja_Izq_Iddle-Sheet_4: -1575966826
-      Bruja_Izq_Iddle-Sheet_5: -2003503568
+      Iddle_Up_0: -1007071675
+      Iddle_Up_1: 852992923
+      Iddle_Up_2: -878572432
+      Iddle_Up_3: -1841188033
+      Iddle_Up_4: 953261369
+      Iddle_Up_5: -561132396
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

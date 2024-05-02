@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b9b40f302cb87fc438cf6538990c6edb
+guid: d571908980a02d344b39e2817cedd3c4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,12 +123,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LeftWalk_Witch_0
+      name: GroundAttack_Left_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,40 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d72d34d80b80a64ea5ccc78e3961da2
-      internalID: -923374280
+      spriteID: 0611ed37f9a571d42972974e929ed96f
+      internalID: 760197956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeftWalk_Witch_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e9467d7ec14d4f47b6124fc426ac82f
-      internalID: -1440530619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LeftWalk_Witch_2
+      name: GroundAttack_Left_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -179,40 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81e810775fb801e4b91b1d5f22bc3882
-      internalID: 530986984
+      spriteID: d2c4720113236ca4ca3d52fcca5bb97f
+      internalID: 1167036680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeftWalk_Witch_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ca0a54a47e4b134e848d443e2a2e0f3
-      internalID: 708317602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LeftWalk_Witch_4
+      name: GroundAttack_Left_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,19 +179,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b893160225da314295e7796a31ec5e2
-      internalID: -1119850020
+      spriteID: 90c25495bafeb1041a1694bd9b442fb6
+      internalID: 165273858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeftWalk_Witch_5
+      name: GroundAttack_Left_3
       rect:
         serializedVersion: 2
-        x: 160
+        x: 192
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -242,8 +200,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23ed04401cc3b3c43bbec228826837f0
-      internalID: 1684215012
+      spriteID: 3dae61623c9e19e4aadce8b54e7ceab5
+      internalID: 1956285842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Left_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380688711df9cde41a968844a1cb9206
+      internalID: -506085943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Left_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d261b2b15e7542d4b83b682f0f2443ed
+      internalID: 1763539003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Left_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90cc1cf7bcae694f9c589fb1d9050bb
+      internalID: 1385119802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Left_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af835efab936f2143b527c9f526b3720
+      internalID: 1952740043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Left_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecedd683296e074f9ddf3ae6dc7ad63
+      internalID: -1572341786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Left_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a549a69de919348b9487f5319521c5
+      internalID: -1028636958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Left_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8530b24cfaa0d3d4bb8fadf743054855
+      internalID: -462163804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Left_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db41237f0d7e56942af5a4bb8348a10e
+      internalID: 58124691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundAttack_Left_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2412d734bbb8a5a4283c1c792fd99d90
+      internalID: 1129384657
       vertices: []
       indices: 
       edges: []
@@ -259,12 +406,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      LeftWalk_Witch_0: -923374280
-      LeftWalk_Witch_1: -1440530619
-      LeftWalk_Witch_2: 530986984
-      LeftWalk_Witch_3: 708317602
-      LeftWalk_Witch_4: -1119850020
-      LeftWalk_Witch_5: 1684215012
+      GroundAttack_Left_0: 760197956
+      GroundAttack_Left_1: 1167036680
+      GroundAttack_Left_10: -462163804
+      GroundAttack_Left_11: 58124691
+      GroundAttack_Left_12: 1129384657
+      GroundAttack_Left_2: 165273858
+      GroundAttack_Left_3: 1956285842
+      GroundAttack_Left_4: -506085943
+      GroundAttack_Left_5: 1763539003
+      GroundAttack_Left_6: 1385119802
+      GroundAttack_Left_7: 1952740043
+      GroundAttack_Left_8: -1572341786
+      GroundAttack_Left_9: -1028636958
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

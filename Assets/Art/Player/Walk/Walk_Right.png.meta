@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1075a46de6e2f2042a377121c59f403a
+guid: 27b0aa6f45364de4ab1951d5acb99c53
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Caminata_Back-Sheet_0
+      name: Walk_Right_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0178e88949e6cb4484ba2fb03b34221
-      internalID: -25695105
+      spriteID: 82b84a240d3f62c42b3da7af3447502c
+      internalID: 171317633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caminata_Back-Sheet_1
+      name: Walk_Right_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c118ccb0a1c081c4682aa2a6b7225683
-      internalID: 1030320227
+      spriteID: 1da4ef6a80784bf42bdd8ec1b117b2c9
+      internalID: 1763252060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caminata_Back-Sheet_2
+      name: Walk_Right_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 785d0b2cf651be4459fe641f43d03c09
-      internalID: -323476791
+      spriteID: 07a270ebd84676e49bfe5261c8b89b1a
+      internalID: -442982356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caminata_Back-Sheet_3
+      name: Walk_Right_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e13dfad4770d0a64a97c5210d34a1f01
-      internalID: -357331642
+      spriteID: cf5a545e3452a18468e1f9bdec016220
+      internalID: -614068017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caminata_Back-Sheet_4
+      name: Walk_Right_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 559b3055d371db145958b9b848d53431
-      internalID: -1884643759
+      spriteID: aef03dde25362ca46995895195446714
+      internalID: 1239496055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caminata_Back-Sheet_5
+      name: Walk_Right_5
       rect:
         serializedVersion: 2
         x: 160
@@ -242,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecd39f449a204bf4d9c7230b2aa4c028
-      internalID: 2012047700
+      spriteID: 7172111777fe2c34c82affb712cfc1bc
+      internalID: -408447999
       vertices: []
       indices: 
       edges: []
@@ -259,12 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Caminata_Back-Sheet_0: -25695105
-      Caminata_Back-Sheet_1: 1030320227
-      Caminata_Back-Sheet_2: -323476791
-      Caminata_Back-Sheet_3: -357331642
-      Caminata_Back-Sheet_4: -1884643759
-      Caminata_Back-Sheet_5: 2012047700
+      Walk_Right_0: 171317633
+      Walk_Right_1: 1763252060
+      Walk_Right_2: -442982356
+      Walk_Right_3: -614068017
+      Walk_Right_4: 1239496055
+      Walk_Right_5: -408447999
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

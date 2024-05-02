@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 862283a9af048e540874f1f389d84ce3
+guid: 70bb899485413fe4b84b4efa6bc00633
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WalkLeft_Witch_0
+      name: Walk_Left_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb6539f4c8df7994fab037d959217a65
-      internalID: 1210151228
+      spriteID: 7b3cf7fd04c2aec4fb84fcf04cea299a
+      internalID: 1998243252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft_Witch_1
+      name: Walk_Left_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 844dcb21999904046b27725be5db6186
-      internalID: 968669713
+      spriteID: 4155b9c3d8db2c1499f15acb9f3dadd0
+      internalID: 1033237509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft_Witch_2
+      name: Walk_Left_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a81484fbe955046468591479b8c3eeed
-      internalID: 1713138409
+      spriteID: 388541d03fc58e84f93ea76c243392ae
+      internalID: 2106381917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft_Witch_3
+      name: Walk_Left_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eddfa065258f66468484d708cfc208b
-      internalID: 632897654
+      spriteID: 43ef238cb25f2284689da409f37dac90
+      internalID: 656683838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft_Witch_4
+      name: Walk_Left_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0aaea40ed414dd4292141f810f0c48e
-      internalID: 1114051396
+      spriteID: 1fcc9e1ae1eb39e4382883d2d5d4dc36
+      internalID: 1170255657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft_Witch_5
+      name: Walk_Left_5
       rect:
         serializedVersion: 2
         x: 160
@@ -242,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b789fa5bb4697a0408a5aa7a2a42f9e9
-      internalID: 1734526262
+      spriteID: e2c227624389f6344ae365aabd6a2ee9
+      internalID: -312500451
       vertices: []
       indices: 
       edges: []
@@ -259,12 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WalkLeft_Witch_0: 1210151228
-      WalkLeft_Witch_1: 968669713
-      WalkLeft_Witch_2: 1713138409
-      WalkLeft_Witch_3: 632897654
-      WalkLeft_Witch_4: 1114051396
-      WalkLeft_Witch_5: 1734526262
+      Walk_Left_0: 1998243252
+      Walk_Left_1: 1033237509
+      Walk_Left_2: 2106381917
+      Walk_Left_3: 656683838
+      Walk_Left_4: 1170255657
+      Walk_Left_5: -312500451
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
