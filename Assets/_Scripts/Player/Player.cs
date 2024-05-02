@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CapsuleCollider2D))]
 public class Player : MonoBehaviour
 {
+    [Header("Player Values")]
     [SerializeField] Controller _controller;
     [SerializeField] float _speed;
     [SerializeField] LayerMask _floorMask;
@@ -15,15 +16,15 @@ public class Player : MonoBehaviour
 
     public Enemy ClosestEnemy { get; private set; }
 
-    JoystickController joystickController; // sirve?
-
     private Vector2 initialTouch;
     private Vector2 finalTouch;
 
     [SerializeField] private GameObject trail;
     private GameObject currentTrail;
 
+    [Header("Animator")]
     Animator _animator;
+    private Vector2 _lastMovement = Vector2.zero;
 
     private void Start()
     {
@@ -35,7 +36,15 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        Vector2 movement = _controller.GetMovementInput();
+
         transform.position += new Vector3(_controller.GetMovementInput().x, _controller.GetMovementInput().y, 0) * _speed * Time.deltaTime;
+
+        if (movement.magnitude > 0)
+        {
+            _lastMovement = movement; 
+        }
+
         FindClosestEnemy();
         SwipeDetection();
     }
@@ -146,9 +155,8 @@ public class Player : MonoBehaviour
         else
         {
             _animator.SetBool("isWalking", false);
-
-            _animator.SetFloat("HAx", 0f);
-            _animator.SetFloat("VAx", 0f);
+            _animator.SetFloat("HAx", _lastMovement.x);
+            _animator.SetFloat("VAx", _lastMovement.y);
         }
     }
 
