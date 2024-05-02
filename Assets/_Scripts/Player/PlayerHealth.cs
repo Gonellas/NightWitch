@@ -32,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (canTakeDamage)
         {
-            _healthBar.value = currentHealth - damage;
+            _healthBar.value -= damage;
         }
         else canTakeDamage = false;
     }
