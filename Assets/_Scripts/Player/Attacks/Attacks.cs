@@ -1,17 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Attacks : MonoBehaviour
+public abstract class Attacks : AttackController
 {
+    [Header("Swipe")]
     [SerializeField] private GameObject trail;
     [SerializeField] private float radius = 1f;
     private Vector2 initialTouch;
     private Vector2 finalTouch;
-
     private GameObject currentTrail;
 
-    public virtual void AttackController()
+    public override Vector2 GetAttackInput()
     {
         if (Input.touchCount > 0)
         {
@@ -75,10 +73,12 @@ public abstract class Attacks : MonoBehaviour
                 }
             }
         }
+
+        return Vector2.zero;
     }
 
     protected abstract void PerformAttack(Direction direction);
-
+  
     protected enum Direction
     {
         Up,
@@ -91,11 +91,11 @@ public abstract class Attacks : MonoBehaviour
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius);
 
-        foreach(Collider2D col in colliders)
+        foreach (Collider2D col in colliders)
         {
             IDamageable damageable = col.GetComponent<IDamageable>();
 
-            if(damageable != null && col.gameObject != gameObject)
+            if (damageable != null && col.gameObject != gameObject)
             {
                 damageable.TakeDamage(damage);
             }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CapsuleCollider2D))]
@@ -50,6 +48,8 @@ public class Player : MonoBehaviour
         SwipeDetection();
     }
 
+
+
     private void SwipeDetection()
     {
 
@@ -63,8 +63,8 @@ public class Player : MonoBehaviour
                 if (touch.phase == TouchPhase.Began)
                 {
                     initialTouch = touch.position;
-                    
-                    if(currentTrail != null)
+
+                    if (currentTrail != null)
                     {
                         Destroy(currentTrail);
 
@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
                     currentTrail.transform.position = touch.position;
 
                 }
-                if(touch.phase == TouchPhase.Moved)
+                if (touch.phase == TouchPhase.Moved)
                 {
                     currentTrail.transform.position = touch.position;
                 }
@@ -115,7 +115,7 @@ public class Player : MonoBehaviour
             }
         }
 
-       
+
     }
 
     public void FindClosestEnemy()

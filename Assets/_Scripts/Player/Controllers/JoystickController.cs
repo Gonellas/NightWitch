@@ -15,7 +15,6 @@ public class JoystickController : Controller, IDragHandler, IEndDragHandler
     private void Start()
     {
         _initialPos = transform.position;
-        //_animator = GetComponent<Animator>();
     }
 
     public override Vector2 GetMovementInput()
@@ -33,8 +32,6 @@ public class JoystickController : Controller, IDragHandler, IEndDragHandler
 
         MoveEvent?.Invoke(_moveDir);
         
-        //UpdateAnimations();
-
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -44,32 +41,6 @@ public class JoystickController : Controller, IDragHandler, IEndDragHandler
 
         MoveEvent?.Invoke(Vector2.zero);
 
-        //UpdateAnimations();
     }
 
-    //private void UpdateAnimations()
-    //{
-    //    float angle = Vector2.SignedAngle(Vector2.up, _moveDir);
-
-    //    if(angle >= -45 && angle < 45)
-    //    {
-    //        _animator.SetFloat("HAx", 1f);
-    //        _animator.SetFloat("VAx", 0f);
-    //    }
-    //    else if(angle >= 45 && angle < 135)
-    //    {
-    //        _animator.SetFloat("HAx", 0f);
-    //        _animator.SetFloat("VAx", 1f);
-    //    }
-    //    else if (angle >= -135 && angle < -45)
-    //    {
-    //        _animator.SetFloat("HAx", 0f);
-    //        _animator.SetFloat("VAx", -1f);
-    //    }
-    //    else
-    //    {
-    //        _animator.SetFloat("HAx", -1f);
-    //        _animator.SetFloat("VAx", 0f);
-    //    }
-    //}
 }
