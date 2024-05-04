@@ -7,8 +7,6 @@ public class JoystickController : Controller, IDragHandler, IEndDragHandler
     [SerializeField, Range(75, 150)] float _maxMagnitude = 125f;
     Vector2 _initialPos;
 
-    //private Animator _animator;
-
     public delegate void OnMove(Vector2 movement);
     public static event OnMove MoveEvent;
 

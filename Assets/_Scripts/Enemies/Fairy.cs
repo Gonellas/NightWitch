@@ -3,17 +3,25 @@ using UnityEngine;
 
 public class Fairy : MonoBehaviour
 {
+    [Header("Fairy Components and Values")]
     [SerializeField] Transform _player;
-    [SerializeField] GameObject _bomb; 
+    [SerializeField] LayerMask _colliders;
     [SerializeField] float _speed = 5f;
     [SerializeField] float _detectionRadius = 5f;
-    [SerializeField] LayerMask _colliders;
-
-    private bool _canSpawnBomb = true;
-    private bool _isFleeing = false; 
+    [SerializeField] bool _isFleeing = false; 
+    Animator _animator;
+    
+    [Header("Bomb Components and Values")]
+    [SerializeField] GameObject _bomb; 
+    [SerializeField] bool _canSpawnBomb = true;
+    [SerializeField] float _bombCooldown = 10f;
     private float _lastBombSpawnTime; 
-    private float _bombCooldown = 10f; 
 
+
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
     private void Update()
     {
         if (_player != null)
@@ -31,7 +39,7 @@ public class Fairy : MonoBehaviour
 
                 }
             }
-        }
+        }     
     }
 
     private IEnumerator ActiveBomb()
@@ -98,10 +106,14 @@ public class Fairy : MonoBehaviour
         {
             Vector2 randomDirection = Random.insideUnitCircle.normalized;
             transform.Translate(randomDirection * _speed * Time.deltaTime);
+
+            UpdateAnimations(randomDirection);
         }
         else
         {
             transform.Translate(-directionToTarget * _speed * Time.deltaTime);
+
+            UpdateAnimations(-directionToTarget);
         }
     }
 
@@ -120,6 +132,22 @@ public class Fairy : MonoBehaviour
         if (!_canSpawnBomb && Time.time - _lastBombSpawnTime >= _bombCooldown)
         {
             _canSpawnBomb = true;
+        }
+    }
+
+    void UpdateAnimations(Vector2 movement)
+    {
+        if (movement.magnitude > 0)
+        {
+            _animator.SetBool("isWalking", true);
+            _animator.SetFloat("HAx", movement.x);
+            _animator.SetFloat("VAx", movement.y);
+        }
+        else
+        {
+            _animator.SetBool("isWalking", false);
+            _animator.SetFloat("HAx", movement.x);
+            _animator.SetFloat("VAx", movement.y);
         }
     }
 }
