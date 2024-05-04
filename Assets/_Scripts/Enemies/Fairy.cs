@@ -32,11 +32,6 @@ public class Fairy : MonoBehaviour
                 }
             }
         }
-
-        if (_isFleeing)
-        {
-            FleeDirection();
-        }
     }
 
     private IEnumerator ActiveBomb()
@@ -59,20 +54,37 @@ public class Fairy : MonoBehaviour
     private IEnumerator ExpandBomb(GameObject bomb)
     {
         float elapsedTime = 0f;
-        Vector3 initialScale = bomb.transform.localScale;
-        Vector3 targetScale = initialScale * 3f; 
+        float initialSize = bomb.transform.localScale.x;
+        float targetSize = initialSize * 3f;
 
-        while (elapsedTime < 1.5f) 
+        CircleCollider2D circleCol = bomb.GetComponent<CircleCollider2D>();
+
+        while (elapsedTime < 1.5f)
         {
-          
-            bomb.transform.localScale = Vector3.Lerp(initialScale, targetScale, elapsedTime / 1.5f);
+            float newSize = Mathf.Lerp(initialSize, targetSize, elapsedTime / 1.5f);
+            bomb.transform.localScale = Vector3.one * newSize;
+
+            circleCol.radius = newSize / 2f;
 
             elapsedTime += Time.deltaTime;
 
             yield return null;
         }
 
-      
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(bomb.transform.position, targetSize / 2f);
+
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.CompareTag("Player"))
+            {
+                PlayerHealth playerHealth = collider.GetComponent<PlayerHealth>();
+                if (playerHealth != null)
+                {
+                    playerHealth.TakeDamage(25);
+                }
+            }
+        }
+
         Destroy(bomb);
     }
 

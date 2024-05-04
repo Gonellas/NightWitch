@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour, IDamageable
+public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] Slider _healthBar;
     [SerializeField] float _maxHealth = 100;
@@ -36,8 +36,13 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         else canTakeDamage = false;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
-        Debug.Log("Daño: " + damage);
+        if (canTakeDamage)
+        {
+            currentHealth -= damage;
+            UpdateHealthBar();
+            Debug.Log("Vida restante: " + currentHealth);
+        }
     }
 }
