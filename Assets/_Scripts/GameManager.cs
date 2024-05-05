@@ -1,30 +1,39 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using TMPro;
 using UnityEngine.SceneManagement;
 
-public class SaveWithPlayerPrefs : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    [SerializeField] int _currency = 10;
-    [SerializeField] float _life = 100;
+    // Game Manager Instance
+    public static GameManager instance;
+
+
+    // References
+    [SerializeField] Player player;
+
+
+    //Save, Load, Delete Game:
+    [SerializeField] int _currency = 0;
+    [SerializeField] int _energy = 10;
     [SerializeField] string _playerName = "Default";
     [SerializeField] TextMeshProUGUI[] _textShowingStats;
 
-    void Awake()
+    private void Awake()
     {
+        instance = this;
+
+        //Save, Load, Delete Game:
         LoadGame();
     }
 
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.S)) SaveGame();
-        //else if (Input.GetKeyDown(KeyCode.L)) LoadGame();
-        //else if (Input.GetKeyDown(KeyCode.D)) DeleteGame();
+        //Save, Load, Delete Game:
 
         _textShowingStats[0].text = $"Currency: {_currency}";
-        _textShowingStats[1].text = $"Life: {_life}";
+        _textShowingStats[1].text = $"Energy: {_energy}";
         _textShowingStats[2].text = $"Player Name: {_playerName}";
     }
 
@@ -32,7 +41,7 @@ public class SaveWithPlayerPrefs : MonoBehaviour
     {
         PlayerPrefs.SetInt("Data_Currency", _currency);
 
-        PlayerPrefs.SetFloat("Data_Life", _life);
+        PlayerPrefs.SetInt("Data_Energy", _energy);
 
         PlayerPrefs.SetString("Data_Name", _playerName);
 
@@ -41,15 +50,16 @@ public class SaveWithPlayerPrefs : MonoBehaviour
         Debug.Log("Saving Game");
     }
 
+    //Save, Load, Delete Game:
     private void LoadGame()
     {
         // if(PlayerPrefs.HasKey("Data_Currency")) _currency = PlayerPrefs.GetInt("Data_Currency");
-        _currency = PlayerPrefs.GetInt("Data_Currency", 10);
+        _currency = PlayerPrefs.GetInt("Data_Currency", 0);
 
 
 
-       //  if (PlayerPrefs.HasKey("Data_Life")) _life = PlayerPrefs.GetFloat("Data_Life");
-        _life = PlayerPrefs.GetFloat("Data_Life", 100);
+        //  if (PlayerPrefs.HasKey("Data_Life")) _life = PlayerPrefs.GetFloat("Data_Life");
+        _energy = PlayerPrefs.GetInt("Data_Energy", 10);
 
 
 
@@ -86,5 +96,13 @@ public class SaveWithPlayerPrefs : MonoBehaviour
     private void OnApplicationQuit()
     {
         SaveGame();
+    }
+
+
+    //Get currency:
+
+    public void GiveCurrency(int add)
+    {
+        _currency += add;
     }
 }

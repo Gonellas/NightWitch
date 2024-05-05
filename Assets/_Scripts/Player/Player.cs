@@ -165,4 +165,14 @@ public class Player : MonoBehaviour
     {
         JoystickController.MoveEvent -= UpdateAnimations;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Coin")
+        {
+            // decirle al game manager che sumame 10 punteques
+            GameManager.instance.GiveCurrency(10);
+            Destroy(collision.gameObject);
+        }
+    }
 }

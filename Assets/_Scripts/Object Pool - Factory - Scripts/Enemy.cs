@@ -10,12 +10,15 @@ public class Enemy : MonoBehaviour, IEnemy
 
     [SerializeField] private float _hp;
 
+    [SerializeField] private GameObject coin;
+
     public void LoseHP(float damage)
     {
         _hp -= damage;
 
         if (_hp <= 0)
         {
+            Instantiate(coin, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
