@@ -112,7 +112,6 @@
     <Compile Include="Assets\_Scripts\Player\Attacks\GroundAttack.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\_Scripts\Coin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\Pool.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\Enemy.cs" />

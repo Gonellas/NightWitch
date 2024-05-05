@@ -75,6 +75,9 @@ public class GameManager : MonoBehaviour
         //PlayerPrefs.DeleteKey("Data_Life");
         //PlayerPrefs.DeleteKey("Data_Name");
 
+        // Agregar confirmacion
+
+
         PlayerPrefs.DeleteAll();   // - Para borrar todas las keys. 
 
         Debug.Log("Deleting Game");
