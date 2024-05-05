@@ -3,24 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveWithPlayerPrefs : MonoBehaviour
 {
     [SerializeField] int _currency = 10;
     [SerializeField] float _life = 100;
-    [SerializeField] string _playerName = "Emi";
+    [SerializeField] string _playerName = "Default";
     [SerializeField] TextMeshProUGUI[] _textShowingStats;
 
     void Awake()
     {
-        //LoadGame();
+        LoadGame();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S)) SaveGame();
-        else if (Input.GetKeyDown(KeyCode.L)) LoadGame();
-        else if (Input.GetKeyDown(KeyCode.D)) DeleteGame();
+        //if (Input.GetKeyDown(KeyCode.S)) SaveGame();
+        //else if (Input.GetKeyDown(KeyCode.L)) LoadGame();
+        //else if (Input.GetKeyDown(KeyCode.D)) DeleteGame();
 
         _textShowingStats[0].text = $"Currency: {_currency}";
         _textShowingStats[1].text = $"Life: {_life}";
@@ -36,6 +37,8 @@ public class SaveWithPlayerPrefs : MonoBehaviour
         PlayerPrefs.SetString("Data_Name", _playerName);
 
         PlayerPrefs.Save();
+
+        Debug.Log("Saving Game");
     }
 
     private void LoadGame()
@@ -52,14 +55,36 @@ public class SaveWithPlayerPrefs : MonoBehaviour
 
         //if (PlayerPrefs.HasKey("Data_Name")) _playerName = PlayerPrefs.GetString("Data_Name");
         _playerName = PlayerPrefs.GetString("Data_Name", "Default");
+
+        Debug.Log("Loading Game");
     }
 
-    private void DeleteGame()
+    public void DeleteGame()
     {
-        PlayerPrefs.DeleteKey("Data_Currency");
-        PlayerPrefs.DeleteKey("Data_Life");
-        PlayerPrefs.DeleteKey("Data_Name");
+        //PlayerPrefs.DeleteKey("Data_Currency");
+        //PlayerPrefs.DeleteKey("Data_Life");
+        //PlayerPrefs.DeleteKey("Data_Name");
 
-        // PlayerPrefs.DeleteAll();   - Para borrar todas las keys. 
+        PlayerPrefs.DeleteAll();   // - Para borrar todas las keys. 
+
+        Debug.Log("Deleting Game");
+        LoadGame();
+
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    private void OnApplicationPause(bool pause) // -- Cuando pausas que se guarde
+    {
+        if (pause) SaveGame();
+    }
+
+    //private void OnApplicationFocus(bool focus) -- Cuando minimizas que se guarde
+    //{
+    //    if (!focus) SaveGame();
+    //}
+
+    private void OnApplicationQuit()
+    {
+        SaveGame();
+}
 }
