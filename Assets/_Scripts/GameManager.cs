@@ -99,10 +99,61 @@ public class GameManager : MonoBehaviour
     }
 
 
-    //Get currency:
+    //Get, Take _currency:
 
     public void GiveCurrency(int add)
     {
         _currency += add;
+    }
+
+    public void TakeCurrency(int take)
+    {
+        _currency -= take;
+    }
+
+    public void GiveEnergy (int add)
+    {
+        _energy += add;
+    }
+
+    public void TakeEnergy(int take)
+    {
+        _energy -= take;
+    }
+
+    //Play Button
+    public void PlayButton()
+    {
+        TakeEnergy(1);
+        SaveGame();
+        SceneManager.LoadScene(3);
+    }
+
+    //Store Button
+    public void StoreButton()
+    {
+        SaveGame();
+        SceneManager.LoadScene(1);
+    }
+
+    //Options Button
+    public void OptionsButton()
+    {
+        SaveGame();
+        SceneManager.LoadScene(2);
+    }
+
+    //Main Menu Button
+    public void MainMenuButton()
+    {
+        SaveGame();
+        SceneManager.LoadScene(0);
+    }
+
+    //Application Quit
+    public void QuitGame()
+    {
+        SaveGame();
+        Application.Quit();
     }
 }

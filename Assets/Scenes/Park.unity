@@ -599,7 +599,7 @@ GameObject:
   - component: {fileID: 96837863}
   - component: {fileID: 96837862}
   m_Layer: 5
-  m_Name: FloatData
+  m_Name: IntData
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35142,7 +35142,7 @@ GameObject:
   - component: {fileID: 1116883316}
   - component: {fileID: 1116883315}
   m_Layer: 5
-  m_Name: Canvas_CurrencyNameLife --- TEST
+  m_Name: Canvas_Currency_Energy_Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
