@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(CapsuleCollider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -8,6 +9,8 @@ public class Player : MonoBehaviour
     [SerializeField] Controller _controller;
     [SerializeField] float _speed;
     [SerializeField] LayerMask _floorMask;
+    private PlayerHealth playerHealth;
+    private bool isDamaged = false;
 
     [SerializeField] private Material enemyMaterial;
 
@@ -31,8 +34,6 @@ public class Player : MonoBehaviour
         JoystickController.MoveEvent += UpdateAnimations;
     }
 
-
-
     void Update()
     {
         Vector2 movement = _controller.GetMovementInput();
@@ -41,7 +42,7 @@ public class Player : MonoBehaviour
 
         if (movement.magnitude > 0)
         {
-            _lastMovement = movement; 
+            _lastMovement = movement;
         }
 
         FindClosestEnemy();
