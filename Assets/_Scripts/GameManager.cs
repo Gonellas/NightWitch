@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] int _energy = 10;
     [SerializeField] string _playerName = "Default";
     [SerializeField] TextMeshProUGUI[] _textShowingStats;
+    [SerializeField] GameObject _deleteConfirmationPanel;
+    [SerializeField] GameObject _canvasMainMenu;
 
     private void Awake()
     {
@@ -76,14 +78,32 @@ public class GameManager : MonoBehaviour
         //PlayerPrefs.DeleteKey("Data_Name");
 
         // Agregar confirmacion
+        _canvasMainMenu.SetActive(false);
+        _deleteConfirmationPanel.SetActive(true);
 
+        /*PlayerPrefs.DeleteAll()*/;   // - Para borrar todas las keys. 
 
-        PlayerPrefs.DeleteAll();   // - Para borrar todas las keys. 
-
-        Debug.Log("Deleting Game");
-        LoadGame();
+        //Debug.Log("Deleting Game");
+        //LoadGame();
 
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void ConfirmDeleteGame()
+    {
+        PlayerPrefs.DeleteAll();
+        Debug.Log("Deleting Game");
+        LoadGame(); 
+
+        _deleteConfirmationPanel.SetActive(false);
+        _canvasMainMenu.SetActive(true);
+
+    }
+
+    public void CancelDeleteGame()
+    {
+        _deleteConfirmationPanel.SetActive(false);
+        _canvasMainMenu.SetActive(true);
     }
 
     private void OnApplicationPause(bool pause) // -- Cuando pausas que se guarde
