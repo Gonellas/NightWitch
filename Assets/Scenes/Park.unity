@@ -57580,6 +57580,8 @@ MonoBehaviour:
   - {fileID: 382216103}
   - {fileID: 96837862}
   - {fileID: 995767408}
+  _deleteConfirmationPanel: {fileID: 0}
+  _canvasMainMenu: {fileID: 0}
 --- !u!4 &2072003354
 Transform:
   m_ObjectHideFlags: 0
