@@ -12,6 +12,7 @@ public class Zombie : MonoBehaviour
     [SerializeField] float _maxSpeed = 5f;
     [SerializeField] float _detectionRadius = 2f;
     [SerializeField] float _damage = 25f;
+    [SerializeField] float _minDistanceToPlayer = 0.8f;
 
     private void Start()
     {
@@ -30,20 +31,28 @@ public class Zombie : MonoBehaviour
 
     void PursueBehaviour()
     {
-        if(_player != null)
+        if (_player != null)
         {
             Vector2 playerDirection = _player.position - transform.position;
-            
+
             float distance = playerDirection.magnitude;
             float lookAhead = distance / _maxSpeed;
 
-            Vector2 playerPosition = (Vector2)_player.position + _player.GetComponent<Rigidbody2D>().velocity * lookAhead;
-            Vector2 desiredVelocity = (playerPosition - (Vector2)transform.position).normalized * _maxSpeed;
-            Vector2 steeringForce = desiredVelocity - GetComponent<Rigidbody2D>().velocity;
+            if (distance > _minDistanceToPlayer)
+            {
+                Vector2 playerPosition = (Vector2)_player.position + _player.GetComponent<Rigidbody2D>().velocity * lookAhead;
+                Vector2 desiredVelocity = (playerPosition - (Vector2)transform.position).normalized * _maxSpeed;
+                Vector2 steeringForce = desiredVelocity - GetComponent<Rigidbody2D>().velocity;
 
-            GetComponent<Rigidbody2D>().AddForce(steeringForce);
+                GetComponent<Rigidbody2D>().AddForce(steeringForce);
 
-            UpdateAnimations(desiredVelocity);
+                UpdateAnimations(desiredVelocity);
+            }
+            else
+            {
+                StopMovement();
+                // Agregar animacion de ataque aca
+            }
         }
     }
 
@@ -88,6 +97,7 @@ public class Zombie : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            StopMovement();
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
             playerHealth.TakeDamage(_damage);
         }
