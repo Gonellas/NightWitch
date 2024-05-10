@@ -25,10 +25,13 @@ public class JoystickController : Controller, IDragHandler, IEndDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-        _moveDir = Vector2.ClampMagnitude(eventData.position - _initialPos, _maxMagnitude);
-        transform.position = _initialPos + _moveDir;
+        if (!GameManager.instance.IsPaused())
+        {
+            _moveDir = Vector2.ClampMagnitude(eventData.position - _initialPos, _maxMagnitude);
+            transform.position = _initialPos + _moveDir;
 
-        MoveEvent?.Invoke(_moveDir);        
+            MoveEvent?.Invoke(_moveDir);
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)

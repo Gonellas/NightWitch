@@ -36,87 +36,90 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        Vector2 movement = _controller.GetMovementInput();
-
-        transform.position += new Vector3(_controller.GetMovementInput().x, _controller.GetMovementInput().y, 0) * _speed * Time.deltaTime;
-
-        if (movement.magnitude > 0)
+        if (!GameManager.instance.IsPaused()) 
         {
-            _lastMovement = movement;
-        }
+            Vector2 movement = _controller.GetMovementInput();
 
-        FindClosestEnemy();
-        SwipeDetection();
+            transform.position += new Vector3(_controller.GetMovementInput().x, _controller.GetMovementInput().y, 0) * _speed * Time.deltaTime;
+
+            if (movement.magnitude > 0)
+            {
+                _lastMovement = movement;
+            }
+
+            FindClosestEnemy();
+            SwipeDetection();
+        }
     }
 
 
 
     private void SwipeDetection()
     {
-
-        if (Input.touchCount > 0)
+        if (!GameManager.instance.IsPaused())
         {
-
-            Touch touch = Input.GetTouch(Input.touchCount - 1);
-
-            if (touch.position.x >= Screen.width * 0.5f && touch.position.y <= Screen.height * 0.5f)
+            if (Input.touchCount > 0)
             {
-                if (touch.phase == TouchPhase.Began)
-                {
-                    initialTouch = touch.position;
 
-                    if (currentTrail != null)
+                Touch touch = Input.GetTouch(Input.touchCount - 1);
+
+                if (touch.position.x >= Screen.width * 0.5f && touch.position.y <= Screen.height * 0.5f)
+                {
+                    if (touch.phase == TouchPhase.Began)
                     {
+                        initialTouch = touch.position;
+
+                        if (currentTrail != null)
+                        {
+                            Destroy(currentTrail);
+
+                        }
+                        currentTrail = Instantiate(trail);
+
+                        currentTrail.transform.position = touch.position;
+
+                    }
+                    if (touch.phase == TouchPhase.Moved)
+                    {
+                        currentTrail.transform.position = touch.position;
+                    }
+
+                    if (touch.phase == TouchPhase.Ended)
+                    {
+                        finalTouch = touch.position;
+
+                        Vector2 swipeDirection = (finalTouch - initialTouch);
+
+                        if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
+                        {
+
+                            if (swipeDirection.x > 0)
+                            {
+                                Debug.Log("Swiped right");
+                            }
+                            else
+                            {
+                                Debug.Log("Swiped left");
+                            }
+                        }
+                        else
+                        {
+                            // Vertical swipe
+                            if (swipeDirection.y > 0)
+                            {
+                                Debug.Log("Swiped up");
+                            }
+                            else
+                            {
+                                Debug.Log("Swiped down");
+                            }
+                        }
+
                         Destroy(currentTrail);
-
                     }
-                    currentTrail = Instantiate(trail);
-
-                    currentTrail.transform.position = touch.position;
-
-                }
-                if (touch.phase == TouchPhase.Moved)
-                {
-                    currentTrail.transform.position = touch.position;
-                }
-
-                if (touch.phase == TouchPhase.Ended)
-                {
-                    finalTouch = touch.position;
-
-                    Vector2 swipeDirection = (finalTouch - initialTouch);
-
-                    if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
-                    {
-
-                        if (swipeDirection.x > 0)
-                        {
-                            Debug.Log("Swiped right");
-                        }
-                        else
-                        {
-                            Debug.Log("Swiped left");
-                        }
-                    }
-                    else
-                    {
-                        // Vertical swipe
-                        if (swipeDirection.y > 0)
-                        {
-                            Debug.Log("Swiped up");
-                        }
-                        else
-                        {
-                            Debug.Log("Swiped down");
-                        }
-                    }
-
-                    Destroy(currentTrail);
                 }
             }
         }
-
-
     }
 
     public void FindClosestEnemy()
@@ -148,17 +151,20 @@ public class Player : MonoBehaviour
 
     void UpdateAnimations(Vector2 movement)
     {
-        if(movement.magnitude > 0)
+        if (!GameManager.instance.IsPaused())
         {
-            _animator.SetBool("isWalking", true);
-            _animator.SetFloat("HAx", movement.x);
-            _animator.SetFloat("VAx", movement.y);
-        }
-        else
-        {
-            _animator.SetBool("isWalking", false);
-            _animator.SetFloat("HAx", _lastMovement.x);
-            _animator.SetFloat("VAx", _lastMovement.y);
+            if (movement.magnitude > 0)
+            {
+                _animator.SetBool("isWalking", true);
+                _animator.SetFloat("HAx", movement.x);
+                _animator.SetFloat("VAx", movement.y);
+            }
+            else
+            {
+                _animator.SetBool("isWalking", false);
+                _animator.SetFloat("HAx", _lastMovement.x);
+                _animator.SetFloat("VAx", _lastMovement.y);
+            }
         }
     }
 
@@ -169,11 +175,14 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Coin")
+        if (!GameManager.instance.IsPaused())
         {
-            // decirle al game manager che sumame 10 punteques
-            GameManager.instance.GiveCurrency(10);
-            Destroy(collision.gameObject);
+            if (collision.gameObject.tag == "Coin")
+            {
+                // decirle al game manager che sumame 10 punteques
+                GameManager.instance.GiveCurrency(10);
+                Destroy(collision.gameObject);
+            }
         }
     }
 }

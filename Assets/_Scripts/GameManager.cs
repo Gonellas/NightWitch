@@ -6,21 +6,22 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Game Manager Instance
+    [Header("Game Manager Instance")]
     public static GameManager instance;
 
-
-    // References
+    [Header("Components References")]
     [SerializeField] Player player;
 
-
-    //Save, Load, Delete Game:
+    [Header("Save, Load, Delete Game Values")]
     [SerializeField] int _currency = 0;
     [SerializeField] int _energy = 10;
     [SerializeField] string _playerName = "Default";
     [SerializeField] TextMeshProUGUI[] _textShowingStats;
     [SerializeField] GameObject _deleteConfirmationPanel;
     [SerializeField] GameObject _canvasMainMenu;
+
+    [Header("Pause Game")]
+    private bool isPaused = false;
 
     private void Awake()
     {
@@ -37,6 +38,17 @@ public class GameManager : MonoBehaviour
         _textShowingStats[0].text = $"Currency: {_currency}";
         _textShowingStats[1].text = $"Energy: {_energy}";
         _textShowingStats[2].text = $"Player Name: {_playerName}";
+    }
+
+    public void TogglePause()
+    {
+        isPaused = !isPaused;
+        Time.timeScale = isPaused ? 0 : 1;
+    }
+
+    public bool IsPaused()
+    {
+        return isPaused;
     }
 
     private void SaveGame()
@@ -171,6 +183,8 @@ public class GameManager : MonoBehaviour
     {
         SaveGame();
         SceneManager.LoadScene(0);
+        isPaused = false;
+        Time.timeScale = 1;
     }
 
     //Application Quit
