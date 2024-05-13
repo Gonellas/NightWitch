@@ -10,8 +10,10 @@ public class Fairy : MonoBehaviour
     [SerializeField] float _detectionRadius = 5f;
     [SerializeField] bool _isFleeing = false; 
     Animator _animator;
-    
+
     [Header("Bomb Components and Values")]
+    [SerializeField] float _bombDamage = 25f;
+
     [SerializeField] GameObject _bomb; 
     [SerializeField] bool _canSpawnBomb = true;
     [SerializeField] float _bombCooldown = 10f;
@@ -88,7 +90,7 @@ public class Fairy : MonoBehaviour
                 PlayerHealth playerHealth = collider.GetComponent<PlayerHealth>();
                 if (playerHealth != null)
                 {
-                    playerHealth.TakeDamage(25);
+                    playerHealth.TakeDamage(_bombDamage);
                 }
             }
         }

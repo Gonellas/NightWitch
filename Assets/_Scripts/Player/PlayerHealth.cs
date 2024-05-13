@@ -13,32 +13,18 @@ public class PlayerHealth : MonoBehaviour
     public float currentHealth;
     public bool canTakeDamage;
 
-    //TEST DAÑO
-    public float damage = 25;
-
     private void Start()
     {
         currentHealth = _maxHealth;
         _animator = GetComponent<Animator>();
     }
 
-    //TEST DAÑO
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            canTakeDamage = true;
-            currentHealth -= damage;
-            Debug.Log("Vida restante" + " " + currentHealth);
-            UpdateHealthBar();
-        }
-    }
-
     public void UpdateHealthBar()
     {
         if (canTakeDamage)
         {
-            _healthBar.value -= damage;
+            currentHealth = Mathf.Max(0, currentHealth);
+            _healthBar.value = ((float)currentHealth / _maxHealth) * 100f;
         }
         else canTakeDamage = false;
     }
@@ -56,6 +42,18 @@ public class PlayerHealth : MonoBehaviour
           
             StartCoroutine(ResetAnimation());
         }
+
+        if(currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+
+        GameManager.instance.Lose();
+       
     }
 
     private IEnumerator ResetAnimation()

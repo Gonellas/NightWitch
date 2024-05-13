@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -11,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Components References")]
     [SerializeField] Player player;
+    [SerializeField] PlayerHealth _playerHealth;
 
     [Header("Save, Load, Delete Game Values")]
     [SerializeField] int _currency = 0;
@@ -19,9 +18,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI[] _textShowingStats;
     [SerializeField] GameObject _deleteConfirmationPanel;
     [SerializeField] GameObject _canvasMainMenu;
+    [SerializeField] GameObject _loseCanvas;
 
     [Header("Pause Game")]
     private bool isPaused = false;
+
+    [Header("Energy Recovery")]
+    [SerializeField] float _interval = 30f;
+    [SerializeField] float _timer = 0f;
 
     private void Awake()
     {
@@ -33,11 +37,41 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        //Save, Load, Delete Game:
+        //Energy Recovery
+        if(_energy < 10)
+        {
+            _timer += Time.deltaTime;
+            if(_timer >= _interval)
+            {
+                _timer = 0f;
+                GiveEnergy(1);
+                SaveGame();
+            }
+        }
 
+        UpdateUI();
+    }
+
+    //Lose Condition
+    public void Lose()
+    {
+        TogglePause();
+        _loseCanvas.SetActive(true);
+    }
+    private void UpdateUI()
+    {
         _textShowingStats[0].text = $"Currency: {_currency}";
         _textShowingStats[1].text = $"Energy: {_energy}";
         _textShowingStats[2].text = $"Player Name: {_playerName}";
+    }
+
+    public void RestartLevel()
+    {
+        TakeEnergy(1);
+        SaveGame();
+        SceneManager.LoadScene(3);
+        Time.timeScale = 1;
+        isPaused = false;
     }
 
     public void TogglePause()
