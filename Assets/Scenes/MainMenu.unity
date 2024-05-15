@@ -621,6 +621,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db6038bda177384a8881d12061244b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countdownDuration: 120
+  timer: 0
+  isCounting: 1
   player: {fileID: 0}
   _playerHealth: {fileID: 0}
   _currency: 0
@@ -2643,7 +2646,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 558859178}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: DeleteGameConfirmation
+        m_MethodName: DeleteGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

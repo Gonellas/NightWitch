@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [Header("Park Timer")]
-    public float countdownDuration = 120f;
-    [SerializeField] private float timer = 0f;
+    [SerializeField] private float countdownEnd;
+    [SerializeField] private float timer;
     [SerializeField] private bool isCounting = true;
 
     [Header("Game Manager Instance")]
@@ -74,6 +74,7 @@ public class GameManager : MonoBehaviour
         _textShowingStats[0].text = $"Currency: {_currency}";
         _textShowingStats[1].text = $"Energy: {_energy}";
         _textShowingStats[2].text = $"Player Name: {_playerName}";
+        _textShowingStats[3].text = $"Time: {(int)timer}";
     }
 
     public void RestartLevel()
@@ -244,9 +245,9 @@ public class GameManager : MonoBehaviour
     {
         if (isCounting)
         {
-            timer += Time.deltaTime;
+            timer -= Time.deltaTime;
 
-            if (timer >= countdownDuration)
+            if (timer <= countdownEnd)
             {
                 isCounting = false;
                 SaveGame();
