@@ -4,6 +4,5 @@ using UnityEngine;
 
 public interface IEnemy
 {
-    public void LoseHP(float damage);
-
+    void LoseHP(float damage);
 }

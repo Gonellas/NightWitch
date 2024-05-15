@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Fairy : MonoBehaviour
+public class Fairy : Enemy, IEnemy
 {
     [Header("Fairy Components and Values")]
     [SerializeField] Transform _player;
@@ -12,12 +12,15 @@ public class Fairy : MonoBehaviour
     Animator _animator;
 
     [Header("Bomb Components and Values")]
-    [SerializeField] float _bombDamage = 25f;
-
     [SerializeField] GameObject _bomb; 
+    [SerializeField] float _bombDamage = 25f;
     [SerializeField] bool _canSpawnBomb = true;
     [SerializeField] float _bombCooldown = 10f;
-    private float _lastBombSpawnTime; 
+    private float _lastBombSpawnTime;
+
+    [SerializeField] private float _hp;
+
+    [SerializeField] private GameObject coin;
 
 
     private void Start()
@@ -32,7 +35,7 @@ public class Fairy : MonoBehaviour
 
             if (distanceToTarget <= _detectionRadius)
             {
-                FleeDirection();
+                SteeringBehaviour();
 
                 if (_canSpawnBomb)
                 {
@@ -42,6 +45,17 @@ public class Fairy : MonoBehaviour
                 }
             }
         }     
+    }
+
+    public void LoseHP(float damage)
+    {
+        _hp -= damage;
+
+        if (_hp <= 0)
+        {
+            Instantiate(coin, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
     }
 
     private IEnumerator ActiveBomb()
@@ -98,7 +112,8 @@ public class Fairy : MonoBehaviour
         Destroy(bomb);
     }
 
-    private void FleeDirection()
+    //FLEE
+    protected override void SteeringBehaviour()
     {
         Vector2 directionToTarget = (_player.position - transform.position).normalized;
 
@@ -118,6 +133,7 @@ public class Fairy : MonoBehaviour
             UpdateAnimations(-directionToTarget);
         }
     }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

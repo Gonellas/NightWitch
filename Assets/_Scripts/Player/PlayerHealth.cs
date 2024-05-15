@@ -51,9 +51,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-
         GameManager.instance.Lose();
-       
     }
 
     private IEnumerator ResetAnimation()

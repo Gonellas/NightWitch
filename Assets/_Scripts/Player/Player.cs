@@ -9,8 +9,6 @@ public class Player : MonoBehaviour
     [SerializeField] Controller _controller;
     [SerializeField] float _speed;
     [SerializeField] LayerMask _floorMask;
-    private PlayerHealth playerHealth;
-    private bool isDamaged = false;
 
     [SerializeField] private Material enemyMaterial;
 
@@ -47,7 +45,7 @@ public class Player : MonoBehaviour
                 _lastMovement = movement;
             }
 
-            FindClosestEnemy();
+            //FindClosestEnemy();
             SwipeDetection();
         }
     }
@@ -122,32 +120,32 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void FindClosestEnemy()
-    {
-        float distanceToClosestEnemy = Mathf.Infinity;
-        Enemy[] allEnemies = GameObject.FindObjectsOfType<Enemy>();
+    //public void FindClosestEnemy()
+    //{
+    //    float distanceToClosestEnemy = Mathf.Infinity;
+    //    Enemy[] allEnemies = GameObject.FindObjectsOfType<Enemy>();
 
-        foreach (Enemy currentEnemy in allEnemies)
-        {
-            float distanceToEnemy = (currentEnemy.transform.position - this.transform.position).sqrMagnitude;
-            if (distanceToEnemy < distanceToClosestEnemy)
-            {
-                if (closestEnemy)
-                {
-                    var renderer2 = closestEnemy.GetComponent<MeshRenderer>();
-                    renderer2.material = enemyMaterial;
-                }
+    //    foreach (Enemy currentEnemy in allEnemies)
+    //    {
+    //        float distanceToEnemy = (currentEnemy.transform.position - this.transform.position).sqrMagnitude;
+    //        if (distanceToEnemy < distanceToClosestEnemy)
+    //        {
+    //            if (closestEnemy)
+    //            {
+    //                var renderer2 = closestEnemy.GetComponent<MeshRenderer>();
+    //                renderer2.material = enemyMaterial;
+    //            }
 
-                distanceToClosestEnemy = distanceToEnemy;
-                closestEnemy = currentEnemy;
+    //            distanceToClosestEnemy = distanceToEnemy;
+    //            closestEnemy = currentEnemy;
 
-                var renderer = currentEnemy.GetComponent<MeshRenderer>();
-                renderer.material = default;
-            }
-        }
+    //            var renderer = currentEnemy.GetComponent<MeshRenderer>();
+    //            renderer.material = default;
+    //        }
+    //    }
 
-        ClosestEnemy = closestEnemy;
-    }
+    //    ClosestEnemy = closestEnemy;
+    //}
 
     void UpdateAnimations(Vector2 movement)
     {

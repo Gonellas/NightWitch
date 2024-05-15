@@ -1,7 +1,7 @@
 using UnityEngine;
 
-public class Zombie : MonoBehaviour
-{
+public class Zombie : Enemy, IEnemy
+{ 
     [Header("Components")]
     [SerializeField] Transform _player;
     [SerializeField] LayerMask _playerLayerMask;
@@ -14,6 +14,9 @@ public class Zombie : MonoBehaviour
     [SerializeField] float _damage = 25f;
     [SerializeField] float _minDistanceToPlayer = 0.8f;
 
+    [SerializeField] private float _hp;
+    [SerializeField] private GameObject coin;
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -21,7 +24,7 @@ public class Zombie : MonoBehaviour
     }
     private void Update()
     {
-        if (IsPlayerDetected()) PursueBehaviour();
+        if (IsPlayerDetected()) SteeringBehaviour();
         else
         {
             StopMovement();
@@ -29,7 +32,17 @@ public class Zombie : MonoBehaviour
         }
     }
 
-    void PursueBehaviour()
+    public void LoseHP(float damage)
+    {
+        _hp -= damage;
+
+        if (_hp <= 0)
+        {
+            Instantiate(coin, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
+    }
+    protected override void SteeringBehaviour()
     {
         if (_player != null)
         {
