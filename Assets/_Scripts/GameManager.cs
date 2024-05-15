@@ -4,6 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Park Timer")]
+    public float countdownDuration = 120f;
+    [SerializeField] private float timer = 0f;
+    [SerializeField] private bool isCounting = true;
+
     [Header("Game Manager Instance")]
     public static GameManager instance;
 
@@ -37,8 +42,14 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        //Park Timer
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            ParkTimer();
+        }
+
         //Energy Recovery
-        if(_energy < 10)
+        if (_energy < 10)
         {
             _timer += Time.deltaTime;
             if(_timer >= _interval)
@@ -226,5 +237,21 @@ public class GameManager : MonoBehaviour
     {
         SaveGame();
         Application.Quit();
+    }
+
+    //Park Timer
+    private void ParkTimer()
+    {
+        if (isCounting)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= countdownDuration)
+            {
+                isCounting = false;
+                SaveGame();
+                SceneManager.LoadScene(0);
+            }
+        }
     }
 }
