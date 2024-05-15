@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OPTIONS
+  m_text: TUTORIAL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 316866903}
   - component: {fileID: 316866902}
   m_Layer: 5
-  m_Name: Button_Options
+  m_Name: Button_Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -361,8 +361,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.356, y: 0.39843783}
   m_AnchorMax: {x: 0.64335656, y: 0.514}
-  m_AnchoredPosition: {x: 0.50001526, y: -0.5}
-  m_SizeDelta: {x: -7.531189, y: -6.994293}
+  m_AnchoredPosition: {x: 1.1387024, y: -0.5}
+  m_SizeDelta: {x: 52.517, y: -6.9943}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316866902
 MonoBehaviour:
@@ -410,7 +410,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 558859178}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: OptionsButton
+        m_MethodName: TutorialButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -622,6 +622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  _playerHealth: {fileID: 0}
   _currency: 0
   _energy: 10
   _playerName: Default
@@ -631,6 +632,9 @@ MonoBehaviour:
   - {fileID: 1165762846}
   _deleteConfirmationPanel: {fileID: 832089756}
   _canvasMainMenu: {fileID: 1267780326}
+  _loseCanvas: {fileID: 0}
+  _interval: 30
+  _timer: 0
 --- !u!4 &558859179
 Transform:
   m_ObjectHideFlags: 0

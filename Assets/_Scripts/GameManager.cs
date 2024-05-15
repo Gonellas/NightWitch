@@ -206,7 +206,7 @@ public class GameManager : MonoBehaviour
     }
 
     //Options Button
-    public void OptionsButton()
+    public void TutorialButton()
     {
         SaveGame();
         SceneManager.LoadScene(2);
