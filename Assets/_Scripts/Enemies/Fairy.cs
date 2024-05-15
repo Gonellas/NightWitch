@@ -20,6 +20,7 @@ public class Fairy : Enemy
 
     private void Start()
     {
+        _player = FindObjectOfType<Player>().transform;
         _animator = GetComponent<Animator>();
     }
     private void Update()

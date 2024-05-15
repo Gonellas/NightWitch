@@ -4,10 +4,13 @@ public class EnemyFactory : MonoBehaviour
 {
     public static EnemyFactory Instance { get; private set; }
     
-    [SerializeField] private Enemy _enemyPrefab;
+    [SerializeField] private Fairy _fairyPrefab;
+    [SerializeField] private Zombie _zombiePrefab;
     [SerializeField] private int initialAmount;
-    
-    private Pool<Enemy> _enemyPool;
+
+    private Pool<Fairy> _fairyPool;
+    private Pool<Zombie> _zombiePool;
+
 
     private void Awake()
     {
@@ -19,19 +22,34 @@ public class EnemyFactory : MonoBehaviour
 
         Instance = this;
         
-        _enemyPool = new Pool<Enemy>(() => Instantiate(_enemyPrefab), 
+        _fairyPool = new Pool<Fairy>(() => Instantiate(_fairyPrefab), 
                                 (e) => e.gameObject.SetActive(true) , 
                                 (e) => e.gameObject.SetActive(false), 
                                 initialAmount);
+
+        _zombiePool = new Pool<Zombie>(() => Instantiate(_zombiePrefab),
+                        (e) => e.gameObject.SetActive(true),
+                        (e) => e.gameObject.SetActive(false),
+                        initialAmount);
     }
     
-    public Enemy GetObjectFromPool()
+    public Fairy GetFairyFromPool()
     {
-        return _enemyPool.GetObject();
+        return _fairyPool.GetObject();
     }
 
-    public void ReturnObjectToPool(Enemy obj)
+    public void ReturnFairyToPool(Fairy obj)
     {
-        _enemyPool.ReturnObjectToPool(obj);
+        _fairyPool.ReturnObjectToPool(obj);
+    }
+
+    public Zombie GetZombieFromPool()
+    {
+        return _zombiePool.GetObject();
+    }
+
+    public void ReturnZombieToPool(Zombie obj)
+    {
+        _zombiePool.ReturnObjectToPool(obj);
     }
 }

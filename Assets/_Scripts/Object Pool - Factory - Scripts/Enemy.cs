@@ -1,7 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public abstract class Enemy : MonoBehaviour, IEnemy
 {
+
+    public Func<Enemy> instantiateMethod;
     public float hp;
     public abstract Vector3 GetPosition();
     protected abstract void SteeringBehaviour();

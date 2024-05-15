@@ -15,7 +15,7 @@ public class Debugger : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.A))
         {
-            var enemy = EnemyFactory.Instance.GetObjectFromPool();
+            var enemy = EnemyFactory.Instance.GetFairyFromPool();
             
             enemy.transform.position = Vector3.zero;
         }

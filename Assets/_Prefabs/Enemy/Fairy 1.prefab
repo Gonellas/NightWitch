@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2078958156970714918
+--- !u!1 &1635830267042627579
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7111995118706157033}
-  - component: {fileID: 8389792671438211771}
-  - component: {fileID: 4541447456854812138}
-  - component: {fileID: 1534837959182373363}
+  - component: {fileID: 9149615805239112849}
+  - component: {fileID: 40988141974515773}
+  - component: {fileID: 4962929920683365290}
+  - component: {fileID: 2713606533979879127}
+  - component: {fileID: 7027176811174334797}
   m_Layer: 0
-  m_Name: Fairy
+  m_Name: Fairy 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7111995118706157033
+--- !u!4 &9149615805239112849
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078958156970714918}
+  m_GameObject: {fileID: 1635830267042627579}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -23.14, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8389792671438211771
+--- !u!212 &40988141974515773
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078958156970714918}
+  m_GameObject: {fileID: 1635830267042627579}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -197135418, guid: a72c6c7057de0b842888cdcb8261f17b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -86,20 +87,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4541447456854812138
+--- !u!114 &4962929920683365290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078958156970714918}
+  m_GameObject: {fileID: 1635830267042627579}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f72ce06f50d303e4a958f4590dca1a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 0
-  _coin: {fileID: 0}
+  hp: 100
+  _coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
   _player: {fileID: 0}
   _colliders:
     serializedVersion: 2
@@ -107,18 +108,18 @@ MonoBehaviour:
   _speed: 1.5
   _detectionRadius: 3
   _isFleeing: 0
-  _bomb: {fileID: 0}
-  _bombDamage: 25
+  _bomb: {fileID: 3482510219627398589, guid: a49bdbd262001cd46bbebdb72e89e425, type: 3}
+  _bombDamage: 100
   _canSpawnBomb: 1
   _bombCooldown: 10
---- !u!95 &1534837959182373363
+--- !u!95 &2713606533979879127
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078958156970714918}
+  m_GameObject: {fileID: 1635830267042627579}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: f2adf53626429d94dab5704c0c269068, type: 2}
@@ -132,3 +133,38 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &7027176811174334797
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635830267042627579}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0021162033, y: 0.1226964}
+  m_Size: {x: 0.9888096, y: 1.3738232}
+  m_Direction: 0
