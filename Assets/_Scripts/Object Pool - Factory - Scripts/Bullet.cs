@@ -4,31 +4,65 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private float _initialLifeTime;
     [SerializeField] private float _speed;
-    private float _currentLifeTime;
-    private Enemy targetEnemy;
-    private EnemyDetector enemyDetector;
+    [SerializeField] private float _damage = 10f;
+    private Enemy _targetEnemy;
+    private EnemyDetector _enemyDetector;
+
 
     void Start()
     {
-        enemyDetector = FindObjectOfType<EnemyDetector>();
+        _enemyDetector = FindObjectOfType<EnemyDetector>();
+        if (_enemyDetector == null)
+        {
+            Debug.LogWarning("No se detectó ningún enemigo.");
+        }
+        Reset();
     }
 
     void Update()
     {
-        if (enemyDetector != null)
+        if (_targetEnemy == null)
         {
-            targetEnemy = enemyDetector.ClosestEnemy;
+            if (_enemyDetector != null)
+            {
+                _targetEnemy = _enemyDetector.ClosestEnemy;
+            }
+        }
+        else
+        {
+            MoveBulletToTarget();
         }
 
-        if (targetEnemy != null)
+        _initialLifeTime -= Time.deltaTime;
+
+        if (_initialLifeTime <= 0)
         {
-            Vector3 moveDir = (targetEnemy.transform.position - transform.position).normalized;
-            transform.position += moveDir * _speed * Time.deltaTime;
+            BulletFactory.Instance.ReturnObjectToPool(this);
         }
+    }
 
-        _currentLifeTime -= Time.deltaTime;
+    public void SetTargetEnemy(Enemy target)
+    {
+        _targetEnemy = target;
+    }
 
-        if (_currentLifeTime <= 0)
+    private void MoveBulletToTarget()
+    {
+        if (_targetEnemy == null) return;
+
+        Vector3 moveDir = (_targetEnemy.transform.position - transform.position).normalized;
+        transform.position += moveDir * _speed * Time.deltaTime;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            _targetEnemy.LoseHP(_damage);
+            BulletFactory.Instance.ReturnObjectToPool(this);
+
+        }
+        else if (!other.gameObject.CompareTag("Player")) 
         {
             BulletFactory.Instance.ReturnObjectToPool(this);
         }
@@ -36,8 +70,10 @@ public class Bullet : MonoBehaviour
 
     private void Reset()
     {
-        _currentLifeTime = _initialLifeTime;
+        _initialLifeTime = 2f;
+        _targetEnemy = null;
     }
+
 
     public static void TurnOn(Bullet b)
     {

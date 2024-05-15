@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Fairy : Enemy, IEnemy
+public class Fairy : Enemy
 {
     [Header("Fairy Components and Values")]
     [SerializeField] Transform _player;
@@ -17,11 +17,6 @@ public class Fairy : Enemy, IEnemy
     [SerializeField] bool _canSpawnBomb = true;
     [SerializeField] float _bombCooldown = 10f;
     private float _lastBombSpawnTime;
-
-    [SerializeField] private float _hp;
-
-    [SerializeField] private GameObject coin;
-
 
     private void Start()
     {
@@ -41,21 +36,14 @@ public class Fairy : Enemy, IEnemy
                 {
                     _canSpawnBomb = false; 
                     StartCoroutine(ActiveBomb());
-
                 }
             }
         }     
     }
 
-    public void LoseHP(float damage)
+     public override Vector3 GetPosition()
     {
-        _hp -= damage;
-
-        if (_hp <= 0)
-        {
-            Instantiate(coin, transform.position, transform.rotation);
-            Destroy(gameObject);
-        }
+        return transform.position;
     }
 
     private IEnumerator ActiveBomb()

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Zombie : Enemy, IEnemy
+public class Zombie : Enemy
 { 
     [Header("Components")]
     [SerializeField] Transform _player;
@@ -13,9 +13,6 @@ public class Zombie : Enemy, IEnemy
     [SerializeField] float _detectionRadius = 2f;
     [SerializeField] float _damage = 25f;
     [SerializeField] float _minDistanceToPlayer = 0.8f;
-
-    [SerializeField] private float _hp;
-    [SerializeField] private GameObject coin;
 
     private void Start()
     {
@@ -32,16 +29,11 @@ public class Zombie : Enemy, IEnemy
         }
     }
 
-    public void LoseHP(float damage)
+    public override Vector3 GetPosition()
     {
-        _hp -= damage;
-
-        if (_hp <= 0)
-        {
-            Instantiate(coin, transform.position, transform.rotation);
-            Destroy(gameObject);
-        }
+        return transform.position;
     }
+
     protected override void SteeringBehaviour()
     {
         if (_player != null)

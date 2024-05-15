@@ -37532,8 +37532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4914d0879934fb14cb231887b8721c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hp: 50
-  coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
+  hp: 50
+  _coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
 --- !u!1 &1186253158
 GameObject:
   m_ObjectHideFlags: 0
@@ -40132,8 +40132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4914d0879934fb14cb231887b8721c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hp: 50
-  coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
+  hp: 50
+  _coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
 --- !u!1 &1435967139
 GameObject:
   m_ObjectHideFlags: 0
@@ -40287,8 +40287,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4914d0879934fb14cb231887b8721c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hp: 50
-  coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
+  hp: 50
+  _coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
 --- !u!1 &1505363024
 GameObject:
   m_ObjectHideFlags: 0
@@ -40825,6 +40825,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f73d3570bfd050a438d27ffec8b934bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 100
+  _coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
   _player: {fileID: 1612753676}
   _playerLayerMask:
     serializedVersion: 2
@@ -40833,8 +40835,6 @@ MonoBehaviour:
   _detectionRadius: 5
   _damage: 10
   _minDistanceToPlayer: 0.8
-  _hp: 100
-  coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
 --- !u!50 &1761143434
 Rigidbody2D:
   serializedVersion: 4
@@ -59912,6 +59912,10 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4541447456854812138, guid: edf6ffae1594e4b4193e22e6d83141cf, type: 3}
+      propertyPath: hp
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541447456854812138, guid: edf6ffae1594e4b4193e22e6d83141cf, type: 3}
       propertyPath: _hp
       value: 100
       objectReference: {fileID: 0}
@@ -59923,6 +59927,10 @@ PrefabInstance:
       propertyPath: _bomb
       value: 
       objectReference: {fileID: 3482510219627398589, guid: a49bdbd262001cd46bbebdb72e89e425, type: 3}
+    - target: {fileID: 4541447456854812138, guid: edf6ffae1594e4b4193e22e6d83141cf, type: 3}
+      propertyPath: _coin
+      value: 
+      objectReference: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
     - target: {fileID: 4541447456854812138, guid: edf6ffae1594e4b4193e22e6d83141cf, type: 3}
       propertyPath: _player
       value: 

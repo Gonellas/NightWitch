@@ -5,4 +5,5 @@ using UnityEngine;
 public interface IEnemy
 {
     void LoseHP(float damage);
+    Vector3 GetPosition();
 }

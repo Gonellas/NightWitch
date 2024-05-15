@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class EnemyDetector : MonoBehaviour
 {
     private Enemy closestEnemy;
