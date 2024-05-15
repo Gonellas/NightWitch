@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject _deleteConfirmationPanel;
     [SerializeField] GameObject _canvasMainMenu;
     [SerializeField] GameObject _loseCanvas;
+    [SerializeField] GameObject _winCanvas;
 
     [Header("Pause Game")]
     private bool isPaused = false;
@@ -68,6 +69,13 @@ public class GameManager : MonoBehaviour
     {
         TogglePause();
         _loseCanvas.SetActive(true);
+    }
+
+    //Win Condition
+    public void Win()
+    {
+        TogglePause();
+        _winCanvas.SetActive(true);
     }
     private void UpdateUI()
     {
@@ -250,8 +258,9 @@ public class GameManager : MonoBehaviour
             if (timer <= countdownEnd)
             {
                 isCounting = false;
+                GiveCurrency(100);
                 SaveGame();
-                SceneManager.LoadScene(0);
+                Win();
             }
         }
     }
