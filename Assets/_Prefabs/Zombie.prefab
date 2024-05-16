@@ -136,7 +136,7 @@ MonoBehaviour:
     m_Bits: 128
   _maxSpeed: 3
   _detectionRadius: 5
-  _damage: 10
+  _damage: 5
   _minDistanceToPlayer: 0.8
 --- !u!61 &7564997426105194382
 BoxCollider2D:

@@ -109,7 +109,7 @@ MonoBehaviour:
   _detectionRadius: 3
   _isFleeing: 0
   _bomb: {fileID: 3482510219627398589, guid: a49bdbd262001cd46bbebdb72e89e425, type: 3}
-  _bombDamage: 100
+  _bombDamage: 25
   _canSpawnBomb: 1
   _bombCooldown: 10
 --- !u!95 &2713606533979879127

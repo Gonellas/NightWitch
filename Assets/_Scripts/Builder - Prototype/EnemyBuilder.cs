@@ -68,7 +68,7 @@ public class EnemyBuilder
 
         e.transform.position = _newPosition;
         //e.transform.localScale = _newScale;
-        e.GetComponent<Renderer>().material.color = _newColor;
+        e.GetComponent<SpriteRenderer>().color = _newColor;
 
         e.hp = _newMaxLife;
 
