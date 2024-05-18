@@ -40,7 +40,5 @@ public class JoystickController : Controller, IDragHandler, IEndDragHandler
         _moveDir = Vector2.zero;
 
         MoveEvent?.Invoke(Vector2.zero);
-
     }
-
 }

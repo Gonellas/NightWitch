@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 [RequireComponent(typeof(CapsuleCollider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -7,20 +6,16 @@ public class Player : MonoBehaviour
 {
     [Header("Player Values")]
     [SerializeField] Controller _controller;
+    [SerializeField] AttackController _attackController;
     [SerializeField] float _speed;
     [SerializeField] LayerMask _floorMask;
+    [SerializeField] FireAttack fireAttack;
 
-    [SerializeField] private Material enemyMaterial;
+    //private Vector2 initialTouch;
+    //private Vector2 finalTouch;
 
-    private Enemy closestEnemy = null;
-
-    public Enemy ClosestEnemy { get; private set; }
-
-    private Vector2 initialTouch;
-    private Vector2 finalTouch;
-
-    [SerializeField] private GameObject trail;
-    private GameObject currentTrail;
+    //[SerializeField] private GameObject trail;
+    //private GameObject currentTrail;
 
     [Header("Animator")]
     Animator _animator;
@@ -28,123 +23,129 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        fireAttack = FindObjectOfType<FireAttack>();
         _animator = GetComponent<Animator>();
         JoystickController.MoveEvent += UpdateAnimations;
+
+        if (_attackController == null)
+        {
+            _attackController = GetComponent<AttackController>();
+            if (_attackController == null)
+            {
+                Debug.LogError("No está el attack controller");
+            }
+        }
     }
 
     void Update()
     {
-        if (!GameManager.instance.IsPaused()) 
+        if (!GameManager.instance.IsPaused())
         {
+            Vector2 swipeDirection = _attackController.SwipeDetection();
             Vector2 movement = _controller.GetMovementInput();
 
-            transform.position += new Vector3(_controller.GetMovementInput().x, _controller.GetMovementInput().y, 0) * _speed * Time.deltaTime;
+            transform.position += new Vector3(movement.x, movement.y, 0) * _speed * Time.deltaTime;
 
             if (movement.magnitude > 0)
             {
                 _lastMovement = movement;
             }
 
-            //FindClosestEnemy();
-            SwipeDetection();
-        }
-    }
-
-
-
-    private void SwipeDetection()
-    {
-        if (!GameManager.instance.IsPaused())
-        {
-            if (Input.touchCount > 0)
+            if (swipeDirection != Vector2.zero)
             {
-
-                Touch touch = Input.GetTouch(Input.touchCount - 1);
-
-                if (touch.position.x >= Screen.width * 0.5f && touch.position.y <= Screen.height * 0.5f)
+                if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
                 {
-                    if (touch.phase == TouchPhase.Began)
+                    if (swipeDirection.x > 0)
                     {
-                        initialTouch = touch.position;
-
-                        if (currentTrail != null)
-                        {
-                            Destroy(currentTrail);
-
-                        }
-                        currentTrail = Instantiate(trail);
-
-                        currentTrail.transform.position = touch.position;
-
+                        Debug.Log("Attack to the right");
                     }
-                    if (touch.phase == TouchPhase.Moved)
+                    else
                     {
-                        currentTrail.transform.position = touch.position;
+                        Debug.Log("Attack to the left");
                     }
-
-                    if (touch.phase == TouchPhase.Ended)
+                }
+                else
+                {
+                    if (swipeDirection.y > 0)
                     {
-                        finalTouch = touch.position;
-
-                        Vector2 swipeDirection = (finalTouch - initialTouch);
-
-                        if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
-                        {
-
-                            if (swipeDirection.x > 0)
-                            {
-                                Debug.Log("Swiped right");
-                            }
-                            else
-                            {
-                                Debug.Log("Swiped left");
-                            }
-                        }
-                        else
-                        {
-                            // Vertical swipe
-                            if (swipeDirection.y > 0)
-                            {
-                                Debug.Log("Swiped up");
-                            }
-                            else
-                            {
-                                Debug.Log("Swiped down");
-                            }
-                        }
-
-                        Destroy(currentTrail);
+                        fireAttack.SwipeDetection();
+                    }
+                    else
+                    {
+                        Debug.Log("Attack downwards");
                     }
                 }
             }
         }
     }
 
-    //public void FindClosestEnemy()
+   
+    //private void SwipeDetection()
     //{
-    //    float distanceToClosestEnemy = Mathf.Infinity;
-    //    Enemy[] allEnemies = GameObject.FindObjectsOfType<Enemy>();
-
-    //    foreach (Enemy currentEnemy in allEnemies)
+    //    if (!GameManager.instance.IsPaused())
     //    {
-    //        float distanceToEnemy = (currentEnemy.transform.position - this.transform.position).sqrMagnitude;
-    //        if (distanceToEnemy < distanceToClosestEnemy)
+    //        if (Input.touchCount > 0)
     //        {
-    //            if (closestEnemy)
+
+    //            Touch touch = Input.GetTouch(Input.touchCount - 1);
+
+    //            if (touch.position.x >= Screen.width * 0.5f && touch.position.y <= Screen.height * 0.5f)
     //            {
-    //                var renderer2 = closestEnemy.GetComponent<MeshRenderer>();
-    //                renderer2.material = enemyMaterial;
+    //                if (touch.phase == TouchPhase.Began)
+    //                {
+    //                    initialTouch = touch.position;
+
+    //                    if (currentTrail != null)
+    //                    {
+    //                        Destroy(currentTrail);
+
+    //                    }
+    //                    currentTrail = Instantiate(trail);
+
+    //                    currentTrail.transform.position = touch.position;
+
+    //                }
+    //                if (touch.phase == TouchPhase.Moved)
+    //                {
+    //                    currentTrail.transform.position = touch.position;
+    //                }
+
+    //                if (touch.phase == TouchPhase.Ended)
+    //                {
+    //                    finalTouch = touch.position;
+
+    //                    Vector2 swipeDirection = (finalTouch - initialTouch);
+
+    //                    if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
+    //                    {
+
+    //                        if (swipeDirection.x > 0)
+    //                        {
+    //                            Debug.Log("Swiped right");
+    //                        }
+    //                        else
+    //                        {
+    //                            Debug.Log("Swiped left");
+    //                        }
+    //                    }
+    //                    else
+    //                    {
+    //                        // Vertical swipe
+    //                        if (swipeDirection.y > 0)
+    //                        {
+    //                            Debug.Log("Swiped up");
+    //                        }
+    //                        else
+    //                        {
+    //                            Debug.Log("Swiped down");
+    //                        }
+    //                    }
+
+    //                    Destroy(currentTrail);
+    //                }
     //            }
-
-    //            distanceToClosestEnemy = distanceToEnemy;
-    //            closestEnemy = currentEnemy;
-
-    //            var renderer = currentEnemy.GetComponent<MeshRenderer>();
-    //            renderer.material = default;
     //        }
     //    }
-
-    //    ClosestEnemy = closestEnemy;
     //}
 
     void UpdateAnimations(Vector2 movement)
