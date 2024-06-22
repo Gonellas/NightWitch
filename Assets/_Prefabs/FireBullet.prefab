@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1678222541997786594}
   - component: {fileID: 6561356249229056425}
   m_Layer: 0
-  m_Name: Bullet Test
+  m_Name: FireBullet
   m_TagString: Spell1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

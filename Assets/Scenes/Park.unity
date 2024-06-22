@@ -41273,20 +41273,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _detectionRadius: 5
   enemyMaterial: {fileID: 2100000, guid: bd54390647df66f45aff263607fff22a, type: 2}
---- !u!114 &1612753684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401641198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2db212e65a912c46a7b14b74f806bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trail: {fileID: 2531753828509377161, guid: d79f01f7174e9ad42ae67e4ce6c38732, type: 3}
-  fireEffect: {fileID: 8406413355655624288, guid: 80971f1adcb60c84190fcbef367bd0aa, type: 3}
 --- !u!1 &1614005292
 GameObject:
   m_ObjectHideFlags: 0
@@ -54018,7 +54004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87c532201418cb949922844cfb30531b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trail: {fileID: 2531753828509377161, guid: d79f01f7174e9ad42ae67e4ce6c38732, type: 3}
 --- !u!1 &1843415936
 GameObject:
   m_ObjectHideFlags: 0
@@ -60507,9 +60492,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2531753828509377161, guid: d79f01f7174e9ad42ae67e4ce6c38732, type: 3}
     - target: {fileID: 4807856562073986382, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: _trail
+      value: 
+      objectReference: {fileID: 2531753828509377161, guid: d79f01f7174e9ad42ae67e4ce6c38732, type: 3}
+    - target: {fileID: 4807856562073986382, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: canvas
       value: 
       objectReference: {fileID: 1034406491}
+    - target: {fileID: 4807856562073986382, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: _iceBullet
+      value: 
+      objectReference: {fileID: 5851252056615257334, guid: b71e7a59c5c02694680060b3a7179536, type: 3}
     - target: {fileID: 4807856562073986382, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: fireAttack
       value: 
@@ -60518,6 +60511,18 @@ PrefabInstance:
       propertyPath: _controller
       value: 
       objectReference: {fileID: 1435967143}
+    - target: {fileID: 4807856562073986382, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: _fireBullet
+      value: 
+      objectReference: {fileID: 8406413355655624288, guid: 80971f1adcb60c84190fcbef367bd0aa, type: 3}
+    - target: {fileID: 4807856562073986382, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: _groundBullet
+      value: 
+      objectReference: {fileID: 1175261905476627180, guid: d38335497ea5fa24db68142ff50833be, type: 3}
+    - target: {fileID: 4807856562073986382, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: _thunderBullet
+      value: 
+      objectReference: {fileID: 8504372774510884004, guid: 16f0fc2aeaa272748b02c7a7f4a9c6bf, type: 3}
     - target: {fileID: 4807856562073986382, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: _attackController
       value: 
@@ -60593,9 +60598,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1656062731857384801, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       insertIndex: 6
       addedObject: {fileID: 1612753677}
-    - targetCorrespondingSourceObject: {fileID: 1656062731857384801, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1612753684}
   m_SourcePrefab: {fileID: 100100000, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
 --- !u!1001 &1793647251025792734
 PrefabInstance:

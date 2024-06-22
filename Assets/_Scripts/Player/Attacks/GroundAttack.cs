@@ -2,17 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundAttack : MonoBehaviour
+public class GroundAttack : Swipe
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject _iceBullet;
+
+    public GroundAttack(Transform transform, GameObject trail, GameObject fireBullet) : base(transform, trail)
     {
-        
+        _iceBullet = fireBullet;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override Vector2 SwipeDetection()
     {
-        
+        Vector2 swipeDirection = base.SwipeDetection();
+        if (swipeDirection != Vector2.zero)
+        {
+            CreateFireEffect();
+        }
+        return swipeDirection;
+    }
+
+    private void CreateFireEffect()
+    {
+        Object.Instantiate(_iceBullet, _transform.position, Quaternion.identity);
+        Debug.Log("Ground attack!");
     }
 }

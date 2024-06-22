@@ -6,16 +6,21 @@ public class Player : MonoBehaviour
 {
     [Header("Player Values")]
     [SerializeField] Controller _controller;
-    [SerializeField] AttackController _attackController;
     [SerializeField] float _speed;
     [SerializeField] LayerMask _floorMask;
-    [SerializeField] FireAttack fireAttack;
 
-    //private Vector2 initialTouch;
-    //private Vector2 finalTouch;
+    private IAttack _swipe;
+    private IAttack _fireAttack;
+    private IAttack _iceAttack;
+    private IAttack _thunderAttack;
+    private IAttack _groundAttack;
 
-    //[SerializeField] private GameObject trail;
-    //private GameObject currentTrail;
+    [SerializeField] private GameObject _trail;
+    [SerializeField] private GameObject _fireBullet;
+    [SerializeField] private GameObject _iceBullet;
+    [SerializeField] private GameObject _thunderBullet;
+    [SerializeField] private GameObject _groundBullet;
+
 
     [Header("Animator")]
     Animator _animator;
@@ -23,25 +28,22 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        fireAttack = FindObjectOfType<FireAttack>();
+        _swipe = new Swipe(transform,_trail);
+        _fireAttack = new FireAttack(transform, _trail, _fireBullet);
+        _iceAttack = new IceAttack(transform, _trail, _iceBullet);
+        _thunderAttack = new ThunderAttack(transform, _trail, _iceBullet);
+        _groundAttack = new GroundAttack(transform, _trail, _iceBullet);
+
         _animator = GetComponent<Animator>();
         JoystickController.MoveEvent += UpdateAnimations;
 
-        if (_attackController == null)
-        {
-            _attackController = GetComponent<AttackController>();
-            if (_attackController == null)
-            {
-                Debug.LogError("No está el attack controller");
-            }
-        }
     }
 
     void Update()
     {
         if (!GameManager.instance.IsPaused())
         {
-            Vector2 swipeDirection = _attackController.SwipeDetection();
+            Vector2 swipeDirection = _swipe.SwipeDetection();
             Vector2 movement = _controller.GetMovementInput();
 
             transform.position += new Vector3(movement.x, movement.y, 0) * _speed * Time.deltaTime;
@@ -57,96 +59,27 @@ public class Player : MonoBehaviour
                 {
                     if (swipeDirection.x > 0)
                     {
-                        Debug.Log("Attack to the right");
+                        _thunderAttack.SwipeDetection();
                     }
                     else
                     {
-                        Debug.Log("Attack to the left");
+                        _groundAttack.SwipeDetection();
                     }
                 }
                 else
                 {
                     if (swipeDirection.y > 0)
                     {
-                        fireAttack.SwipeDetection();
+                        _fireAttack.SwipeDetection();
                     }
                     else
                     {
-                        Debug.Log("Attack downwards");
+                        _iceAttack.SwipeDetection();
                     }
                 }
             }
         }
     }
-
-   
-    //private void SwipeDetection()
-    //{
-    //    if (!GameManager.instance.IsPaused())
-    //    {
-    //        if (Input.touchCount > 0)
-    //        {
-
-    //            Touch touch = Input.GetTouch(Input.touchCount - 1);
-
-    //            if (touch.position.x >= Screen.width * 0.5f && touch.position.y <= Screen.height * 0.5f)
-    //            {
-    //                if (touch.phase == TouchPhase.Began)
-    //                {
-    //                    initialTouch = touch.position;
-
-    //                    if (currentTrail != null)
-    //                    {
-    //                        Destroy(currentTrail);
-
-    //                    }
-    //                    currentTrail = Instantiate(trail);
-
-    //                    currentTrail.transform.position = touch.position;
-
-    //                }
-    //                if (touch.phase == TouchPhase.Moved)
-    //                {
-    //                    currentTrail.transform.position = touch.position;
-    //                }
-
-    //                if (touch.phase == TouchPhase.Ended)
-    //                {
-    //                    finalTouch = touch.position;
-
-    //                    Vector2 swipeDirection = (finalTouch - initialTouch);
-
-    //                    if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
-    //                    {
-
-    //                        if (swipeDirection.x > 0)
-    //                        {
-    //                            Debug.Log("Swiped right");
-    //                        }
-    //                        else
-    //                        {
-    //                            Debug.Log("Swiped left");
-    //                        }
-    //                    }
-    //                    else
-    //                    {
-    //                        // Vertical swipe
-    //                        if (swipeDirection.y > 0)
-    //                        {
-    //                            Debug.Log("Swiped up");
-    //                        }
-    //                        else
-    //                        {
-    //                            Debug.Log("Swiped down");
-    //                        }
-    //                    }
-
-    //                    Destroy(currentTrail);
-    //                }
-    //            }
-    //        }
-    //    }
-    //}
 
     void UpdateAnimations(Vector2 movement)
     {

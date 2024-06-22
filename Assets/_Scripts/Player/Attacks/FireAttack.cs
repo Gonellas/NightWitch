@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class FireAttack : Swipe
 {
-    [SerializeField] private GameObject fireEffect;
+    [SerializeField] private GameObject _fireBullet;
+
+    public FireAttack(Transform transform, GameObject trail, GameObject fireBullet) : base(transform, trail)
+    {
+        _fireBullet = fireBullet;
+    }
 
     public override Vector2 SwipeDetection()
     {
@@ -16,7 +21,8 @@ public class FireAttack : Swipe
 
     private void CreateFireEffect()
     {
-        Instantiate(fireEffect, transform.position, Quaternion.identity);
+        Object.Instantiate(_fireBullet, _transform.position, Quaternion.identity);
         Debug.Log("Fire attack!");
     }
 }
+

@@ -1,16 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Swipe : AttackController
+public class Swipe : MonoBehaviour, IAttack
 {
-    private Vector2 initialTouch;
-    private Vector2 finalTouch;
+    protected Transform _transform;
+    protected GameObject _trail;
 
-    [SerializeField] private GameObject trail;
-    private GameObject currentTrail;
+    private Vector2 _initialTouch;
+    private Vector2 _finalTouch;
+    private GameObject _currentTrail;
 
-    public override Vector2 SwipeDetection()
+    public Swipe(Transform transform, GameObject trail)
+    {
+        _transform = transform;
+        _trail = trail;
+    }
+
+    public virtual Vector2 SwipeDetection()
     {
         if (!GameManager.instance.IsPaused())
         {
@@ -22,26 +27,26 @@ public class Swipe : AttackController
                 {
                     if (touch.phase == TouchPhase.Began)
                     {
-                        initialTouch = touch.position;
+                        _initialTouch = touch.position;
 
-                        if (currentTrail != null)
+                        if (_currentTrail != null)
                         {
-                            Destroy(currentTrail);
+                            Object.Destroy(_currentTrail);
                         }
-                        currentTrail = Instantiate(trail);
-                        currentTrail.transform.position = touch.position;
+                        _currentTrail = Object.Instantiate(_trail);
+                        _currentTrail.transform.position = touch.position;
                     }
                     if (touch.phase == TouchPhase.Moved)
                     {
-                        currentTrail.transform.position = touch.position;
+                        _currentTrail.transform.position = touch.position;
                     }
                     if (touch.phase == TouchPhase.Ended)
                     {
-                        finalTouch = touch.position;
+                        _finalTouch = touch.position;
 
-                        Vector2 swipeDirection = finalTouch - initialTouch;
+                        Vector2 swipeDirection = _finalTouch - _initialTouch;
 
-                        Destroy(currentTrail);
+                        Object.Destroy(_currentTrail);
 
                         return swipeDirection;
                     }
