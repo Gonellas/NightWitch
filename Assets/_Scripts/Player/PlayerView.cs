@@ -60,7 +60,7 @@ public class PlayerView : MonoBehaviour
     {
         Debug.Log("Evento disparado ice attack");
 
-        if (parameters.Length > 0 & parameters[0] is Vector2)
+        if (parameters != null && parameters.Length > 0 & parameters[0] is Vector2)
         {
             Vector2 dir = (Vector2)parameters[0];
             UpdateAttackAnimations(dir, "IceAttack");
@@ -70,7 +70,7 @@ public class PlayerView : MonoBehaviour
     {
         Debug.Log("Evento disparado ground attack");
 
-        if (parameters.Length > 0 & parameters[0] is Vector2)
+        if (parameters != null && parameters.Length > 0 & parameters[0] is Vector2)
         {
             Vector2 dir = (Vector2)parameters[0];
             UpdateAttackAnimations(dir, "GroundAttack");
@@ -80,7 +80,7 @@ public class PlayerView : MonoBehaviour
     {
         Debug.Log("Evento disparado thunder attack");
 
-        if (parameters.Length > 0 & parameters[0] is Vector2)
+        if (parameters != null && parameters.Length > 0 & parameters[0] is Vector2)
         {
             Vector2 dir = (Vector2)parameters[0];
             UpdateAttackAnimations(dir, "ThunderAttack");
@@ -127,14 +127,10 @@ public class PlayerView : MonoBehaviour
             else
             {
                 _animator.SetBool("isAttacking", false);
-                _animator.SetFloat("HAx", _lastMovement.x);
-                _animator.SetFloat("VAx", _lastMovement.y);
+                
             }
 
-            if (dir.magnitude > 0)
-            {
-                _lastMovement = dir;
-            }
+           
         }
            
     }
