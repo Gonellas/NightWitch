@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -6,9 +5,6 @@ public class JoystickController : Controller, IDragHandler, IEndDragHandler
 {
     [SerializeField, Range(75, 150)] float _maxMagnitude = 125f;
     Vector2 _initialPos;
-
-    public delegate void OnMove(Vector2 movement);
-    public static event OnMove MoveEvent;
 
     private void Start()
     {
@@ -30,7 +26,7 @@ public class JoystickController : Controller, IDragHandler, IEndDragHandler
             _moveDir = Vector2.ClampMagnitude(eventData.position - _initialPos, _maxMagnitude);
             transform.position = _initialPos + _moveDir;
 
-            MoveEvent?.Invoke(_moveDir);
+            EventManager.TriggerEvent(EventsType.Movement, _moveDir);
         }
     }
 
@@ -39,6 +35,6 @@ public class JoystickController : Controller, IDragHandler, IEndDragHandler
         transform.position = _initialPos;
         _moveDir = Vector2.zero;
 
-        MoveEvent?.Invoke(Vector2.zero);
+        EventManager.TriggerEvent(EventsType.Movement, Vector2.zero);
     }
 }

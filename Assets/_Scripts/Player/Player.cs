@@ -1,3 +1,4 @@
+using System.IO.Pipes;
 using UnityEngine;
 
 [RequireComponent(typeof(CapsuleCollider2D))]
@@ -15,15 +16,13 @@ public class Player : MonoBehaviour
     private IAttack _thunderAttack;
     private IAttack _groundAttack;
 
+    [Header("Bullets")]
     [SerializeField] private GameObject _trail;
     [SerializeField] private GameObject _fireBullet;
     [SerializeField] private GameObject _iceBullet;
     [SerializeField] private GameObject _thunderBullet;
     [SerializeField] private GameObject _groundBullet;
 
-
-    [Header("Animator")]
-    Animator _animator;
     private Vector2 _lastMovement = Vector2.zero;
 
     private void Start()
@@ -33,10 +32,6 @@ public class Player : MonoBehaviour
         _iceAttack = new IceAttack(transform, _trail, _iceBullet);
         _thunderAttack = new ThunderAttack(transform, _trail, _iceBullet);
         _groundAttack = new GroundAttack(transform, _trail, _iceBullet);
-
-        _animator = GetComponent<Animator>();
-        JoystickController.MoveEvent += UpdateAnimations;
-
     }
 
     void Update()
@@ -55,54 +50,40 @@ public class Player : MonoBehaviour
 
             if (swipeDirection != Vector2.zero)
             {
-                if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
-                {
-                    if (swipeDirection.x > 0)
-                    {
-                        _thunderAttack.SwipeDetection();
-                    }
-                    else
-                    {
-                        _groundAttack.SwipeDetection();
-                    }
-                }
-                else
-                {
-                    if (swipeDirection.y > 0)
-                    {
-                        _fireAttack.SwipeDetection();
-                    }
-                    else
-                    {
-                        _iceAttack.SwipeDetection();
-                    }
-                }
+                HandleAttack(swipeDirection);
             }
         }
     }
 
-    void UpdateAnimations(Vector2 movement)
+    private void HandleAttack(Vector2 swipeDirection)
     {
-        if (!GameManager.instance.IsPaused())
+        if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
         {
-            if (movement.magnitude > 0)
+            if (swipeDirection.x > 0)
             {
-                _animator.SetBool("isWalking", true);
-                _animator.SetFloat("HAx", movement.x);
-                _animator.SetFloat("VAx", movement.y);
+                _thunderAttack.SwipeDetection();
+                EventManager.TriggerEvent(EventsType.Thunder_Attack, _lastMovement);
             }
             else
             {
-                _animator.SetBool("isWalking", false);
-                _animator.SetFloat("HAx", _lastMovement.x);
-                _animator.SetFloat("VAx", _lastMovement.y);
+                _groundAttack.SwipeDetection();
+                EventManager.TriggerEvent(EventsType.Ground_Attack, _lastMovement);
+
             }
         }
-    }
-
-    private void OnDestroy()
-    {
-        JoystickController.MoveEvent -= UpdateAnimations;
+        else
+        {
+            if (swipeDirection.y > 0)
+            {
+                _fireAttack.SwipeDetection();
+                EventManager.TriggerEvent(EventsType.Fire_Attack, _lastMovement);
+            }
+            else
+            {
+                _iceAttack.SwipeDetection();
+                EventManager.TriggerEvent(EventsType.Ice_Attack, _lastMovement);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -111,7 +92,6 @@ public class Player : MonoBehaviour
         {
             if (collision.gameObject.tag == "Coin")
             {
-                // decirle al game manager che sumame 10 punteques
                 GameManager.instance.GiveCurrency(10);
                 Destroy(collision.gameObject);
             }

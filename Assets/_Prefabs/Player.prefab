@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 3120616589769662607}
   - component: {fileID: 8449546529175523540}
   - component: {fileID: 4807856562073986382}
+  - component: {fileID: 5122328928679697172}
   - component: {fileID: 263711569852571671}
   - component: {fileID: 926549721579821747}
   - component: {fileID: 2890990192930538153}
+  - component: {fileID: 8645200024325997576}
   - component: {fileID: 4907134064474866256}
   m_Layer: 0
   m_Name: Player
@@ -135,8 +137,23 @@ MonoBehaviour:
   _floorMask:
     serializedVersion: 2
     m_Bits: 8
-  enemyMaterial: {fileID: 2100000, guid: bd54390647df66f45aff263607fff22a, type: 2}
-  trail: {fileID: 0}
+  _trail: {fileID: 0}
+  _fireBullet: {fileID: 0}
+  _iceBullet: {fileID: 0}
+  _thunderBullet: {fileID: 0}
+  _groundBullet: {fileID: 0}
+--- !u!114 &5122328928679697172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656062731857384801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e40edbf1346b44da9d56bec78dcc11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &263711569852571671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,10 +167,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthBar: {fileID: 0}
+  _animator: {fileID: 0}
   _maxHealth: 100
   currentHealth: 0
   canTakeDamage: 0
-  damage: 25
 --- !u!114 &926549721579821747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,6 +220,20 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0017695427, y: -0.48700798}
   m_Size: {x: 0.6581929, y: 1.0914767}
   m_Direction: 0
+--- !u!114 &8645200024325997576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656062731857384801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3494f8633203e2e4ab5def878c9c0eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _detectionRadius: 5
+  enemyMaterial: {fileID: 2100000, guid: bd54390647df66f45aff263607fff22a, type: 2}
 --- !u!95 &4907134064474866256
 Animator:
   serializedVersion: 5

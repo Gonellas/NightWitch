@@ -72,6 +72,7 @@
     <Compile Include="Assets\_Scripts\Enemies\Zombie.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\_Scripts\Enemies\Fairy.cs" />
+    <Compile Include="Assets\_Scripts\EventManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\_Scripts\Player\Controllers\ButtonController.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\IEnemy.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\_Scripts\Player\Attacks\ThunderAttack.cs" />
+    <Compile Include="Assets\_Scripts\Player\Attacks\Swipe.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
@@ -113,12 +115,12 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\_Scripts\Player\Attacks\GroundAttack.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\_Scripts\Player\Swipe.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\Pool.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\Enemy.cs" />
-    <Compile Include="Assets\_Scripts\Player\IAttack.cs" />
+    <Compile Include="Assets\_Scripts\Player\PlayerView.cs" />
+    <Compile Include="Assets\_Scripts\Player\Attacks\IAttack.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\EnemyFactory.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
