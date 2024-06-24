@@ -9,13 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isAttacking
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
     m_ConditionEvent: IceAttack
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: isWalking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5402063562141267515}
@@ -38,13 +32,7 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isAttacking
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: isWalking
-    m_EventTreshold: 0
+  m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 655420001203538116}
   m_Solo: 0
@@ -772,13 +760,7 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isAttacking
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: isWalking
-    m_EventTreshold: 0
+  m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 655420001203538116}
   m_Solo: 0
@@ -1061,13 +1043,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isAttacking
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
     m_ConditionEvent: GroundAttack
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: isWalking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6824016481193012135}

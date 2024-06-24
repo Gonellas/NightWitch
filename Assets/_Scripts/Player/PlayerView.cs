@@ -88,6 +88,7 @@ public class PlayerView : MonoBehaviour
     }
     #endregion
 
+    #region Animations Update
     private void UpdateAnimations(Vector2 movement)
     {
         if (!GameManager.instance.IsPaused())
@@ -129,9 +130,7 @@ public class PlayerView : MonoBehaviour
                 _animator.SetBool("isAttacking", false);
                 
             }
-
-           
         }
-           
     }
+    #endregion
 }
