@@ -23,7 +23,8 @@ public class IceAttack : Swipe
 
     private void CreateFireEffect()
     {
-        Object.Instantiate(_iceBullet, _transform.position, Quaternion.identity);
+        var bullet = BulletFactory.Instance.GetObjectFromPool();
+        bullet.transform.position = _transform.position;
         Debug.Log("Ice attack!");
     }
 }

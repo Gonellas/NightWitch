@@ -34,17 +34,12 @@ public class EnemyDetector : MonoBehaviour
                     if (closestEnemy)
                     {
                         Debug.Log("Enemigo cerca" + enemy.gameObject);
-                        //var renderer2 = closestEnemy.GetComponent<MeshRenderer>();
-                        //renderer2.material = enemyMaterial;
                     }
 
                     distanceToClosestEnemy = distanceToEnemy;
                     closestEnemy = enemy.GetComponent<Enemy>();
 
                     Debug.Log("Enemigo no cerca" + enemy.gameObject);
-
-                    //var renderer = closestEnemy.GetComponent<MeshRenderer>();
-                    //renderer.material = default;
                 }
             }
         }

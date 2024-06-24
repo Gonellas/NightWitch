@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
 public class FireAttack : Swipe
 {
@@ -23,7 +22,8 @@ public class FireAttack : Swipe
 
     private void CreateFireEffect()
     {
-        Object.Instantiate(_fireBullet, _transform.position, Quaternion.identity);
+        var bullet = BulletFactory.Instance.GetObjectFromPool();
+        bullet.transform.position = _transform.position;
         Debug.Log("Fire attack!");
     }
 }

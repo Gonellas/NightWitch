@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GroundAttack : Swipe
 {
-    [SerializeField] private GameObject _iceBullet;
+    [SerializeField] private GameObject _groundBullet;
 
     public GroundAttack(Transform transform, GameObject trail, GameObject fireBullet) : base(transform, trail)
     {
-        _iceBullet = fireBullet;
+        _groundBullet = fireBullet;
     }
 
     public override Vector2 SwipeDetection()
@@ -23,7 +23,8 @@ public class GroundAttack : Swipe
 
     private void CreateFireEffect()
     {
-        Object.Instantiate(_iceBullet, _transform.position, Quaternion.identity);
+        var bullet = BulletFactory.Instance.GetObjectFromPool();
+        bullet.transform.position = _transform.position;
         Debug.Log("Ground attack!");
     }
 }
