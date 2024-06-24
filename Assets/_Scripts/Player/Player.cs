@@ -1,5 +1,6 @@
-using System.IO.Pipes;
 using UnityEngine;
+using System;
+using System.Collections;
 
 [RequireComponent(typeof(CapsuleCollider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -10,6 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] float _speed;
     [SerializeField] LayerMask _floorMask;
 
+    [Header("Attacks")]
     private IAttack _swipe;
     private IAttack _fireAttack;
     private IAttack _iceAttack;
@@ -32,6 +34,8 @@ public class Player : MonoBehaviour
         _iceAttack = new IceAttack(transform, _trail, _iceBullet);
         _thunderAttack = new ThunderAttack(transform, _trail, _iceBullet);
         _groundAttack = new GroundAttack(transform, _trail, _iceBullet);
+
+        Debug.Log("Player Start: Initialization complete");
     }
 
     void Update()

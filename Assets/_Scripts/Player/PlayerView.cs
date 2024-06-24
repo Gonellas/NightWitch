@@ -17,6 +17,9 @@ public class PlayerView : MonoBehaviour
         EventManager.SubscribeToEvent(EventsType.Ice_Attack, OnIceAttack);
         EventManager.SubscribeToEvent(EventsType.Ground_Attack, OnGroundAttack);
         EventManager.SubscribeToEvent(EventsType.Thunder_Attack, OnThunderAttack);
+
+        //PowerUps
+        
     }
 
     private void OnDestroy()
@@ -28,6 +31,8 @@ public class PlayerView : MonoBehaviour
         EventManager.UnsubscribeToEvent(EventsType.Ground_Attack, OnGroundAttack);
         EventManager.UnsubscribeToEvent(EventsType.Thunder_Attack, OnThunderAttack);
         EventManager.UnsubscribeToEvent(EventsType.Ice_Attack, OnIceAttack);
+
+        //PowerUps
     }
     #region Movement Anim
     private void OnMove(params object[] parameters)

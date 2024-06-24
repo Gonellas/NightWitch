@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] PlayerHealth _playerHealth;
 
     [Header("Save, Load, Delete Game Values")]
-    [SerializeField] int _currency = 0;
+    public int _currency = 0;
     [SerializeField] int _energy = 10;
     [SerializeField] string _playerName = "Default";
     [SerializeField] TextMeshProUGUI[] _textShowingStats;
@@ -25,6 +25,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject _canvasMainMenu;
     [SerializeField] GameObject _loseCanvas;
     [SerializeField] GameObject _winCanvas;
+
+    [Header("PowerUps")]
+    [SerializeField] GameObject _shieldButton;
+    public bool _shieldBought = false;
 
     [Header("Pause Game")]
     private bool isPaused = false;
@@ -39,6 +43,8 @@ public class GameManager : MonoBehaviour
 
         //Save, Load, Delete Game:
         LoadGame();
+
+        CheckShieldBought();
     }
 
     void Update()
@@ -63,7 +69,17 @@ public class GameManager : MonoBehaviour
 
         UpdateUI();
     }
+    private void UpdateUI()
+    {
+        _textShowingStats[0].text = $"Currency: {_currency}";
+        _textShowingStats[1].text = $"Energy: {_energy}";
+        _textShowingStats[2].text = $"Player Name: {_playerName}";
+        _textShowingStats[3].text = $"Time: {(int)timer}";
 
+        _shieldButton.SetActive(_shieldBought);
+    }
+
+    #region Lose/Win Conditions
     //Lose Condition
     public void Lose()
     {
@@ -77,12 +93,22 @@ public class GameManager : MonoBehaviour
         TogglePause();
         _winCanvas.SetActive(true);
     }
-    private void UpdateUI()
+    #endregion
+
+    public void BuyShield()
     {
-        _textShowingStats[0].text = $"Currency: {_currency}";
-        _textShowingStats[1].text = $"Energy: {_energy}";
-        _textShowingStats[2].text = $"Player Name: {_playerName}";
-        _textShowingStats[3].text = $"Time: {(int)timer}";
+        if(_currency >= 50)
+        {
+            TakeCurrency(50);
+            _shieldBought = true;
+            Debug.Log("Escudo comprado");
+            SaveGame();
+        }
+    }
+
+    private void CheckShieldBought()
+    {
+        _shieldBought = PlayerPrefs.GetInt("Data_ShieldBought", 0) == 1;
     }
 
     public void RestartLevel()
@@ -94,6 +120,7 @@ public class GameManager : MonoBehaviour
         isPaused = false;
     }
 
+    #region Game Paused
     public void TogglePause()
     {
         isPaused = !isPaused;
@@ -104,7 +131,9 @@ public class GameManager : MonoBehaviour
     {
         return isPaused;
     }
+    #endregion
 
+    #region Save, Load, Delete Game:
     private void SaveGame()
     {
         PlayerPrefs.SetInt("Data_Currency", _currency);
@@ -113,12 +142,13 @@ public class GameManager : MonoBehaviour
 
         PlayerPrefs.SetString("Data_Name", _playerName);
 
+        PlayerPrefs.SetInt("Data_ShieldBought", _shieldBought ? 1 : 0);
+
         PlayerPrefs.Save();
 
         Debug.Log("Saving Game");
     }
 
-    //Save, Load, Delete Game:
     private void LoadGame()
     {
         // if(PlayerPrefs.HasKey("Data_Currency")) _currency = PlayerPrefs.GetInt("Data_Currency");
@@ -139,20 +169,9 @@ public class GameManager : MonoBehaviour
 
     public void DeleteGame()
     {
-        //PlayerPrefs.DeleteKey("Data_Currency");
-        //PlayerPrefs.DeleteKey("Data_Life");
-        //PlayerPrefs.DeleteKey("Data_Name");
-
         // Agregar confirmacion
         _canvasMainMenu.SetActive(false);
         _deleteConfirmationPanel.SetActive(true);
-
-        /*PlayerPrefs.DeleteAll()*/;   // - Para borrar todas las keys. 
-
-        //Debug.Log("Deleting Game");
-        //LoadGame();
-
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void ConfirmDeleteGame()
@@ -176,19 +195,11 @@ public class GameManager : MonoBehaviour
     {
         if (pause) SaveGame();
     }
-
-    //private void OnApplicationFocus(bool focus) -- Cuando minimizas que se guarde
-    //{
-    //    if (!focus) SaveGame();
-    //}
-
-    private void OnApplicationQuit()
-    {
-        SaveGame();
-    }
+    #endregion
 
 
-    //Get, Take _currency:
+
+    #region Get, Take Currency/Energy:
 
     public void GiveCurrency(int add)
     {
@@ -209,7 +220,9 @@ public class GameManager : MonoBehaviour
     {
         _energy -= take;
     }
+    #endregion
 
+    #region Buttons
     //Play Button
     public void PlayButton()
     {
@@ -247,6 +260,7 @@ public class GameManager : MonoBehaviour
         SaveGame();
         Application.Quit();
     }
+    #endregion
 
     //Park Timer
     private void ParkTimer()
@@ -263,5 +277,9 @@ public class GameManager : MonoBehaviour
                 Win();
             }
         }
+    }
+    private void OnApplicationQuit()
+    {
+        SaveGame();
     }
 }

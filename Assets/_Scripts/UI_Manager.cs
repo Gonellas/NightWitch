@@ -1,21 +1,47 @@
 using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
 
 public class UI_Manager : MonoBehaviour
 {
     [SerializeField] Player player;
+    private IPowerUp _shield;
+    private IPowerUp _powerUp;
+    [SerializeField] private GameObject _shieldPrefab;
+    PlayerHealth _playerHealth;
+    [SerializeField] GameObject _shieldButton;
+
 
     [Header("Paused Game")]
     [SerializeField] GameObject _pauseButtonCanvas;
     [SerializeField] GameObject _pauseMenuCanvas;
 
+    private void Start()
+    {
+        _shield = new Shield(FindObjectOfType<PlayerHealth>(), _shieldPrefab);
+
+        UpdateShieldButton();
+    }
+
     public void FireBall()
     {
         if (!GameManager.instance.IsPaused())
         {
-            var bullet = BulletFactory.Instance.GetObjectFromPool();
-            bullet.transform.position = player.transform.position;
+            SetPowerUp(_shield);
         }
+    }
+
+    public void BuyShield()
+    {
+        GameManager.instance.BuyShield();
+        UpdateShieldButton(); // Actualiza el estado del botón del shield después de la compra
+    }
+
+    private void UpdateShieldButton()
+    {
+        if (GameManager.instance._shieldBought)
+        _shieldButton.SetActive(true); // Ajusta la lógica según sea necesario
+        else _shieldButton.SetActive(false);
     }
 
     public void PauseMenu()
@@ -36,5 +62,34 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.instance.MainMenuButton();
     }
-}
 
+    public void SetPowerUp(IPowerUp powerUp)
+    {
+        if (_powerUp != null)
+        {
+            _powerUp.DeactivatePowerUp();
+            StopCoroutine(ActivateShieldForTime());
+        }
+
+        // Asigna el nuevo PowerUp actual y lo activa si es diferente de null
+        _powerUp = powerUp;
+        if (_powerUp != null)
+        {
+            _powerUp.ApplyPowerUp();
+            StartCoroutine(ActivateShieldForTime());
+        }
+    }
+
+    private IEnumerator ActivateShieldForTime()
+    {
+        if (_shieldPrefab != null)
+        {
+            _shieldPrefab.SetActive(true);
+            Debug.Log("Shield: Shield activated");
+        }
+
+        yield return new WaitForSeconds(5f);
+
+        _shield.DeactivatePowerUp();
+    }
+}

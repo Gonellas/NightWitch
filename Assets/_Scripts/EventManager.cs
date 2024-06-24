@@ -9,7 +9,9 @@ public enum EventsType
     Ground_Attack,
     Ice_Attack,
     Fire_Attack,
-    Thunder_Attack
+    Thunder_Attack,
+    Shield_Activated,
+    Shield_Deactivated,
 }
 
 public class EventManager 
