@@ -5,7 +5,7 @@ public class Shield : PowerUp
     private PlayerHealth _playerHealth;
     [SerializeField] private GameObject _shieldPrefab;
     private float[] _durations = { 3f, 5f, 8f };
-    private Color[] _colors = {Color.blue, Color.green, Color.red};
+    private Color[] _colors = {Color.white, Color.yellow, Color.red};
 
     public Shield(GameObject shieldPrefab, PlayerHealth playerHealth) : base(0, 0, shieldPrefab)
     {
