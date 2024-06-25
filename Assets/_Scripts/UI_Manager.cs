@@ -73,8 +73,8 @@ public class UI_Manager : MonoBehaviour
             StopCoroutine(ActivateShieldForTime());
         }
 
-        // Asigna el nuevo PowerUp actual y lo activa si es diferente de null
         _powerUp = powerUp;
+
         if (_powerUp != null)
         {
             _powerUp.ApplyPowerUp();

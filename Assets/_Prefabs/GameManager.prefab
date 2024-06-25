@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3917870399992916229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3011922866752083109}
+  - component: {fileID: 78395010683914697}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3011922866752083109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3917870399992916229}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 876.39276, y: 489.20352, z: -16.067469}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &78395010683914697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3917870399992916229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db6038bda177384a8881d12061244b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownEnd: 0
+  timer: 0
+  isCounting: 1
+  player: {fileID: 0}
+  _playerHealth: {fileID: 0}
+  _currency: 0
+  _energy: 10
+  _playerName: Default
+  _textShowingStats:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _deleteConfirmationPanel: {fileID: 0}
+  _canvasMainMenu: {fileID: 0}
+  _loseCanvas: {fileID: 4446307252358388927, guid: 508ec4ae1bdcd524c8c04ccb2cdccc18, type: 3}
+  _winCanvas: {fileID: 8916749379299342229, guid: 36439a2a9a5ed4b48a9aae320cb3f9ae, type: 3}
+  _storeShieldButton: {fileID: 2720658106501139828, guid: efc05e0e3eef86443a6824434efe8b15, type: 3}
+  _shieldButton: {fileID: 5409455383471333868, guid: 1cda810934c3cfc4b803984cdb852007, type: 3}
+  _shieldBought: 0
+  shieldLevel: 0
+  _interval: 30
+  _timer: 0
