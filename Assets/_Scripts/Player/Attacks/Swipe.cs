@@ -31,9 +31,9 @@ public class Swipe : MonoBehaviour, IAttack
 
                         if (_currentTrail != null)
                         {
-                            Object.Destroy(_currentTrail);
+                            Destroy(_currentTrail);
                         }
-                        _currentTrail = Object.Instantiate(_trail);
+                        _currentTrail = Instantiate(_trail);
                         _currentTrail.transform.position = touch.position;
                     }
                     if (touch.phase == TouchPhase.Moved)
@@ -46,7 +46,7 @@ public class Swipe : MonoBehaviour, IAttack
 
                         Vector2 swipeDirection = _finalTouch - _initialTouch;
 
-                        Object.Destroy(_currentTrail);
+                        Destroy(_currentTrail);
 
                         return swipeDirection;
                     }

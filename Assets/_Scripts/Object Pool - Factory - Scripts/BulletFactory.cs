@@ -20,11 +20,6 @@ public class BulletFactory : MonoBehaviour
         Instance = this;
         
         _bulletPool = new Pool<Bullet>(CreateObject, Bullet.TurnOn, Bullet.TurnOff, initialAmount);
-        
-        // _bulletPool = new Pool<Bullet>(()=>Instantiate(_bulletPrefab), 
-        //                                 (bullet) => bullet.gameObject.SetActive(true), 
-        //                                 (bullet) => bullet.gameObject.SetActive(false), 
-        //                                 initialAmount);
     }
 
     Bullet CreateObject()

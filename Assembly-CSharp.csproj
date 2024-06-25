@@ -58,8 +58,6 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Scripts\UI_Manager.cs" />
-    <Compile Include="Assets\_Scripts\GameManager.cs" />
     <Compile Include="Assets\_Scripts\PatternRecognition.cs" />
     <Compile Include="Assets\_Scripts\Builder - Prototype\Spawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
@@ -72,7 +70,6 @@
     <Compile Include="Assets\_Scripts\Enemies\Zombie.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\_Scripts\Enemies\Fairy.cs" />
-    <Compile Include="Assets\_Scripts\EventManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\_Scripts\Player\Controllers\ButtonController.cs" />
@@ -92,6 +89,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\_Scripts\Player\PowerUps\IPowerUp.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\_Scripts\Managers\UI_Manager.cs" />
     <Compile Include="Assets\_Scripts\Enemies\TestEnemy.cs" />
     <Compile Include="Assets\_Scripts\Player\Attacks\FireAttack.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
@@ -104,29 +102,31 @@
     <Compile Include="Assets\_Scripts\Player\IDamageable.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\_Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\_Scripts\Audio\MusicSlider.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerHealth.cs" />
+    <Compile Include="Assets\_Scripts\Managers\AudioManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\Bullet.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\_Scripts\Player\Controllers\JoystickController.cs" />
+    <Compile Include="Assets\_Scripts\Audio\SfxSlider.cs" />
     <Compile Include="Assets\_Scripts\Player\EnemyDetector.cs" />
     <Compile Include="Assets\_Scripts\Player\PowerUps\PowerUp.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\_Scripts\Player\Attacks\IceAttack.cs" />
-    <Compile Include="Assets\_Scripts\MusicSlider.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\_Scripts\Player\Attacks\GroundAttack.cs" />
-    <Compile Include="Assets\_Scripts\AudioManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\_Scripts\SfxSlider.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\Pool.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\Enemy.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerView.cs" />
     <Compile Include="Assets\_Scripts\Player\Attacks\IAttack.cs" />
+    <Compile Include="Assets\_Scripts\Managers\EventManager.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\EnemyFactory.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
