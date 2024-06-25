@@ -8,7 +8,6 @@ public class UI_Manager : MonoBehaviour
     private IPowerUp _shield;
     private IPowerUp _powerUp;
     [SerializeField] private GameObject _shieldPrefab;
-    PlayerHealth _playerHealth;
     [SerializeField] GameObject _shieldButton;
 
 
@@ -21,9 +20,10 @@ public class UI_Manager : MonoBehaviour
         _shield = new Shield(FindObjectOfType<PlayerHealth>(), _shieldPrefab);
 
         UpdateShieldButton();
+
     }
 
-    public void FireBall()
+    public void Shield()
     {
         if (!GameManager.instance.IsPaused())
         {
@@ -34,13 +34,15 @@ public class UI_Manager : MonoBehaviour
     public void BuyShield()
     {
         GameManager.instance.BuyShield();
-        UpdateShieldButton(); // Actualiza el estado del botón del shield después de la compra
+        UpdateShieldButton(); 
     }
 
     private void UpdateShieldButton()
     {
         if (GameManager.instance._shieldBought)
-        _shieldButton.SetActive(true); // Ajusta la lógica según sea necesario
+        {
+            _shieldButton.SetActive(true);
+        }
         else _shieldButton.SetActive(false);
     }
 

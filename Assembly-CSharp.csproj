@@ -116,11 +116,13 @@
     <Compile Include="Assets\_Scripts\Player\Attacks\IceAttack.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\_Scripts\Player\Attacks\GroundAttack.cs" />
+    <Compile Include="Assets\_Scripts\AudioManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\Pool.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\Enemy.cs" />
+    <Compile Include="Assets\_Scripts\VolumeSlider.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerView.cs" />
     <Compile Include="Assets\_Scripts\Player\Attacks\IAttack.cs" />
     <Compile Include="Assets\_Scripts\Object Pool - Factory - Scripts\EnemyFactory.cs" />

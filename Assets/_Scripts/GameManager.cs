@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,10 +26,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject _canvasMainMenu;
     [SerializeField] GameObject _loseCanvas;
     [SerializeField] GameObject _winCanvas;
+    [SerializeField] Button _storeShieldButton;
 
     [Header("PowerUps")]
     [SerializeField] GameObject _shieldButton;
     public bool _shieldBought = false;
+    public int shieldLevel = 0;
+    private readonly int[] _shieldCosts = { 50, 100, 150 };
 
     [Header("Pause Game")]
     private bool isPaused = false;
@@ -39,7 +43,15 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
         //Save, Load, Delete Game:
         LoadGame();
@@ -68,6 +80,7 @@ public class GameManager : MonoBehaviour
         }
 
         UpdateUI();
+
     }
     private void UpdateUI()
     {
@@ -76,7 +89,9 @@ public class GameManager : MonoBehaviour
         _textShowingStats[2].text = $"Player Name: {_playerName}";
         _textShowingStats[3].text = $"Time: {(int)timer}";
 
-        _shieldButton.SetActive(_shieldBought);
+        if(shieldLevel > 0) _shieldButton.SetActive(_shieldBought);
+        //ButtonDeactivated(_storeShieldButton, shieldLevel, _shieldCosts);
+
     }
 
     #region Lose/Win Conditions
@@ -95,21 +110,30 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+    #region Shield
     public void BuyShield()
     {
-        if(_currency >= 50)
+        if(shieldLevel < _shieldCosts.Length && _currency >= _shieldCosts[shieldLevel]) 
         {
-            TakeCurrency(50);
+            TakeCurrency(_shieldCosts[shieldLevel]);
+            shieldLevel++;
             _shieldBought = true;
-            Debug.Log("Escudo comprado");
+            Debug.Log($"Escudo nivel {shieldLevel}");
             SaveGame();
         }
     }
 
     private void CheckShieldBought()
     {
-        _shieldBought = PlayerPrefs.GetInt("Data_ShieldBought", 0) == 1;
+        shieldLevel = PlayerPrefs.GetInt("Data_ShieldBought", 0);
     }
+
+    /*arreglar, no se desactiva*/
+    //private void ButtonDeactivated(Button button, int powerUpLevel, int[] powerUpCosts)
+    //{
+    //    button.interactable = powerUpLevel < powerUpCosts.Length;
+    //}
+    #endregion
 
     public void RestartLevel()
     {
@@ -137,35 +161,30 @@ public class GameManager : MonoBehaviour
     private void SaveGame()
     {
         PlayerPrefs.SetInt("Data_Currency", _currency);
-
         PlayerPrefs.SetInt("Data_Energy", _energy);
-
         PlayerPrefs.SetString("Data_Name", _playerName);
-
         PlayerPrefs.SetInt("Data_ShieldBought", _shieldBought ? 1 : 0);
-
+        PlayerPrefs.SetInt("Data_ShieldLevel", _shieldBought ? shieldLevel : 0);
         PlayerPrefs.Save();
 
         Debug.Log("Saving Game");
+        Debug.Log($"Shield Level: {PlayerPrefs.GetInt("Data_ShieldLevel", shieldLevel)}");
     }
 
     private void LoadGame()
     {
-        // if(PlayerPrefs.HasKey("Data_Currency")) _currency = PlayerPrefs.GetInt("Data_Currency");
         _currency = PlayerPrefs.GetInt("Data_Currency", 0);
-
-
-
-        //  if (PlayerPrefs.HasKey("Data_Life")) _life = PlayerPrefs.GetFloat("Data_Life");
         _energy = PlayerPrefs.GetInt("Data_Energy", 10);
-
-
-
-        //if (PlayerPrefs.HasKey("Data_Name")) _playerName = PlayerPrefs.GetString("Data_Name");
         _playerName = PlayerPrefs.GetString("Data_Name", "Default");
+        _shieldBought = PlayerPrefs.GetInt("Data_ShieldBought", 0) == 1;
+        //no me carga el nivel
+        shieldLevel = PlayerPrefs.GetInt("Data_ShieldLevel", 0);
+
 
         Debug.Log("Loading Game");
+        Debug.Log($"Shield Level: {shieldLevel}");
     }
+
 
     public void DeleteGame()
     {
@@ -196,8 +215,6 @@ public class GameManager : MonoBehaviour
         if (pause) SaveGame();
     }
     #endregion
-
-
 
     #region Get, Take Currency/Energy:
 
@@ -239,6 +256,13 @@ public class GameManager : MonoBehaviour
     }
 
     //Options Button
+    public void OptionsButton()
+    {
+        SaveGame();
+        SceneManager.LoadScene(4);
+    }
+
+    //Tutorial Button
     public void TutorialButton()
     {
         SaveGame();

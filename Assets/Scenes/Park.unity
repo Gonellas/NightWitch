@@ -41034,6 +41034,17 @@ Transform:
   - {fileID: 1274898767}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1699005832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8694846860668071122, guid: 1cda810934c3cfc4b803984cdb852007, type: 3}
+  m_PrefabInstance: {fileID: 2189143905057379251}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1775014111
 GameObject:
   m_ObjectHideFlags: 0
@@ -59702,8 +59713,10 @@ MonoBehaviour:
   _canvasMainMenu: {fileID: 0}
   _loseCanvas: {fileID: 1924674324}
   _winCanvas: {fileID: 619633577}
+  _storeShieldButton: {fileID: 1699005832}
   _shieldButton: {fileID: 2049390081}
   _shieldBought: 0
+  shieldLevel: 0
   _interval: 60
   _timer: 0
 --- !u!4 &2072003354
@@ -60363,6 +60376,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 585117708}
+    - target: {fileID: 8694846860668071122, guid: 1cda810934c3cfc4b803984cdb852007, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Shield
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
