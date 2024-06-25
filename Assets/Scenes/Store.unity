@@ -362,7 +362,7 @@ MonoBehaviour:
   isCounting: 1
   player: {fileID: 0}
   _playerHealth: {fileID: 0}
-  _currency: 0
+  _currency: 500
   _energy: 10
   _playerName: Default
   _textShowingStats:
@@ -1622,7 +1622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &6852074803965311206
 MonoBehaviour:
   m_ObjectHideFlags: 0

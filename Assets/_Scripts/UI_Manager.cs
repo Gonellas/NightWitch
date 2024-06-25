@@ -5,47 +5,105 @@ using UnityEngine.UI;
 public class UI_Manager : MonoBehaviour
 {
     [SerializeField] Player player;
-    private IPowerUp _shield;
-    private IPowerUp _powerUp;
+    private PowerUp _powerUp;
+    private Shield _shield;
     [SerializeField] private GameObject _shieldPrefab;
-    [SerializeField] GameObject _shieldButton;
+    [SerializeField] private Button _shieldButton;
+    [SerializeField] private float _cooldown = 5f;
+    [SerializeField] private float _activeShield = 3f;
 
+    [SerializeField] private bool _cooldownActive = false;
 
     [Header("Paused Game")]
     [SerializeField] GameObject _pauseButtonCanvas;
     [SerializeField] GameObject _pauseMenuCanvas;
 
+    public static UI_Manager instance;
+
+    public static UI_Manager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<UI_Manager>();
+
+                if (instance == null)
+                {
+                    instance = new GameObject("UI_MANAGER", typeof(UI_Manager)).GetComponent<UI_Manager>();
+                }
+            }
+
+            return instance;
+        }
+
+        private set
+        {
+            instance = value;
+        }
+    }
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Start()
     {
-        _shield = new Shield(FindObjectOfType<PlayerHealth>(), _shieldPrefab);
+        _powerUp = FindObjectOfType<PowerUp>();
+        _shield = new Shield(_shieldPrefab, FindObjectOfType<PlayerHealth>());
 
-        UpdateShieldButton();
-
+        UpdatePowerUpButtons();
     }
-
-    public void Shield()
+    #region Active PowerUp
+    public void ActivateShield()
     {
-        if (!GameManager.instance.IsPaused())
+        if (!GameManager.instance.IsPaused() && !_cooldownActive)
         {
-            SetPowerUp(_shield);
+            _shield.UpdateShieldProperties(GameManager.instance.shieldLevel);
+            StartCoroutine(ActivatePowerUp(_shield, _shield._durationPowerUp));
+        }
+    }
+    #endregion
+
+    #region Set PowerUp
+
+    private void UpdatePowerUpButtons()
+    {
+        if (GameManager.instance.PowerUpBought(PowerUpType.Shield)) 
+        { 
+            _shieldButton.gameObject.SetActive(true);
+        }
+
+        if (GameManager.instance.PowerUpBought(PowerUpType.Speed))
+        {
+
         }
     }
 
-    public void BuyShield()
+    private IEnumerator ActivatePowerUp(IPowerUp powerUp, float duration)
     {
-        GameManager.instance.BuyShield();
-        UpdateShieldButton(); 
-    }
+        powerUp.ActivePowerUp();
+        yield return new WaitForSeconds(duration);
+        powerUp.DeactivatePowerUp();
 
-    private void UpdateShieldButton()
-    {
-        if (GameManager.instance._shieldBought)
-        {
-            _shieldButton.SetActive(true);
-        }
-        else _shieldButton.SetActive(false);
+        _cooldownActive = true;
+        UpdatePowerUpButtons();
+        yield return new WaitForSeconds(_cooldown);
+        _cooldownActive = false;
+        UpdatePowerUpButtons();
     }
+    #endregion
 
+    #region Buttons
     public void PauseMenu()
     {
         GameManager.instance.TogglePause();
@@ -64,34 +122,5 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.instance.MainMenuButton();
     }
-
-    public void SetPowerUp(IPowerUp powerUp)
-    {
-        if (_powerUp != null)
-        {
-            _powerUp.DeactivatePowerUp();
-            StopCoroutine(ActivateShieldForTime());
-        }
-
-        _powerUp = powerUp;
-
-        if (_powerUp != null)
-        {
-            _powerUp.ApplyPowerUp();
-            StartCoroutine(ActivateShieldForTime());
-        }
-    }
-
-    private IEnumerator ActivateShieldForTime()
-    {
-        if (_shieldPrefab != null)
-        {
-            _shieldPrefab.SetActive(true);
-            Debug.Log("Shield: Shield activated");
-        }
-
-        yield return new WaitForSeconds(5f);
-
-        _shield.DeactivatePowerUp();
-    }
+    #endregion
 }

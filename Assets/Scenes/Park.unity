@@ -34384,8 +34384,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 127899779}
+  _shield: {fileID: 0}
   _shieldPrefab: {fileID: 1873788344}
-  _shieldButton: {fileID: 2049390081}
+  _shieldButton: {fileID: 1699005832}
+  _cooldown: 5
+  _activeShield: 3
+  _cooldownActive: 0
   _pauseButtonCanvas: {fileID: 231032217}
   _pauseMenuCanvas: {fileID: 879890828}
 --- !u!4 &585117709
@@ -57922,7 +57926,7 @@ PrefabInstance:
       objectReference: {fileID: 585117708}
     - target: {fileID: 8694846860668071122, guid: 1cda810934c3cfc4b803984cdb852007, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Shield
+      value: ActivateShield
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58024,6 +58028,10 @@ PrefabInstance:
     - target: {fileID: 8916749379299342229, guid: 36439a2a9a5ed4b48a9aae320cb3f9ae, type: 3}
       propertyPath: m_Name
       value: Canvas_Win
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916749379299342229, guid: 36439a2a9a5ed4b48a9aae320cb3f9ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

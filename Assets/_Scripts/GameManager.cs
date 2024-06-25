@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -34,6 +35,8 @@ public class GameManager : MonoBehaviour
     public int shieldLevel = 0;
     private readonly int[] _shieldCosts = { 50, 100, 150 };
 
+    private List<PowerUpType> _boughtPowerUp = new List<PowerUpType>();
+
     [Header("Pause Game")]
     private bool isPaused = false;
 
@@ -57,8 +60,6 @@ public class GameManager : MonoBehaviour
 
         //Save, Load, Delete Game:
         LoadGame();
-
-        CheckShieldBought();
     }
 
     void Update()
@@ -112,23 +113,33 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+    #region PowerUps
+    public bool PowerUpBought(PowerUpType powerUpType)
+    {
+        return _boughtPowerUp.Contains(powerUpType);
+    }
+
+    public void BuyPowerUp(PowerUpType powerUpType)
+    {
+        _boughtPowerUp.Add(powerUpType);
+    }
+
     #region Shield
     public void BuyShield()
     {
         if(shieldLevel < _shieldCosts.Length && _currency >= _shieldCosts[shieldLevel]) 
         {
+
             TakeCurrency(_shieldCosts[shieldLevel]);
             shieldLevel++;
             _shieldBought = true;
-            Debug.Log($"Escudo nivel {shieldLevel}");
+            BuyPowerUp(PowerUpType.Shield);
+            //UI_Manager.instance._shield.UpdateShieldProperties(shieldLevel);
+            Debug.Log($"Escudo nivel {shieldLevel} comprado");
             SaveGame();
         }
     }
-
-    private void CheckShieldBought()
-    {
-        shieldLevel = PlayerPrefs.GetInt("Data_ShieldBought", 0);
-    }
+    #endregion
 
     /*arreglar, no se desactiva*/
     //private void ButtonDeactivated(Button button, int powerUpLevel, int[] powerUpCosts)
@@ -184,7 +195,7 @@ public class GameManager : MonoBehaviour
 
 
         Debug.Log("Loading Game");
-        Debug.Log($"Shield Level: {shieldLevel}");
+        Debug.Log($"Shield Level loaded: {shieldLevel}");
     }
 
 
