@@ -181,7 +181,6 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.Save();
 
         Debug.Log("Saving Game");
-        Debug.Log($"Shield Level: {PlayerPrefs.GetInt("Data_ShieldLevel", shieldLevel)}");
     }
 
     private void LoadGame()
@@ -195,7 +194,6 @@ public class GameManager : MonoBehaviour
 
 
         Debug.Log("Loading Game");
-        Debug.Log($"Shield Level loaded: {shieldLevel}");
     }
 
 

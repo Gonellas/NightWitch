@@ -1,10 +1,10 @@
 using UnityEngine;
+
 public class EnemyDetector : MonoBehaviour
 {
     private Enemy closestEnemy;
     public Enemy ClosestEnemy { get; private set; }
     [SerializeField] float _detectionRadius = 10f;
-    [SerializeField] private Material enemyMaterial;
 
     private void Update()
     {
@@ -28,22 +28,23 @@ public class EnemyDetector : MonoBehaviour
                 Vector2 enemyPosition = enemy.transform.position;
                 float distanceToEnemy = (enemyPosition - (Vector2)transform.position).sqrMagnitude;
 
-                if(distanceToEnemy < distanceToClosestEnemy)
+                if (distanceToEnemy < distanceToClosestEnemy)
                 {
-                    Debug.Log("enemy en el radio");
-                    if (closestEnemy)
-                    {
-                        Debug.Log("Enemigo cerca" + enemy.gameObject);
-                    }
-
                     distanceToClosestEnemy = distanceToEnemy;
                     closestEnemy = enemy.GetComponent<Enemy>();
-
-                    Debug.Log("Enemigo no cerca" + enemy.gameObject);
                 }
             }
         }
-
         ClosestEnemy = closestEnemy;
+    }
+
+    public Vector2 GetDirectionToClosestEnemy(Vector2 playerPosition)
+    {
+        if (ClosestEnemy != null)
+        {
+            Vector2 enemyPosition = ClosestEnemy.transform.position;
+            return (enemyPosition - playerPosition).normalized;
+        }
+        return Vector2.zero;
     }
 }

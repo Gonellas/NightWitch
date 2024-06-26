@@ -1,7 +1,4 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public enum EventsType
 {
@@ -10,8 +7,8 @@ public enum EventsType
     Ice_Attack,
     Fire_Attack,
     Thunder_Attack,
-    Shield_Activated,
-    Shield_Deactivated,
+    EnemyDetected,
+    NoEnemiesDetected
 }
 
 public class EventManager 

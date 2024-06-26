@@ -60,7 +60,6 @@ public class Bullet : MonoBehaviour
         {
             _targetEnemy.LoseHP(_damage);
             BulletFactory.Instance.ReturnObjectToPool(this);
-
         }
         else if (!other.gameObject.CompareTag("Player")) 
         {

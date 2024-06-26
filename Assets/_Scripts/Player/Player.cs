@@ -1,6 +1,4 @@
 using UnityEngine;
-using System;
-using System.Collections;
 
 [RequireComponent(typeof(CapsuleCollider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -26,16 +24,17 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject _groundBullet;
 
     private Vector2 _lastMovement = Vector2.zero;
+    private EnemyDetector _enemyDetector;
 
     private void Start()
     {
-        _swipe = new Swipe(transform,_trail);
+        _swipe = new Swipe(transform, _trail);
         _fireAttack = new FireAttack(transform, _trail, _fireBullet);
         _iceAttack = new IceAttack(transform, _trail, _iceBullet);
-        _thunderAttack = new ThunderAttack(transform, _trail, _iceBullet);
-        _groundAttack = new GroundAttack(transform, _trail, _iceBullet);
+        _thunderAttack = new ThunderAttack(transform, _trail, _thunderBullet);
+        _groundAttack = new GroundAttack(transform, _trail, _groundBullet);
 
-        Debug.Log("Player Start: Initialization complete");
+        _enemyDetector = GetComponent<EnemyDetector>();
     }
 
     void Update()
@@ -61,31 +60,41 @@ public class Player : MonoBehaviour
 
     private void HandleAttack(Vector2 swipeDirection)
     {
-        if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
+        Vector2 attackDirection = swipeDirection;
+
+        // Use direction towards closest enemy if an enemy is detected
+        if (_enemyDetector.ClosestEnemy != null)
         {
-            if (swipeDirection.x > 0)
+            Vector2 playerPosition = transform.position;
+            Vector2 enemyDirection = _enemyDetector.GetDirectionToClosestEnemy(playerPosition);
+            attackDirection = enemyDirection.normalized;
+        }
+
+        // Perform attack based on direction
+        if (Mathf.Abs(attackDirection.x) > Mathf.Abs(attackDirection.y))
+        {
+            if (attackDirection.x > 0)
             {
                 _thunderAttack.SwipeDetection();
-                EventManager.TriggerEvent(EventsType.Thunder_Attack, _lastMovement);
+                EventManager.TriggerEvent(EventsType.Thunder_Attack, attackDirection);
             }
             else
             {
                 _groundAttack.SwipeDetection();
-                EventManager.TriggerEvent(EventsType.Ground_Attack, _lastMovement);
-
+                EventManager.TriggerEvent(EventsType.Ground_Attack, attackDirection);
             }
         }
         else
         {
-            if (swipeDirection.y > 0)
+            if (attackDirection.y > 0)
             {
                 _fireAttack.SwipeDetection();
-                EventManager.TriggerEvent(EventsType.Fire_Attack, _lastMovement);
+                EventManager.TriggerEvent(EventsType.Fire_Attack, attackDirection);
             }
             else
             {
                 _iceAttack.SwipeDetection();
-                EventManager.TriggerEvent(EventsType.Ice_Attack, _lastMovement);
+                EventManager.TriggerEvent(EventsType.Ice_Attack, attackDirection);
             }
         }
     }
@@ -102,3 +111,4 @@ public class Player : MonoBehaviour
         }
     }
 }
+

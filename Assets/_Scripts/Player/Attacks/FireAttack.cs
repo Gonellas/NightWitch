@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class FireAttack : Swipe
@@ -16,6 +15,7 @@ public class FireAttack : Swipe
         if (swipeDirection != Vector2.zero)
         {
             CreateFireEffect();
+            EventManager.TriggerEvent(EventsType.Fire_Attack, swipeDirection);
         }
         return swipeDirection;
     }
@@ -27,4 +27,3 @@ public class FireAttack : Swipe
         Debug.Log("Fire attack!");
     }
 }
-
