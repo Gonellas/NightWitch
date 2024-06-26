@@ -128,4 +128,13 @@ public class PlayerView : MonoBehaviour
         }
     }
     #endregion
+
+    public void WalkingR()
+    {
+        AudioManager.Instance.PlaySFX(SoundType.Player_MovementR, 1f);
+    }
+    public void WalkingL()
+    {
+        AudioManager.Instance.PlaySFX(SoundType.Player_MovementL, 1f);
+    }
 }

@@ -5,22 +5,26 @@ public enum SoundType
 {
     MainTheme_1,
     MainTheme_2,
-    Fire_Attack,
-    Ice_Attack,
-    GroundAttack,
-    ThunderAttack,
-    Shield,
-    Player_Movement,
-    Player_Damaged,
-    Player_Die,
-    Zombie_Movement,
-    Zombie_Damaged,
-    Zombie_Die,
-    Zombie_Attack,
-    Fairy_Movement,
-    Fairy_Damaged,
-    Fairy_Die,
-    Fairy_Bomb,
+    Player_MovementR,
+    Player_MovementL,
+    Zombie_MovementR,
+    Zombie_MovementL,
+    //Fire_Attack,
+    //Ice_Attack,
+    //GroundAttack,
+    //ThunderAttack,
+    //Shield,
+    //Player_Movement,
+    //Player_Damaged,
+    //Player_Die,
+    //Zombie_Movement,
+    //Zombie_Damaged,
+    //Zombie_Die,
+    //Zombie_Attack,
+    //Fairy_Movement,
+    //Fairy_Damaged,
+    //Fairy_Die,
+    //Fairy_Bomb,
     Click
 }
 
@@ -125,9 +129,9 @@ public class AudioManager : MonoBehaviour
     public void PlaySFX(SoundType soundType, float volume)
     {
         AudioClip clip = _soundList[(int)soundType];
+
         if (clip != null)
         {
-            Debug.Log($"Playing SFX: {soundType} with volume: {volume * _sfxVolume}");
             sfxSource.PlayOneShot(clip, volume * _sfxVolume);
         }
         else

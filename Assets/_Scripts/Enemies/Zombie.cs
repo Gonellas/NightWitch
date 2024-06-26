@@ -97,6 +97,14 @@ public class Zombie : Enemy
             _animator.SetFloat("VAx", movement.y);
         }
     }
+    public void WalkingR()
+    {
+        AudioManager.Instance.PlaySFX(SoundType.Zombie_MovementR, 1f);
+    }
+    public void WalkingL()
+    {
+        AudioManager.Instance.PlaySFX(SoundType.Zombie_MovementL, 1f);
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
