@@ -93,7 +93,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        PlayMusic(SoundType.MainTheme_1, 10);
+        PlayMusic(SoundType.MainTheme_1, 1);
     }
 
     public float GetMusicVolume()
@@ -122,8 +122,9 @@ public class AudioManager : MonoBehaviour
     public void PlayMusic(SoundType soundType, float volume) 
     {
         AudioSource activeSource = _firstAudioSourceIsPlaying ? audioSource : audioSource2;
-
-        activeSource.PlayOneShot(_soundList[(int)soundType], _musicVolume);
+        activeSource.clip = _soundList[(int)soundType];
+        activeSource.volume = _musicVolume;
+        activeSource.Play();
     }
 
     public void PlaySFX(SoundType soundType, float volume)
