@@ -271,3 +271,240 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 147.929543 seconds.
+  path: Assets/_Scripts/Gymnopedie-No-1-â€“-Satie-_No-Copyright-Music_.wav
+  artifactKey: Guid(e081988dcd4d1ac4cba047636aa07b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scripts/Gymnopedie-No-1-â€“-Satie-_No-Copyright-Music_.wav using Guid(e081988dcd4d1ac4cba047636aa07b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781f9fe6b50eaced4345bfdcdfd8a5a1') in 0.079513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Repositorios\Motores2_Modelos1\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Repositorios\Motores2_Modelos1\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.715 seconds
+Refreshing native plugins compatible for Editor in 7.28 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.870 seconds
+Domain Reload Profiling: 1580ms
+	BeginReloadAssembly (146ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (477ms)
+		LoadAssemblies (267ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (264ms)
+			TypeCache.Refresh (253ms)
+				TypeCache.ScanAssembly (243ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (871ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (334ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (201ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 7.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4169 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (43.3 KB). Loaded Objects now: 4670.
+Memory consumption went from 150.2 MB to 150.2 MB.
+Total: 3.304200 ms (FindLiveObjects: 0.362400 ms CreateObjectMapping: 0.123200 ms MarkObjects: 2.751300 ms  DeleteObjects: 0.066400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 132.067626 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_1.asset
+  artifactKey: Guid(d1ddf73908bf27d43ace1d0e10e99a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_1.asset using Guid(d1ddf73908bf27d43ace1d0e10e99a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0abae3f8bfcb00b6be971115f792c36e') in 0.077720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_7.asset
+  artifactKey: Guid(06e426d48d7fc6b47b6764b5a95332f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_7.asset using Guid(06e426d48d7fc6b47b6764b5a95332f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be8d07244924ca79892d3a6715f2c0db') in 0.021834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_10.asset
+  artifactKey: Guid(78e8c3b80ee90d245a727b37730e64a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_10.asset using Guid(78e8c3b80ee90d245a727b37730e64a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '894619b40ab745118967dbdd933e6edc') in 0.019015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_13.asset
+  artifactKey: Guid(87ed2e3ae87cbb543abd95e4c37d49d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_13.asset using Guid(87ed2e3ae87cbb543abd95e4c37d49d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d2d5d28305bfc4fa53f7d5481df2b9e') in 0.014908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_15.asset
+  artifactKey: Guid(b6df6135012738b42a06a6cb69a6f8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_15.asset using Guid(b6df6135012738b42a06a6cb69a6f8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c67e63000a695c0dd639f0e5ad12ef5') in 0.017648 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_16.asset
+  artifactKey: Guid(1ac6c3bb5056b1144888b3460300e87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_16.asset using Guid(1ac6c3bb5056b1144888b3460300e87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73c6c20d424598aa1441092776bd4bf') in 0.015846 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_11.asset
+  artifactKey: Guid(3d3698fe473968a4e804ed4532b50a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_11.asset using Guid(3d3698fe473968a4e804ed4532b50a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aaf0b25f420e53fb8f7c2ca67766b6c') in 0.018060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_22.asset
+  artifactKey: Guid(a8b8f26a68c43a8449253619b07aaab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_22.asset using Guid(a8b8f26a68c43a8449253619b07aaab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a9512e33746cc056476937fb5ebef87') in 0.015687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_25.asset
+  artifactKey: Guid(9858bb6fa7f6cd549b8c13e76d3cab6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_25.asset using Guid(9858bb6fa7f6cd549b8c13e76d3cab6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500ed8e4b1776778a23b446effaeedee') in 0.016111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_26.asset
+  artifactKey: Guid(0aff81c4415c6d04ea7611d4cfee9bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_26.asset using Guid(0aff81c4415c6d04ea7611d4cfee9bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c3777db68f5eaefe0c2c9ef9c9f5443') in 0.014708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_30.asset
+  artifactKey: Guid(18721854e1cf2434aa67f333c866e24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_30.asset using Guid(18721854e1cf2434aa67f333c866e24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a2ccf71554d8b3246c5a00d9f3fa927') in 0.020601 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_23.asset
+  artifactKey: Guid(03ff472c8522b3e4eb536c48a451b95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_23.asset using Guid(03ff472c8522b3e4eb536c48a451b95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411bf5d9e1cb0d5264efa2beb4c23818') in 0.019960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_19.asset
+  artifactKey: Guid(0bda70f988e232344a15c6c58de69aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_19.asset using Guid(0bda70f988e232344a15c6c58de69aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c873311b5bca90742e73119570a7eafa') in 0.015994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_9.asset
+  artifactKey: Guid(033e25533b593da439d32814c7ab2a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_9.asset using Guid(033e25533b593da439d32814c7ab2a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96babdb57fa48e5445dc3ef28e89ddf4') in 0.014151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_3.asset
+  artifactKey: Guid(f0094c8dfd000754089df7bbd47c0671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_3.asset using Guid(f0094c8dfd000754089df7bbd47c0671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5493fbf9fc98ff3368ea6a142a14758e') in 0.016450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 12.084749 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat
+  artifactKey: Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat using Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa9b1b3702c6f08e75963a80f1fc8cf') in 0.306762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.965398 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_906.asset
+  artifactKey: Guid(a5f233380684e104c95ecfb1c4ce936f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_906.asset using Guid(a5f233380684e104c95ecfb1c4ce936f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f8c27ec6662e0552e43876374cb955e') in 0.027373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.041696 seconds.
+  path: Assets/Art/Map/Graveyard/19_Graveyard_32x32_912.asset
+  artifactKey: Guid(f88af665c458eae4680e0b698e4722ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Map/Graveyard/19_Graveyard_32x32_912.asset using Guid(f88af665c458eae4680e0b698e4722ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cd0fdfe13fe79b1381c41c523706efe') in 0.019662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.063439 seconds.
+  path: Assets/_Prefabs/Menu/Canvas_Lose.prefab
+  artifactKey: Guid(508ec4ae1bdcd524c8c04ccb2cdccc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Prefabs/Menu/Canvas_Lose.prefab using Guid(508ec4ae1bdcd524c8c04ccb2cdccc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53899941aa3eea020c43a473aecf9537') in 0.048098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 45
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/_Prefabs/Menu/Canvas_PauseMenu.prefab
+  artifactKey: Guid(3d2d625a1b818b14fb8a7f025a961544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Prefabs/Menu/Canvas_PauseMenu.prefab using Guid(3d2d625a1b818b14fb8a7f025a961544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c518f073fe954aa777ba5d91daf575fd') in 0.022044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 45
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
