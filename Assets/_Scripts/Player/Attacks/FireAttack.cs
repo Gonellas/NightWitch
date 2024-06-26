@@ -15,14 +15,14 @@ public class FireAttack : Swipe
         if (swipeDirection != Vector2.zero)
         {
             CreateFireEffect();
-            EventManager.TriggerEvent(EventsType.Fire_Attack, swipeDirection);
+            //EventManager.TriggerEvent(EventsType.Fire_Attack, swipeDirection);
         }
         return swipeDirection;
     }
 
     private void CreateFireEffect()
     {
-        var bullet = BulletFactory.Instance.GetObjectFromPool();
+        var bullet = BulletFactory.Instance.GetObjectFromPool(BulletType.Fire);
         bullet.transform.position = _transform.position;
         Debug.Log("Fire attack!");
     }

@@ -6,9 +6,9 @@ public class ThunderAttack : Swipe
 {
     [SerializeField] private GameObject _thunderBullet;
 
-    public ThunderAttack(Transform transform, GameObject trail, GameObject fireBullet) : base(transform, trail)
+    public ThunderAttack(Transform transform, GameObject trail, GameObject thunderBullet) : base(transform, trail)
     {
-        _thunderBullet = fireBullet;
+        _thunderBullet = thunderBullet;
     }
 
     public override Vector2 SwipeDetection()
@@ -16,14 +16,15 @@ public class ThunderAttack : Swipe
         Vector2 swipeDirection = base.SwipeDetection();
         if (swipeDirection != Vector2.zero)
         {
-            CreateFireEffect();
+            //EventManager.TriggerEvent(EventsType.Thunder_Attack, swipeDirection);
+            CreateThunderEffect();
         }
         return swipeDirection;
     }
 
-    private void CreateFireEffect()
+    private void CreateThunderEffect()
     {
-        var bullet = BulletFactory.Instance.GetObjectFromPool();
+        var bullet = BulletFactory.Instance.GetObjectFromPool(BulletType.Thunder);
         bullet.transform.position = _transform.position;
         Debug.Log("Thunder attack!");
     }

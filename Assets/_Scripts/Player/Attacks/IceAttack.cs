@@ -6,9 +6,9 @@ public class IceAttack : Swipe
 {
     [SerializeField] private GameObject _iceBullet;
 
-    public IceAttack(Transform transform, GameObject trail, GameObject fireBullet) : base(transform, trail)
+    public IceAttack(Transform transform, GameObject trail, GameObject iceBullet) : base(transform, trail)
     {
-        _iceBullet = fireBullet;
+        _iceBullet = iceBullet;
     }
 
     public override Vector2 SwipeDetection()
@@ -16,6 +16,7 @@ public class IceAttack : Swipe
         Vector2 swipeDirection = base.SwipeDetection();
         if (swipeDirection != Vector2.zero)
         {
+            //EventManager.TriggerEvent(EventsType.Ice_Attack, swipeDirection);
             CreateFireEffect();
         }
         return swipeDirection;
@@ -23,7 +24,7 @@ public class IceAttack : Swipe
 
     private void CreateFireEffect()
     {
-        var bullet = BulletFactory.Instance.GetObjectFromPool();
+        var bullet = BulletFactory.Instance.GetObjectFromPool(BulletType.Ice);
         bullet.transform.position = _transform.position;
         Debug.Log("Ice attack!");
     }

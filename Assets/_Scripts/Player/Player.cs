@@ -1,7 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(CapsuleCollider2D))]
-[RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
     [Header("Player Values")]
@@ -53,27 +51,30 @@ public class Player : MonoBehaviour
 
             if (swipeDirection != Vector2.zero)
             {
-                HandleAttack(swipeDirection);
+                HandleAttackSwipe(swipeDirection);
             }
         }
     }
 
-    private void HandleAttack(Vector2 swipeDirection)
+    private void HandleAttackSwipe(Vector2 swipeDirection)
     {
-        Vector2 attackDirection = swipeDirection;
-
-        // Use direction towards closest enemy if an enemy is detected
         if (_enemyDetector.ClosestEnemy != null)
         {
             Vector2 playerPosition = transform.position;
             Vector2 enemyDirection = _enemyDetector.GetDirectionToClosestEnemy(playerPosition);
-            attackDirection = enemyDirection.normalized;
+            HandleAttackDirection(swipeDirection, enemyDirection);
         }
-
-        // Perform attack based on direction
-        if (Mathf.Abs(attackDirection.x) > Mathf.Abs(attackDirection.y))
+        else
         {
-            if (attackDirection.x > 0)
+            HandleAttackDirection(swipeDirection, swipeDirection);
+        }
+    }
+
+    private void HandleAttackDirection(Vector2 swipeDirection, Vector2 attackDirection)
+    {
+        if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
+        {
+            if (swipeDirection.x > 0)
             {
                 _thunderAttack.SwipeDetection();
                 EventManager.TriggerEvent(EventsType.Thunder_Attack, attackDirection);
@@ -86,7 +87,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            if (attackDirection.y > 0)
+            if (swipeDirection.y > 0)
             {
                 _fireAttack.SwipeDetection();
                 EventManager.TriggerEvent(EventsType.Fire_Attack, attackDirection);
@@ -111,4 +112,3 @@ public class Player : MonoBehaviour
         }
     }
 }
-

@@ -1,13 +1,17 @@
 using UnityEngine;
 
+public enum BulletType { Fire, Ice, Ground, Thunder }
+
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private float _initialLifeTime;
     [SerializeField] private float _speed;
     [SerializeField] private float _damage = 10f;
+    [SerializeField] private BulletType _bulletType;
     private Enemy _targetEnemy;
     private EnemyDetector _enemyDetector;
 
+    public BulletType BulletType => _bulletType;
 
     void Start()
     {
@@ -61,7 +65,7 @@ public class Bullet : MonoBehaviour
             _targetEnemy.LoseHP(_damage);
             BulletFactory.Instance.ReturnObjectToPool(this);
         }
-        else if (!other.gameObject.CompareTag("Player")) 
+        else if (!other.gameObject.CompareTag("Player"))
         {
             BulletFactory.Instance.ReturnObjectToPool(this);
         }
@@ -72,7 +76,6 @@ public class Bullet : MonoBehaviour
         _initialLifeTime = 2f;
         _targetEnemy = null;
     }
-
 
     public static void TurnOn(Bullet b)
     {

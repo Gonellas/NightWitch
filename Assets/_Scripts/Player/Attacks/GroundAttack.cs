@@ -6,9 +6,9 @@ public class GroundAttack : Swipe
 {
     [SerializeField] private GameObject _groundBullet;
 
-    public GroundAttack(Transform transform, GameObject trail, GameObject fireBullet) : base(transform, trail)
+    public GroundAttack(Transform transform, GameObject trail, GameObject groundBullet) : base(transform, trail)
     {
-        _groundBullet = fireBullet;
+        _groundBullet = groundBullet;
     }
 
     public override Vector2 SwipeDetection()
@@ -17,13 +17,14 @@ public class GroundAttack : Swipe
         if (swipeDirection != Vector2.zero)
         {
             CreateFireEffect();
+            //EventManager.TriggerEvent(EventsType.Ground_Attack, swipeDirection);
         }
         return swipeDirection;
     }
 
     private void CreateFireEffect()
     {
-        var bullet = BulletFactory.Instance.GetObjectFromPool();
+        var bullet = BulletFactory.Instance.GetObjectFromPool(BulletType.Ground);
         bullet.transform.position = _transform.position;
         Debug.Log("Ground attack!");
     }

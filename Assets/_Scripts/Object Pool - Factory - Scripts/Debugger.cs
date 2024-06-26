@@ -2,22 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Debugger : MonoBehaviour
-{
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            var bullet = BulletFactory.Instance.GetObjectFromPool();
+//public class Debugger : MonoBehaviour
+//{
+//    void Update()
+//    {
+//        if (Input.GetKeyDown(KeyCode.Space))
+//        {
+//            var bullet = BulletFactory.Instance.GetObjectFromPool();
             
-            bullet.transform.position = Vector3.zero;
-        }
+//            bullet.transform.position = Vector3.zero;
+//        }
         
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            var enemy = EnemyFactory.Instance.GetFairyFromPool();
+//        if (Input.GetKeyDown(KeyCode.A))
+//        {
+//            var enemy = EnemyFactory.Instance.GetFairyFromPool();
             
-            enemy.transform.position = Vector3.zero;
-        }
-    }
-}
+//            enemy.transform.position = Vector3.zero;
+//        }
+//    }
+//}
