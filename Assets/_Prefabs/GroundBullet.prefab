@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9021055309421455750}
   - component: {fileID: 3859473218290310044}
   - component: {fileID: -1533148917894338084}
+  - component: {fileID: 6298330697464772683}
   m_Layer: 0
   m_Name: GroundBullet
   m_TagString: Untagged
@@ -101,3 +102,38 @@ MonoBehaviour:
   _speed: 5
   _damage: 10
   _bulletType: 2
+--- !u!58 &6298330697464772683
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175261905476627180}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.015875816, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.28561854
