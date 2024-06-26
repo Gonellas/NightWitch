@@ -49,6 +49,10 @@ MonoBehaviour:
   _soundList:
   - {fileID: 8300000, guid: 79000180dddbada4194a567dba235c33, type: 3}
   - {fileID: 8300000, guid: d92db0cdcae79584c9cb63f4f48c94c9, type: 3}
+  - {fileID: 8300000, guid: be3229046c038fc40b3fab3e4cf2fe15, type: 3}
+  - {fileID: 8300000, guid: ac04d18ac69447e409da40d0c644bcf2, type: 3}
+  - {fileID: 8300000, guid: a454299db2deb0940a4940f317d7595f, type: 3}
+  - {fileID: 8300000, guid: 4ecf6e41657fb8f408d9be9b4264aea5, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -61,10 +65,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 8300000, guid: e561640981c683049a560b513bab702f, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 8300000, guid: 1947d69c45922c04a8cda61c50902033, type: 3}
-  - {fileID: 8300000, guid: 1947d69c45922c04a8cda61c50902033, type: 3}
-  - {fileID: 8300000, guid: 1947d69c45922c04a8cda61c50902033, type: 3}
   _firstAudioSourceIsPlaying: 0

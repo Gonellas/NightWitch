@@ -131,10 +131,10 @@ public class PlayerView : MonoBehaviour
 
     public void WalkingR()
     {
-        AudioManager.Instance.PlaySFX(SoundType.Player_MovementR, 1f);
+        AudioManager.Instance.PlaySFX(SoundType.Player_MovementR, 0.5f);
     }
     public void WalkingL()
     {
-        AudioManager.Instance.PlaySFX(SoundType.Player_MovementL, 1f);
+        AudioManager.Instance.PlaySFX(SoundType.Player_MovementL, 0.5f);
     }
 }
