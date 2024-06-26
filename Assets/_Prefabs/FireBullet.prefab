@@ -102,6 +102,7 @@ MonoBehaviour:
   _initialLifeTime: 2
   _speed: 10
   _damage: 10
+  _bulletType: 0
 --- !u!58 &-1678222541997786594
 CircleCollider2D:
   m_ObjectHideFlags: 0
