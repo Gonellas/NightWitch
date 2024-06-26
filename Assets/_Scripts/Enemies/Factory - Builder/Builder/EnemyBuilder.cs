@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyBuilder
@@ -65,6 +63,12 @@ public class EnemyBuilder
     public Enemy Done()
     {
         var e = _instantiateMethod();
+
+        if (e == null)
+        {
+            Debug.LogError("Failed to instantiate enemy.");
+            return null;
+        }
 
         e.transform.position = _newPosition;
         //e.transform.localScale = _newScale;

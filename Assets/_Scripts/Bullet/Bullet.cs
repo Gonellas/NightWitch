@@ -1,6 +1,12 @@
 using UnityEngine;
 
-public enum BulletType { Fire, Ice, Ground, Thunder }
+public enum BulletType 
+{ 
+    Fire,
+    Ice,
+    Ground,
+    Thunder 
+}
 
 public class Bullet : MonoBehaviour
 {
