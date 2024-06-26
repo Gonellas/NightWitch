@@ -189,7 +189,6 @@ public class GameManager : MonoBehaviour
         _energy = PlayerPrefs.GetInt("Data_Energy", 10);
         _playerName = PlayerPrefs.GetString("Data_Name", "Default");
         _shieldBought = PlayerPrefs.GetInt("Data_ShieldBought", 0) == 1;
-        //no me carga el nivel
         shieldLevel = PlayerPrefs.GetInt("Data_ShieldLevel", 0);
 
 
@@ -199,13 +198,15 @@ public class GameManager : MonoBehaviour
 
     public void DeleteGame()
     {
-        // Agregar confirmacion
+        AudioManager.Instance.PlaySFX(SoundType.Click, 1);
+
         _canvasMainMenu.SetActive(false);
         _deleteConfirmationPanel.SetActive(true);
     }
 
     public void ConfirmDeleteGame()
     {
+        AudioManager.Instance.PlaySFX(SoundType.Click, 1);
         PlayerPrefs.DeleteAll();
         Debug.Log("Deleting Game");
         LoadGame(); 
@@ -217,6 +218,7 @@ public class GameManager : MonoBehaviour
 
     public void CancelDeleteGame()
     {
+        AudioManager.Instance.PlaySFX(SoundType.Click, 1);
         _deleteConfirmationPanel.SetActive(false);
         _canvasMainMenu.SetActive(true);
     }
@@ -254,7 +256,9 @@ public class GameManager : MonoBehaviour
     //Play Button
     public void PlayButton()
     {
+        AudioManager.Instance.PlaySFX(SoundType.Click, 1);
         TakeEnergy(1);
+        AudioManager.Instance.ChangeMusic(SoundType.MainTheme_2, 100);
         SaveGame();
         SceneManager.LoadScene(3);
     }
@@ -262,6 +266,7 @@ public class GameManager : MonoBehaviour
     //Store Button
     public void StoreButton()
     {
+        AudioManager.Instance.PlaySFX(SoundType.Click, 1);
         SaveGame();
         SceneManager.LoadScene(1);
     }
@@ -269,6 +274,7 @@ public class GameManager : MonoBehaviour
     //Options Button
     public void OptionsButton()
     {
+        AudioManager.Instance.PlaySFX(SoundType.Click, 1);
         SaveGame();
         SceneManager.LoadScene(4);
     }
@@ -276,6 +282,7 @@ public class GameManager : MonoBehaviour
     //Tutorial Button
     public void TutorialButton()
     {
+        AudioManager.Instance.PlaySFX(SoundType.Click, 1);
         SaveGame();
         SceneManager.LoadScene(2);
     }
@@ -283,6 +290,7 @@ public class GameManager : MonoBehaviour
     //Main Menu Button
     public void MainMenuButton()
     {
+        AudioManager.Instance.PlaySFX(SoundType.Click, 1);
         SaveGame();
         SceneManager.LoadScene(0);
         isPaused = false;

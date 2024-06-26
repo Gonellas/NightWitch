@@ -48,13 +48,10 @@ public class PlayerView : MonoBehaviour
     #region Attack Anims
     private void OnFireAttack(params object[] parameters)
     {
-        Debug.Log("Evento disparado fire attack");
-
         if (parameters != null && parameters.Length > 0 && parameters[0] is Vector2)
         {
             Vector2 direction = (Vector2)parameters[0];
             UpdateAttackAnimations(direction, "FireAttack");
-            Debug.Log("Evento disparado fire attack");
         }
         else
         {
@@ -63,8 +60,6 @@ public class PlayerView : MonoBehaviour
     }
     private void OnIceAttack(params object[] parameters)
     {
-        Debug.Log("Evento disparado ice attack");
-
         if (parameters != null && parameters.Length > 0 & parameters[0] is Vector2)
         {
             Vector2 dir = (Vector2)parameters[0];
@@ -73,8 +68,6 @@ public class PlayerView : MonoBehaviour
     }
     private void OnGroundAttack(params object[] parameters)
     {
-        Debug.Log("Evento disparado ground attack");
-
         if (parameters != null && parameters.Length > 0 & parameters[0] is Vector2)
         {
             Vector2 dir = (Vector2)parameters[0];
@@ -83,8 +76,6 @@ public class PlayerView : MonoBehaviour
     }
     private void OnThunderAttack(params object[] parameters)
     {
-        Debug.Log("Evento disparado thunder attack");
-
         if (parameters != null && parameters.Length > 0 & parameters[0] is Vector2)
         {
             Vector2 dir = (Vector2)parameters[0];
@@ -124,7 +115,6 @@ public class PlayerView : MonoBehaviour
         {
             if (dir.magnitude > 0)
             {
-                Debug.Log("Updating Attack Animation: " + trigger);
                 _animator.SetBool("isAttacking", true);
                 _animator.SetFloat("HAx", dir.x);
                 _animator.SetFloat("VAx", dir.y);
@@ -133,7 +123,7 @@ public class PlayerView : MonoBehaviour
             else
             {
                 _animator.SetBool("isAttacking", false);
-                
+                Debug.Log("se termino anim ataque");
             }
         }
     }

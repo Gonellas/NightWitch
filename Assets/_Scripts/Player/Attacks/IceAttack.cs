@@ -16,7 +16,6 @@ public class IceAttack : Swipe
         Vector2 swipeDirection = base.SwipeDetection();
         if (swipeDirection != Vector2.zero)
         {
-            //EventManager.TriggerEvent(EventsType.Ice_Attack, swipeDirection);
             CreateFireEffect();
         }
         return swipeDirection;

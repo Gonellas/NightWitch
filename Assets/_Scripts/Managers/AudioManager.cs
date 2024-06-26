@@ -20,7 +20,8 @@ public enum SoundType
     Fairy_Movement,
     Fairy_Damaged,
     Fairy_Die,
-    Fairy_Bomb
+    Fairy_Bomb,
+    Click
 }
 
 
@@ -35,11 +36,13 @@ public class AudioManager : MonoBehaviour
     private AudioSource audioSource;
     private AudioSource audioSource2;
     private AudioSource sfxSource;
+    private SoundType _soundType;
 
     [SerializeField] private AudioClip[] _soundList;
 
     [SerializeField] private bool _firstAudioSourceIsPlaying;
 
+    public SoundType SoundType => _soundType;
 
     public static AudioManager Instance
     {
@@ -86,7 +89,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        PlayMusic(SoundType.MainTheme_2, 100);
+        PlayMusic(SoundType.MainTheme_1, 10);
     }
 
     public float GetMusicVolume()
@@ -121,7 +124,27 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(SoundType soundType, float volume)
     {
-        sfxSource.PlayOneShot(_soundList[(int)soundType], _sfxVolume);
+        AudioClip clip = _soundList[(int)soundType];
+        if (clip != null)
+        {
+            Debug.Log($"Playing SFX: {soundType} with volume: {volume * _sfxVolume}");
+            sfxSource.PlayOneShot(clip, volume * _sfxVolume);
+        }
+        else
+        {
+            Debug.LogWarning("Audio clip not found for sound type: " + soundType);
+        }
+    }
+
+    public void ChangeMusic(SoundType newSoundType, float volume)
+    {
+        AudioSource activeSource = _firstAudioSourceIsPlaying ? audioSource : audioSource2;
+
+        activeSource.Stop();
+
+        activeSource.clip = _soundList[(int)newSoundType];
+        activeSource.volume = volume;
+        activeSource.Play();
     }
 
 #if UNITY_EDITOR
@@ -138,9 +161,3 @@ public class AudioManager : MonoBehaviour
 #endif
 }
 
-[Serializable]
-public struct SoundList
-{
-    [HideInInspector] public string name;
-    [SerializeField] private AudioClip[] _sounds;
-}

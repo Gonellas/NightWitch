@@ -47,8 +47,8 @@ MonoBehaviour:
   _musicVolume: 1
   _sfxVolume: 1
   _soundList:
-  - {fileID: 8300000, guid: e081988dcd4d1ac4cba047636aa07b7d, type: 3}
-  - {fileID: 8300000, guid: 8cf97251419863a4b9a6c095a8315e07, type: 3}
+  - {fileID: 8300000, guid: 79000180dddbada4194a567dba235c33, type: 3}
+  - {fileID: 8300000, guid: d92db0cdcae79584c9cb63f4f48c94c9, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -64,5 +64,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 1947d69c45922c04a8cda61c50902033, type: 3}
+  - {fileID: 8300000, guid: 1947d69c45922c04a8cda61c50902033, type: 3}
+  - {fileID: 8300000, guid: 1947d69c45922c04a8cda61c50902033, type: 3}
   _firstAudioSourceIsPlaying: 0

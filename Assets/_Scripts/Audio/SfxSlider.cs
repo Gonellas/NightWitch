@@ -8,14 +8,14 @@ public class SfxSlider : MonoBehaviour
 
     void Start()
     {
-        sfxSlider.value = AudioManager.Instance.GetMusicVolume();
+        sfxSlider.value = AudioManager.Instance.GetSFXVolume();
 
         sfxSlider.onValueChanged.AddListener(OnSfxSliderValueChanged);
     }
 
     void OnSfxSliderValueChanged(float value)
     {
-        AudioManager.Instance.SetMusicVolume(value);
+        AudioManager.Instance.SetSFXVolume(value);
     }
 }
 

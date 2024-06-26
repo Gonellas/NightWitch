@@ -113,6 +113,7 @@ public class UI_Manager : MonoBehaviour
 
     public void ResumeGame()
     {
+        AudioManager.Instance.PlaySFX(SoundType.Click, 1);
         GameManager.instance.TogglePause();
         _pauseButtonCanvas.SetActive(true);
         _pauseMenuCanvas.SetActive(false);
@@ -120,7 +121,10 @@ public class UI_Manager : MonoBehaviour
 
     public void GoToMenuGame()
     {
+        AudioManager.Instance.ChangeMusic(SoundType.MainTheme_1, 100);
         GameManager.instance.MainMenuButton();
     }
+
+   
     #endregion
 }

@@ -16,7 +16,6 @@ public class ThunderAttack : Swipe
         Vector2 swipeDirection = base.SwipeDetection();
         if (swipeDirection != Vector2.zero)
         {
-            //EventManager.TriggerEvent(EventsType.Thunder_Attack, swipeDirection);
             CreateThunderEffect();
         }
         return swipeDirection;

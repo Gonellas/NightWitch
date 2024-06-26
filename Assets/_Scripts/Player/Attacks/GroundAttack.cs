@@ -17,7 +17,6 @@ public class GroundAttack : Swipe
         if (swipeDirection != Vector2.zero)
         {
             CreateFireEffect();
-            //EventManager.TriggerEvent(EventsType.Ground_Attack, swipeDirection);
         }
         return swipeDirection;
     }

@@ -2510,7 +2510,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -0.000030517578}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0}
   m_SizeDelta: {x: 0.0002, y: 0.00012207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598363070
@@ -2561,7 +2561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1652312309}
   - component: {fileID: 1652312311}
-  - component: {fileID: 1652312310}
+  - component: {fileID: 1652312312}
   m_Layer: 5
   m_Name: SfxSlider
   m_TagString: Untagged
@@ -2592,19 +2592,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -23}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1652312310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652312308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6580d32edcb22d3478b753ccc9c07ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSlider: {fileID: 1652312311}
 --- !u!114 &1652312311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2656,6 +2643,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1652312312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652312308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebfbde6d4885703499ae17e5f414f79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxSlider: {fileID: 1652312311}
 --- !u!1 &1902375272
 GameObject:
   m_ObjectHideFlags: 0
@@ -2894,6 +2894,18 @@ PrefabInstance:
     - target: {fileID: 2464500354403179633, guid: d541cf6890c88ef45b9b11adfeb81e2e, type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607209505304938020, guid: d541cf6890c88ef45b9b11adfeb81e2e, type: 3}
+      propertyPath: _soundList.Array.data[17]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607209505304938020, guid: d541cf6890c88ef45b9b11adfeb81e2e, type: 3}
+      propertyPath: _soundList.Array.data[18]
+      value: 
+      objectReference: {fileID: 8300000, guid: e561640981c683049a560b513bab702f, type: 3}
+    - target: {fileID: 6607209505304938020, guid: d541cf6890c88ef45b9b11adfeb81e2e, type: 3}
+      propertyPath: _soundList.Array.data[19]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8528048147129745492, guid: d541cf6890c88ef45b9b11adfeb81e2e, type: 3}
       propertyPath: m_LocalPosition.x

@@ -15,7 +15,6 @@ public class FireAttack : Swipe
         if (swipeDirection != Vector2.zero)
         {
             CreateFireEffect();
-            //EventManager.TriggerEvent(EventsType.Fire_Attack, swipeDirection);
         }
         return swipeDirection;
     }
