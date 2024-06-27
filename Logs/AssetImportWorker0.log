@@ -207,3 +207,80 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 192.390893 seconds.
+  path: Assets/Scenes/Graveyard.unity
+  artifactKey: Guid(2cb55c8afd81c064eb8faca4c58b1857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Graveyard.unity using Guid(2cb55c8afd81c064eb8faca4c58b1857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bceefbff679e0c6dba4506f1dcd7d8d6') in 0.001198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 67.147044 seconds.
+  path: Assets/Art/Music/Click.wav
+  artifactKey: Guid(e561640981c683049a560b513bab702f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/Click.wav using Guid(e561640981c683049a560b513bab702f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ad8f2817ef03ea9f4822d2e15559c1') in 0.096930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Art/Music/Ground.ogg
+  artifactKey: Guid(72c02d66b463d3e47a91d46e8033801a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/Ground.ogg using Guid(72c02d66b463d3e47a91d46e8033801a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9738c4301aa21f6ef33e54ed799870') in 0.015155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Art/Music/ZombieWalkL.ogg
+  artifactKey: Guid(4ecf6e41657fb8f408d9be9b4264aea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/ZombieWalkL.ogg using Guid(4ecf6e41657fb8f408d9be9b4264aea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88de5892ec079dc3adf376478b7ed3f7') in 0.018951 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Art/Music/MovementL.wav
+  artifactKey: Guid(ac04d18ac69447e409da40d0c644bcf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/MovementL.wav using Guid(ac04d18ac69447e409da40d0c644bcf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbbe603508e490fd561a3e261d478447') in 0.014466 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Music/MovementR.wav
+  artifactKey: Guid(be3229046c038fc40b3fab3e4cf2fe15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/MovementR.wav using Guid(be3229046c038fc40b3fab3e4cf2fe15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d299c31f9a1eb0cd8a1420477401ab') in 0.014098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Music/Rawr.wav
+  artifactKey: Guid(86903836501412b4ab9b5f2139b9a281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/Rawr.wav using Guid(86903836501412b4ab9b5f2139b9a281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96ff153583ffa9bc5d2ae74f5ff888d') in 0.014726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Music/Pickup_Gold_00.wav
+  artifactKey: Guid(02ec2b915e6a1f543aa4b7155ac32ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/Pickup_Gold_00.wav using Guid(02ec2b915e6a1f543aa4b7155ac32ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '919a090523a52a2fec6afd5df6cfd501') in 0.013744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Art/Music/FieldOfDreams.mp3
+  artifactKey: Guid(79000180dddbada4194a567dba235c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/FieldOfDreams.mp3 using Guid(79000180dddbada4194a567dba235c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263aae14d4d57f373fa28acb3d7eca89') in 0.013549 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

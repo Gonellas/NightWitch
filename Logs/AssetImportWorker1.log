@@ -207,3 +207,56 @@ Received Import Request.
 Start importing Assets/_Scripts/Enemies/Factory - Builder/Enemy.cs using Guid(541c293a731e51b4788e003a95c37a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd10a9770f3edda2e89b5bd4cfdf295ab') in 0.008554 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 223.078729 seconds.
+  path: Assets/Art/Music/explode.ogg
+  artifactKey: Guid(bc0e0167d1738c24d9174b0e4d91281e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/explode.ogg using Guid(bc0e0167d1738c24d9174b0e4d91281e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4057bc6acebaaf29c136adc918b12d14') in 0.098553 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Music/Thunder.ogg
+  artifactKey: Guid(41431d7f86196574f8bb6c470ed22f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/Thunder.ogg using Guid(41431d7f86196574f8bb6c470ed22f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '604d5da294518ad17e3f28a861338d8e') in 0.033078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Music/ZombieWalkR.ogg
+  artifactKey: Guid(a454299db2deb0940a4940f317d7595f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/ZombieWalkR.ogg using Guid(a454299db2deb0940a4940f317d7595f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe90eabe99795bc274a6fca1d323073f') in 0.014318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Music/Fire.ogg
+  artifactKey: Guid(c4aefffc7f125af498e6e710b52ea550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/Fire.ogg using Guid(c4aefffc7f125af498e6e710b52ea550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f84cad5d1f614202cab7046b5518ddd') in 0.014404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Music/TownTheme.mp3
+  artifactKey: Guid(d92db0cdcae79584c9cb63f4f48c94c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/TownTheme.mp3 using Guid(d92db0cdcae79584c9cb63f4f48c94c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c9ff6b17754dc31c64e2277ea0e88d') in 0.014657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Music/Ice.ogg
+  artifactKey: Guid(73c4267b66ba36c4cb06cbfe0f28c524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Music/Ice.ogg using Guid(73c4267b66ba36c4cb06cbfe0f28c524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4391e1da2030eebb208c595a152e7a21') in 0.014117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
