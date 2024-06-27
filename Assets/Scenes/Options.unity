@@ -2576,6 +2576,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5229068876933653874, guid: 58a5ffb63bbaa55479990154c8310e09, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 44568473}
+    - target: {fileID: 5229068876933653874, guid: 58a5ffb63bbaa55479990154c8310e09, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ConfirmDeleteGame
+      objectReference: {fileID: 0}
     - target: {fileID: 5796690700271851867, guid: 58a5ffb63bbaa55479990154c8310e09, type: 3}
       propertyPath: m_Color.a
       value: 0.80784315
