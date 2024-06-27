@@ -365,7 +365,6 @@ public class GameManager : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
 
-        _canvasMainMenu.SetActive(false);
         _deleteConfirmationPanel.SetActive(true);
     }
 
