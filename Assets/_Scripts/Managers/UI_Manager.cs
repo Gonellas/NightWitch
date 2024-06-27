@@ -68,6 +68,7 @@ public class UI_Manager : MonoBehaviour
     {
         if (!GameManager.instance.IsPaused() && !_cooldownActive)
         {
+            AudioManager.instance.PlaySFX(SoundType.Shield, 1f);
             _shield.UpdateShieldProperties(GameManager.instance.shieldLevel);
             StartCoroutine(ActivatePowerUp(_shield, _shield._durationPowerUp));
         }

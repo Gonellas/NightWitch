@@ -23,6 +23,7 @@ public class ThunderAttack : Swipe
 
     private void CreateThunderEffect()
     {
+        AudioManager.instance.PlaySFX(SoundType.Thunder, 1f);
         var bullet = BulletFactory.Instance.GetObjectFromPool(BulletType.Thunder);
         bullet.transform.position = _transform.position;
         Debug.Log("Thunder attack!");

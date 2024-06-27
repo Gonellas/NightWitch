@@ -34,6 +34,7 @@ public abstract class Enemy : MonoBehaviour, IEnemy
 
     public void Die()
     {
+        AudioManager.instance.PlaySFX(SoundType.Coin, 1f);
         Instantiate(_coin, transform.position, transform.rotation);
         EnemyFactory.Instance.ReturnObjectToPool(this);
     }

@@ -21,6 +21,7 @@ public class FireAttack : Swipe
 
     private void CreateFireEffect()
     {
+        AudioManager.instance.PlaySFX(SoundType.Fire, 1f);
         var bullet = BulletFactory.Instance.GetObjectFromPool(BulletType.Fire);
         bullet.transform.position = _transform.position;
         Debug.Log("Fire attack!");

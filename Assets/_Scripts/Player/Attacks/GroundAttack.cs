@@ -23,6 +23,7 @@ public class GroundAttack : Swipe
 
     private void CreateFireEffect()
     {
+        AudioManager.instance.PlaySFX(SoundType.Ground, 1f);
         var bullet = BulletFactory.Instance.GetObjectFromPool(BulletType.Ground);
         bullet.transform.position = _transform.position;
         Debug.Log("Ground attack!");

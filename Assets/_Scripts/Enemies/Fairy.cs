@@ -97,7 +97,7 @@ public class Fairy : Enemy
                 }
             }
         }
-
+        AudioManager.instance.PlaySFX(SoundType.Explosion, 1f);
         Destroy(bomb);
     }
 

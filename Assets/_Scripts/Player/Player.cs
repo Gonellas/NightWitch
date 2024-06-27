@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class Player : MonoBehaviour
 {
     [Header("Player Values")]
@@ -56,6 +57,7 @@ public class Player : MonoBehaviour
         }
     }
 
+    #region Handle Attack Dir
     private void HandleAttackSwipe(Vector2 swipeDirection)
     {
         if (_enemyDetector.ClosestEnemy != null)
@@ -99,6 +101,8 @@ public class Player : MonoBehaviour
             }
         }
     }
+
+    #endregion
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

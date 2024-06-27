@@ -53,18 +53,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ac04d18ac69447e409da40d0c644bcf2, type: 3}
   - {fileID: 8300000, guid: a454299db2deb0940a4940f317d7595f, type: 3}
   - {fileID: 8300000, guid: 4ecf6e41657fb8f408d9be9b4264aea5, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 8300000, guid: e561640981c683049a560b513bab702f, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 86903836501412b4ab9b5f2139b9a281, type: 3}
+  - {fileID: 8300000, guid: 02ec2b915e6a1f543aa4b7155ac32ac6, type: 3}
   _firstAudioSourceIsPlaying: 0

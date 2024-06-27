@@ -52,6 +52,8 @@ public class Zombie : Enemy
                 GetComponent<Rigidbody2D>().AddForce(steeringForce);
 
                 UpdateAnimations(desiredVelocity);
+
+                AudioManager.instance.PlaySFX(SoundType.Rawr, 0.01f);
             }
             else
             {

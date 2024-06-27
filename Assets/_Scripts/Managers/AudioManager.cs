@@ -9,23 +9,15 @@ public enum SoundType
     Player_MovementL,
     Zombie_MovementR,
     Zombie_MovementL,
-    //Fire_Attack,
-    //Ice_Attack,
-    //GroundAttack,
-    //ThunderAttack,
-    //Shield,
-    //Player_Movement,
-    //Player_Damaged,
-    //Player_Die,
-    //Zombie_Movement,
-    //Zombie_Damaged,
-    //Zombie_Die,
-    //Zombie_Attack,
-    //Fairy_Movement,
-    //Fairy_Damaged,
-    //Fairy_Die,
-    //Fairy_Bomb,
-    Click
+    Click, 
+    Rawr,
+    Coin,
+    Explosion,
+    Thunder,
+    Ice,
+    Ground,
+    Fire,
+    Shield
 }
 
 
@@ -165,4 +157,21 @@ public class AudioManager : MonoBehaviour
     }
 #endif
 }
+
+//Fire_Attack,
+//Ice_Attack,
+//GroundAttack,
+//ThunderAttack,
+//Shield,
+//Player_Movement,
+//Player_Damaged,
+//Player_Die,
+//Zombie_Movement,
+//Zombie_Damaged,
+//Zombie_Die,
+//Zombie_Attack,
+//Fairy_Movement,
+//Fairy_Damaged,
+//Fairy_Die,
+//Fairy_Bomb,
 

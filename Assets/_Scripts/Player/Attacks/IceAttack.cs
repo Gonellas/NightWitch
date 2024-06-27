@@ -23,6 +23,7 @@ public class IceAttack : Swipe
 
     private void CreateFireEffect()
     {
+        AudioManager.instance.PlaySFX(SoundType.Ice, 1f);
         var bullet = BulletFactory.Instance.GetObjectFromPool(BulletType.Ice);
         bullet.transform.position = _transform.position;
         Debug.Log("Ice attack!");
