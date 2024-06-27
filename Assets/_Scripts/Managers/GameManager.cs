@@ -424,7 +424,7 @@ public class GameManager : MonoBehaviour
         TakeEnergy(1);
         AudioManager.Instance.ChangeMusic(SoundType.MainTheme_2, 100);
         SaveGame();
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(5);
     }
 
     //Store Button

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Options.unity
     guid: 17baff44e7eebee458a510bb0e7daf30
+  - enabled: 1
+    path: Assets/Scenes/Graveyard.unity
+    guid: 2cb55c8afd81c064eb8faca4c58b1857
   m_configObjects: {}
