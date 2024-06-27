@@ -451,6 +451,14 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
+    public void ParkButton()
+    {
+        AudioManager.Instance.PlaySFX(SoundType.Click, 1);
+        AudioManager.Instance.ChangeMusic(SoundType.MainTheme_2, 100);
+        SaveGame();
+        SceneManager.LoadScene(3);
+    }
+
     //Main Menu Button
     public void MainMenuButton()
     {
