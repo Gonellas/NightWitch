@@ -235,6 +235,12 @@ public class GameManager : MonoBehaviour
             ParkTimer();
         }
 
+        //Graveyard Timer
+        if(SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            ParkTimer();
+        }
+
         //Energy Recovery
         if (_energy < 10)
         {

@@ -39,7 +39,7 @@ public class Spawner : MonoBehaviour
                 {
                     new EnemyBuilder(() => zombie)
                         .SetColor(colors[Random.Range(0, colors.Length)])
-                        .SetPosition(Random.Range(-27, 1f), Random.Range(-9, 9f), 0)
+                        .SetPosition(Random.Range(-22, 1f), Random.Range(-9, 9f), 0)
                         .SetMaxLife(Random.Range(50, 101))
                         .Done();
                 }
@@ -55,7 +55,7 @@ public class Spawner : MonoBehaviour
                 {
                     new EnemyBuilder(() => fairy)
                         .SetColor(colors[Random.Range(0, colors.Length)])
-                        .SetPosition(Random.Range(-27, 1f), Random.Range(-9, 9f), 0)
+                        .SetPosition(Random.Range(-22, 1f), Random.Range(-9, 9f), 0)
                         .SetMaxLife(Random.Range(0, 101))
                         .Done();
                 }
