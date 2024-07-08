@@ -242,6 +242,38 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3750265470647252326, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.8697329
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750265470647252326, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.6088479
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750265470647252326, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.6088479
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750265470647252326, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750265470647252326, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 213
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931130351629496191, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931130351629496191, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931130351629496191, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 6068799733333893302, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
       propertyPath: m_Name
       value: Canvas_Joystick
@@ -46330,7 +46362,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 463962887603165549, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

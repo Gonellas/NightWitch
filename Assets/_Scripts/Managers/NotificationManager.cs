@@ -1,11 +1,10 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using Unity.Notifications.Android;
 using UnityEngine;
 
 public class NotificationManager : MonoBehaviour
 {
+
     public static NotificationManager Instance { get; private set; }
 
     AndroidNotificationChannel notifChannel;
@@ -17,12 +16,11 @@ public class NotificationManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else Destroy(gameObject);
-    }
-
-    void Start()
-    {
-        if(PlayerPrefs.HasKey("Display_ComeBack")) CancelNotification(PlayerPrefs.GetInt("Display_ComeBack"));
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
 
         notifChannel = new AndroidNotificationChannel()
         {
@@ -34,7 +32,12 @@ public class NotificationManager : MonoBehaviour
 
         AndroidNotificationCenter.RegisterNotificationChannel(notifChannel);
 
-        PlayerPrefs.SetInt("Display_ComeBack",DisplayNotification("Comeback! ", "We miss you!",
+        if (PlayerPrefs.HasKey("Display_ComeBack"))
+        {
+            CancelNotification(PlayerPrefs.GetInt("Display_ComeBack"));
+        }
+
+        PlayerPrefs.SetInt("Display_ComeBack", DisplayNotification("Comeback! ", "We miss you!",
             IconSelecter.icon_reminder, IconSelecter.icon_reminderbig, DateTime.Now.AddHours(36)));
     }
 

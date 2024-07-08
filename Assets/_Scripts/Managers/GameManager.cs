@@ -2,9 +2,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using System.Collections.Generic;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -46,24 +46,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] float _interval = 30f;
     [SerializeField] float _timer = 0f;
 
-    private void Awake()
-    {
-        //if (instance == null)
-        //{
-        //    instance = this;
-        //    DontDestroyOnLoad(gameObject);
-        //}
-        //else
-        //{
-        //    Destroy(gameObject);
-        //}
-
-        instance = this;
-
-        //Save, Load, Delete Game:
-        LoadGame();
-    }
-
     [SerializeField] int _maxStamina = 10;
     int _currentStamina;
     [SerializeField] float _timer2ToRecharge = 10;
@@ -82,6 +64,18 @@ public class GameManager : MonoBehaviour
     [SerializeField] IconSelecter _largeIcon = IconSelecter.icon_reminderbig;
     TimeSpan timer2;
     int id;
+
+    private void Awake()
+    {
+        instance = this;
+
+        _currentStamina = _maxStamina;
+        _nextStaminaTime = DateTime.Now;
+        _lastStaminaTime = DateTime.Now;
+
+        LoadGame();
+    }
+
     private void Start()
     {
         StartCoroutine(RechargeStamina());
@@ -91,7 +85,6 @@ public class GameManager : MonoBehaviour
 
             id = NotificationToSend();
         }
-
     }
 
     IEnumerator RechargeStamina()
@@ -115,11 +108,8 @@ public class GameManager : MonoBehaviour
                 addingStamina = true;
                 UpdateStamina();
 
-                //Predecir la proxima vez que se a recargar stamina
-
                 DateTime timeToAdd = nextTime;
 
-                //Checkear si el usuario habia cerrado app
                 if (_lastStaminaTime > nextTime) timeToAdd = _lastStaminaTime;
 
                 nextTime = AddDuration(timeToAdd, _timer2ToRecharge);
@@ -138,22 +128,22 @@ public class GameManager : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
-        NotificationManager.Instance.CancelNotification(id);
+        if (NotificationManager.Instance != null)
+        {
+            NotificationManager.Instance.CancelNotification(id);
+        }
+        else
+        {
+            Debug.LogWarning("NotificationManager.Instance is null!");
+        }
+
         recharging = false;
     }
 
     DateTime AddDuration(DateTime timeToAdd, float timerToRecharge)
     {
         return timeToAdd.AddSeconds(timerToRecharge);
-        //return timeToAdd.AddMinutes(timerToRecharge);
-        //return timeToAdd.AddHours(timerToRecharge);
-        //return timeToAdd.AddDays(timerToRecharge);
-        //return timeToAdd.AddMilliseconds(timerToRecharge);
-        //return timeToAdd.AddTicks((long)timerToRecharge);
-        //return timeToAdd.AddMonths((int)timerToRecharge);
-        //return timeToAdd.AddYears((int)timerToRecharge);
     }
-
 
     public void UseStamina(int staminaToUse)
     {
@@ -166,41 +156,69 @@ public class GameManager : MonoBehaviour
                 _nextStaminaTime = AddDuration(DateTime.Now, _timer2ToRecharge);
                 StartCoroutine(RechargeStamina());
 
-                NotificationManager.Instance.CancelNotification(id);
+                if (NotificationManager.Instance != null)
+                {
+                    NotificationManager.Instance.CancelNotification(id);
 
-                id = NotificationToSend();
+                    id = NotificationToSend();
+                }
+                else
+                {
+                    Debug.LogWarning("NotificationManager.Instance is null!");
+                }
             }
         }
         else
         {
-            Debug.Log("You don't have Stamina");
-
+            Debug.Log("You don't have enough Stamina");
         }
     }
 
     int NotificationToSend()
     {
-        return NotificationManager.Instance.DisplayNotification(_titleNotif,
-                    _textNotif, _smallIcon, _largeIcon,
-                    AddDuration(DateTime.Now, ((_maxStamina - _currentStamina + 1) * _timer2ToRecharge) + 1 + (float)timer2.TotalSeconds));
+        if (NotificationManager.Instance != null)
+        {
+            return NotificationManager.Instance.DisplayNotification(_titleNotif,
+                        _textNotif, _smallIcon, _largeIcon,
+                        AddDuration(DateTime.Now, ((_maxStamina - _currentStamina + 1) * _timer2ToRecharge) + 1 + (float)timer2.TotalSeconds));
+        }
+        else
+        {
+            Debug.LogWarning("NotificationManager.Instance is null! Notification not sent.");
+            return -1; 
+        }
     }
 
     void UpdateStamina()
     {
-        _staminaText.text = $"{_currentStamina} / {_maxStamina}";
+        if (_staminaText != null)
+        {
+            _staminaText.text = $"{_currentStamina} / {_maxStamina}";
+        }
+        else
+        {
+            Debug.LogWarning("_staminaText is null!");
+        }
     }
 
     void UpdateTimer()
     {
-        if (_currentStamina >= _maxStamina)
+        if (_timerText != null)
         {
-            _timerText.text = "Full stamina!";
-            return;
+            if (_currentStamina >= _maxStamina)
+            {
+                _timerText.text = "Full Stamina!";
+                return;
+            }
+
+            TimeSpan timer = _nextStaminaTime - DateTime.Now;
+
+            _timerText.text = $"{timer.Hours.ToString("00")} : {timer.Minutes.ToString("00")} : {timer.Seconds.ToString("00")}";
         }
-
-        TimeSpan timer = _nextStaminaTime - DateTime.Now;
-
-        _timerText.text = $"{timer.Hours.ToString("00")} : {timer.Minutes.ToString("00")} : {timer.Seconds.ToString("00")}";
+        else
+        {
+            Debug.LogWarning("_timerText is null!");
+        }
     }
 
     private void LoadData()
@@ -208,14 +226,12 @@ public class GameManager : MonoBehaviour
         _currentStamina = PlayerPrefs.GetInt(PlayerPrefsKey.currentStamina, _maxStamina);
         _nextStaminaTime = StringToDateTime(PlayerPrefs.GetString("DateTime_NextStaminaTime"));
         _lastStaminaTime = StringToDateTime(PlayerPrefs.GetString("DateTime_LastStaminaTime"));
-
     }
 
     DateTime StringToDateTime(string date)
     {
         if (string.IsNullOrEmpty(date))
-            return DateTime.Now; //Horario actual de nuestro dispositivo
-                                 //return DateTime.UtcNow; //Horario actual de el Coordinated Universal Time
+            return DateTime.Now;
         else
             return DateTime.Parse(date);
     }
@@ -225,27 +241,22 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt(PlayerPrefsKey.currentStamina, _currentStamina);
         PlayerPrefs.SetString("DateTime_NextStaminaTime", _nextStaminaTime.ToString());
         PlayerPrefs.SetString("DateTime_LastStaminaTime", _lastStaminaTime.ToString());
+        PlayerPrefs.Save();
     }
 
     void Update()
     {
-        //Park Timer
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        // Park Timer
+        if (SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 5)
         {
             ParkTimer();
         }
 
-        //Graveyard Timer
-        if(SceneManager.GetActiveScene().buildIndex == 5)
-        {
-            ParkTimer();
-        }
-
-        //Energy Recovery
+        // Energy Recovery
         if (_energy < 10)
         {
             _timer += Time.deltaTime;
-            if(_timer >= _interval)
+            if (_timer >= _interval)
             {
                 _timer = 0f;
                 GiveEnergy(1);
@@ -254,29 +265,36 @@ public class GameManager : MonoBehaviour
         }
 
         UpdateUI();
-
     }
+
     private void UpdateUI()
     {
-        _textShowingStats[0].text = $"Currency: {_currency}";
-        _textShowingStats[1].text = $"Energy: {_energy}";
-        _textShowingStats[2].text = $"Player Name: {_playerName}";
-        _textShowingStats[3].text = $"Time: {(int)timer}";
+        if (SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            if (_textShowingStats.Length >= 4)
+            {
+                _textShowingStats[0].text = $"Currency: {_currency}";
+                _textShowingStats[1].text = $"Energy: {_energy}";
+                _textShowingStats[2].text = $"Player Name: {_playerName}";
+                _textShowingStats[3].text = $"Time: {(int)timer}";
 
-        if(shieldLevel > 0) _shieldButton.SetActive(_shieldBought);
-        //ButtonDeactivated(_storeShieldButton, shieldLevel, _shieldCosts);
-
+                if (shieldLevel > 0)
+                {
+                    _shieldButton.SetActive(_shieldBought);
+                }
+            }
+        }
     }
 
     #region Lose/Win Conditions
-    //Lose Condition
+    // Lose Condition
     public void Lose()
     {
         TogglePause();
         _loseCanvas.SetActive(true);
     }
 
-    //Win Condition
+    // Win Condition
     public void Win()
     {
         TogglePause();
@@ -298,25 +316,17 @@ public class GameManager : MonoBehaviour
     #region Shield
     public void BuyShield()
     {
-        if(shieldLevel < _shieldCosts.Length && _currency >= _shieldCosts[shieldLevel]) 
+        if (shieldLevel < _shieldCosts.Length && _currency >= _shieldCosts[shieldLevel])
         {
-
             TakeCurrency(_shieldCosts[shieldLevel]);
             shieldLevel++;
             _shieldBought = true;
             BuyPowerUp(PowerUpType.Shield);
-            //UI_Manager.instance._shield.UpdateShieldProperties(shieldLevel);
             Debug.Log($"Escudo nivel {shieldLevel} comprado");
             SaveGame();
         }
     }
     #endregion
-
-    /*arreglar, no se desactiva*/
-    //private void ButtonDeactivated(Button button, int powerUpLevel, int[] powerUpCosts)
-    //{
-    //    button.interactable = powerUpLevel < powerUpCosts.Length;
-    //}
     #endregion
 
     public void RestartLevel()
@@ -341,7 +351,7 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    #region Save, Load, Delete Game:
+    #region Save, Load, Delete Game
     private void SaveGame()
     {
         PlayerPrefs.SetInt("Data_Currency", _currency);
@@ -351,7 +361,7 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("Data_ShieldLevel", _shieldBought ? shieldLevel : 0);
         PlayerPrefs.Save();
 
-        Debug.Log("Saving Game");
+        Debug.Log("Game Saved");
     }
 
     private void LoadGame()
@@ -362,15 +372,12 @@ public class GameManager : MonoBehaviour
         _shieldBought = PlayerPrefs.GetInt("Data_ShieldBought", 0) == 1;
         shieldLevel = PlayerPrefs.GetInt("Data_ShieldLevel", 0);
 
-
-        Debug.Log("Loading Game");
+        Debug.Log("Game Loaded");
     }
-
 
     public void DeleteGame()
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
-
         _deleteConfirmationPanel.SetActive(true);
     }
 
@@ -378,12 +385,10 @@ public class GameManager : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
         PlayerPrefs.DeleteAll();
-        Debug.Log("Deleting Game");
-        LoadGame(); 
-
+        Debug.Log("Game Deleted");
+        LoadGame();
         _deleteConfirmationPanel.SetActive(false);
         _canvasMainMenu.SetActive(true);
-
     }
 
     public void CancelDeleteGame()
@@ -393,14 +398,13 @@ public class GameManager : MonoBehaviour
         _canvasMainMenu.SetActive(true);
     }
 
-    private void OnApplicationPause(bool pause) // -- Cuando pausas que se guarde
+    private void OnApplicationPause(bool pause)
     {
         if (pause) SaveGame();
     }
     #endregion
 
-    #region Get, Take Currency/Energy:
-
+    #region Get, Take Currency/Energy
     public void GiveCurrency(int add)
     {
         _currency += add;
@@ -411,7 +415,7 @@ public class GameManager : MonoBehaviour
         _currency -= take;
     }
 
-    public void GiveEnergy (int add)
+    public void GiveEnergy(int add)
     {
         _energy += add;
     }
@@ -423,7 +427,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region Buttons
-    //Play Button
+    // Play Button
     public void PlayButton()
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
@@ -433,7 +437,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(5);
     }
 
-    //Store Button
+    // Store Button
     public void StoreButton()
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
@@ -441,7 +445,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    //Options Button
+    // Options Button
     public void OptionsButton()
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
@@ -449,7 +453,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
-    //Tutorial Button
+    // Tutorial Button
     public void TutorialButton()
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
@@ -465,7 +469,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
-    //Main Menu Button
+    // Main Menu Button
     public void MainMenuButton()
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
@@ -475,7 +479,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    //Application Quit
+    // Application Quit
     public void QuitGame()
     {
         SaveGame();
@@ -483,7 +487,7 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    //Park Timer
+    // Park Timer
     private void ParkTimer()
     {
         if (isCounting)
@@ -499,6 +503,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
     private void OnApplicationQuit()
     {
         SaveGame();

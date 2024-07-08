@@ -56007,7 +56007,8 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 463962887603165549, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -56133,6 +56134,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 602114326}
     m_Modifications:
+    - target: {fileID: 858451787077882305, guid: e23214266df2fbb4e93a60d1c45f6165, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1737981380181913068, guid: e23214266df2fbb4e93a60d1c45f6165, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -56227,7 +56232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7303015387886095036, guid: e23214266df2fbb4e93a60d1c45f6165, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -48
+      value: -193
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57075,6 +57080,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 602114326}
     m_Modifications:
+    - target: {fileID: 3750265470647252326, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.86899
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750265470647252326, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.5172637
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750265470647252326, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.5172637
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750265470647252326, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 356
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750265470647252326, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 299
+      objectReference: {fileID: 0}
     - target: {fileID: 6068799733333893302, guid: 38e00efb3e709734ebc2f225191e9d52, type: 3}
       propertyPath: m_Name
       value: Canvas_Joystick
