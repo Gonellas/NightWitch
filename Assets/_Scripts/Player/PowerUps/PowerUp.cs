@@ -4,7 +4,8 @@ using System.Collections;
 public enum PowerUpType
 {
     Shield,
-    Speed
+    Speed,
+    LifePU
 }
 
 public class PowerUp : MonoBehaviour, IPowerUp
@@ -13,7 +14,6 @@ public class PowerUp : MonoBehaviour, IPowerUp
     protected float _cooldownPowerUp;
     protected GameObject _powerUpPrefab;
     private bool _isActive = false;
-    
 
     protected PowerUp(float duration, float cooldown, GameObject powerUpPrefab)
     {
@@ -25,7 +25,7 @@ public class PowerUp : MonoBehaviour, IPowerUp
     {
         _isActive = true;
         Debug.Log($"PowerUp applied: {_powerUpPrefab.name}");
-        _powerUpPrefab.SetActive(true);
+        //_powerUpPrefab.SetActive(true);
     }
 
     public virtual void DeactivatePowerUp()

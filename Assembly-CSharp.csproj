@@ -94,6 +94,7 @@
     <Compile Include="Assets\_Scripts\Player\PowerUps\IPowerUp.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\_Scripts\Ads\AdsManager.cs" />
+    <Compile Include="Assets\_Scripts\Player\PowerUps\LifePU.cs" />
     <Compile Include="Assets\_Scripts\Managers\UI_Manager.cs" />
     <Compile Include="Assets\_Scripts\Enemies\TestEnemy.cs" />
     <Compile Include="Assets\_Scripts\Player\Attacks\FireAttack.cs" />

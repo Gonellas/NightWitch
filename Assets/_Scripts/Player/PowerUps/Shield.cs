@@ -26,6 +26,7 @@ public class Shield : PowerUp
         {
             base.ActivePowerUp();
             _playerHealth.canTakeDamage = false;
+            _shieldPrefab.SetActive(true);
         }
     }
 

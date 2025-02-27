@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
 {
     [Header("Player Values")]
     [SerializeField] Controller _controller;
+    [SerializeField] PlayerHealth _playerHealth;
     [SerializeField] float _speed;
     [SerializeField] LayerMask _floorMask;
 
@@ -34,6 +35,7 @@ public class Player : MonoBehaviour
         _groundAttack = new GroundAttack(transform, _trail, _groundBullet);
 
         _enemyDetector = GetComponent<EnemyDetector>();
+        _playerHealth = GetComponent<PlayerHealth>();
     }
 
     void Update()
@@ -112,6 +114,20 @@ public class Player : MonoBehaviour
             {
                 GameManager.instance.GiveCurrency(10);
                 Destroy(collision.gameObject);
+            }
+            else if (collision.gameObject.CompareTag("LifePU"))
+            {
+                Debug.Log("Colisión con Power-Up de Vida");
+                LifePU lifePU = collision.GetComponent<LifePU>();
+
+                if(lifePU != null)
+                {
+                    lifePU.ActivePowerUp();
+                }
+                else
+                {
+                    Debug.LogError("LifePU script no encontrado en " + collision.gameObject.name);
+                }
             }
         }
     }

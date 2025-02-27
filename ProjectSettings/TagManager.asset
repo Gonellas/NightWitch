@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Spell1
   - Coin
+  - LifePU
   layers:
   - Default
   - TransparentFX

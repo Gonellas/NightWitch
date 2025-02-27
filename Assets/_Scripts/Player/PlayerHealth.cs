@@ -9,13 +9,13 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] Animator _animator;
 
     [Header("Values")]
-    [SerializeField] float _maxHealth = 100;
+    public float maxHealth = 100;
     public float currentHealth;
     public bool canTakeDamage;
 
     private void Start()
     {
-        currentHealth = _maxHealth;
+        currentHealth = maxHealth;
         _animator = GetComponent<Animator>();
     }
 
@@ -24,9 +24,16 @@ public class PlayerHealth : MonoBehaviour
         if (canTakeDamage)
         {
             currentHealth = Mathf.Max(0, currentHealth);
-            _healthBar.value = ((float)currentHealth / _maxHealth) * 100f;
+            _healthBar.value = ((float)currentHealth / maxHealth) * 100f;
         }
         else canTakeDamage = false;
+    }
+
+    public void Heal(float amount)
+    {
+        currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
+        UpdateHealthBar();
+        Debug.Log("Recovered Life: " + amount + ". Current Life: " + currentHealth);
     }
 
     public void TakeDamage(float damage)
