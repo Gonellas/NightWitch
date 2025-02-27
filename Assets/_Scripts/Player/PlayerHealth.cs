@@ -29,13 +29,6 @@ public class PlayerHealth : MonoBehaviour
         else canTakeDamage = false;
     }
 
-    public void Heal(float amount)
-    {
-        currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
-        UpdateHealthBar();
-        Debug.Log("Recovered Life: " + amount + ". Current Life: " + currentHealth);
-    }
-
     public void TakeDamage(float damage)
     {
         if (canTakeDamage)

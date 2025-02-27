@@ -17,7 +17,7 @@ public class LifePU : PowerUp
         {
             if(_playerHealth.currentHealth < _playerHealth.maxHealth)
             {
-                _playerHealth.currentHealth += 25;
+                _playerHealth.currentHealth = Mathf.Min(_playerHealth.currentHealth + 25, _playerHealth.maxHealth);
                 _playerHealth.UpdateHealthBar();
                 Debug.Log("Recovered Life: " + _playerHealth.currentHealth);
             }
