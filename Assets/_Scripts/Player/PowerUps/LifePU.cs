@@ -32,6 +32,6 @@ public class LifePU : PowerUp
 
     public override void DeactivatePowerUp()
     {
-        GameObject.Destroy(_lifePUPrefab);
+        Destroy(this.gameObject);
     }
 }

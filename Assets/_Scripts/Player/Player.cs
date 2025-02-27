@@ -1,12 +1,11 @@
 using UnityEngine;
 
-
 public class Player : MonoBehaviour
 {
     [Header("Player Values")]
     [SerializeField] Controller _controller;
     [SerializeField] PlayerHealth _playerHealth;
-    [SerializeField] float _speed;
+    public float _speed;
     [SerializeField] LayerMask _floorMask;
 
     [Header("Attacks")]
@@ -22,6 +21,8 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject _iceBullet;
     [SerializeField] private GameObject _thunderBullet;
     [SerializeField] private GameObject _groundBullet;
+
+    public GameObject speedPS;
 
     private Vector2 _lastMovement = Vector2.zero;
     private EnemyDetector _enemyDetector;
@@ -56,6 +57,7 @@ public class Player : MonoBehaviour
             {
                 HandleAttackSwipe(swipeDirection);
             }
+
         }
     }
 
@@ -127,6 +129,17 @@ public class Player : MonoBehaviour
                 else
                 {
                     Debug.LogError("LifePU script no encontrado en " + collision.gameObject.name);
+                }
+            }
+            else if (collision.gameObject.CompareTag("SpeedPU"))
+            {
+                Debug.Log("Colisión con Power-Up de Speed");
+                SpeedPU speedPU = collision.GetComponent<SpeedPU>();
+
+                if(speedPU != null)
+                {
+                    speedPU.ActivePowerUp();
+
                 }
             }
         }
