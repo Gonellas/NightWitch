@@ -4,7 +4,8 @@ using System;
 public enum EnemyType
 {
     Zombie,
-    Fairy
+    Fairy,
+    Dasher,
 }
 
 public abstract class Enemy : MonoBehaviour, IEnemy

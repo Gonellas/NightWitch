@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dasher : MonoBehaviour
+public class Dasher : Enemy
 {
     public float moveSpeed = 2f;      
     public float detectionRange = 5f; 
@@ -17,6 +17,17 @@ public class Dasher : MonoBehaviour
     private bool onCooldown = false;
     private Vector2 dashDirection;
 
+
+    protected override void SteeringBehaviour()
+    {
+        
+    }
+
+    public override Vector3 GetPosition()
+    {
+        return transform.position;
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,6 +36,8 @@ public class Dasher : MonoBehaviour
 
     void Update()
     {
+
+
         if (player == null) return;
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
