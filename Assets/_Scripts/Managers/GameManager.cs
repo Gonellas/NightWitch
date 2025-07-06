@@ -185,7 +185,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.LogWarning("NotificationManager.Instance is null! Notification not sent.");
-            return -1; 
+            return -1;
         }
     }
 
@@ -434,7 +434,18 @@ public class GameManager : MonoBehaviour
         TakeEnergy(1);
         AudioManager.Instance.ChangeMusic(SoundType.MainTheme_2, 100);
         SaveGame();
-        SceneManager.LoadScene(5);
+
+        // Chequeo si el tutorial fue completado
+        bool tutorialDone = PlayerPrefs.GetInt("TutorialCompleted", 0) == 1;
+
+        if (tutorialDone)
+        {
+            SceneManager.LoadScene(5); // Nivel normal
+        }
+        else
+        {
+            SceneManager.LoadScene(2); // Escena "Tutorial"
+        }
     }
 
     // Store Button

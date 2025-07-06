@@ -1,7 +1,9 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player instance; // 👈 Acceso global al Player
+
     [Header("Player Values")]
     [SerializeField] Controller _controller;
     [SerializeField] PlayerHealth _playerHealth;
@@ -27,6 +29,15 @@ public class Player : MonoBehaviour
     private Vector2 _lastMovement = Vector2.zero;
     private EnemyDetector _enemyDetector;
 
+    // ✅ Flags para el tutorial
+    public bool HasMoved { get; private set; } = false;
+    public bool HasCastSpell { get; private set; } = false;
+
+    private void Awake()
+    {
+        instance = this; // 👈 Inicializamos la instancia
+    }
+
     private void Start()
     {
         _swipe = new Swipe(transform, _trail);
@@ -51,13 +62,18 @@ public class Player : MonoBehaviour
             if (movement.magnitude > 0)
             {
                 _lastMovement = movement;
+
+                // ✅ Marcamos que el jugador se movió
+                HasMoved = true;
             }
 
             if (swipeDirection != Vector2.zero)
             {
                 HandleAttackSwipe(swipeDirection);
-            }
 
+                // ✅ Marcamos que el jugador hizo un ataque
+                HasCastSpell = true;
+            }
         }
     }
 
@@ -105,7 +121,6 @@ public class Player : MonoBehaviour
             }
         }
     }
-
     #endregion
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -119,10 +134,9 @@ public class Player : MonoBehaviour
             }
             else if (collision.gameObject.CompareTag("LifePU"))
             {
-                Debug.Log("Colisi�n con Power-Up de Vida");
+                Debug.Log("Colisión con Power-Up de Vida");
                 LifePU lifePU = collision.GetComponent<LifePU>();
-
-                if(lifePU != null)
+                if (lifePU != null)
                 {
                     lifePU.ActivePowerUp();
                 }
@@ -133,13 +147,11 @@ public class Player : MonoBehaviour
             }
             else if (collision.gameObject.CompareTag("SpeedPU"))
             {
-                Debug.Log("Colisi�n con Power-Up de Speed");
+                Debug.Log("Colisión con Power-Up de Speed");
                 SpeedPU speedPU = collision.GetComponent<SpeedPU>();
-
-                if(speedPU != null)
+                if (speedPU != null)
                 {
                     speedPU.ActivePowerUp();
-
                 }
             }
         }
