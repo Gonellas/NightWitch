@@ -17,7 +17,10 @@ public abstract class Enemy : MonoBehaviour, IEnemy
     public Func<Enemy> instantiateMethod;
 
     [SerializeField] private EnemyType _enemyType;
-    public EnemyType EnemyType => _enemyType;  
+    public EnemyType EnemyType => _enemyType;
+
+    // Evento estático para notificar cuando un enemigo muere
+    public static event Action OnEnemyDied;
 
     public abstract Vector3 GetPosition();
 
@@ -38,6 +41,9 @@ public abstract class Enemy : MonoBehaviour, IEnemy
         AudioManager.instance.PlaySFX(SoundType.Coin, 1f);
         Instantiate(_coin, transform.position, transform.rotation);
         EnemyFactory.Instance.ReturnObjectToPool(this);
+
+        // Disparar evento para notificar que un enemigo murió
+        OnEnemyDied?.Invoke();
     }
 
     public static void TurnOn(Enemy b)
