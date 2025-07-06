@@ -4427,6 +4427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedBoost
       objectReference: {fileID: 0}
+    - target: {fileID: 8287548874655950156, guid: 4fc1e20745e373f4d914ff9200edc6ee, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 929654173}
     - target: {fileID: 8853125237435836600, guid: 4fc1e20745e373f4d914ff9200edc6ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.19408834
@@ -47609,6 +47613,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LifePU (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8122623687700355089, guid: 5b9ebc20161837b4580fe01976afdee0, type: 3}
+      propertyPath: _playerHealth
+      value: 
+      objectReference: {fileID: 929654172}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48173,6 +48181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedBoost (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8287548874655950156, guid: 4fc1e20745e373f4d914ff9200edc6ee, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 929654173}
     - target: {fileID: 8853125237435836600, guid: 4fc1e20745e373f4d914ff9200edc6ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.012117
@@ -48270,6 +48282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LifePU
       objectReference: {fileID: 0}
+    - target: {fileID: 8122623687700355089, guid: 5b9ebc20161837b4580fe01976afdee0, type: 3}
+      propertyPath: _playerHealth
+      value: 
+      objectReference: {fileID: 929654172}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55505,6 +55521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LifePU (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8122623687700355089, guid: 5b9ebc20161837b4580fe01976afdee0, type: 3}
+      propertyPath: _playerHealth
+      value: 
+      objectReference: {fileID: 929654172}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
