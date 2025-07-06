@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 
 public class EnemyBuilder
@@ -6,7 +6,6 @@ public class EnemyBuilder
     public Func<Enemy> _instantiateMethod;
 
     Vector3 _newPosition;
-    //Vector3 _newScale;
     Color _newColor;
 
     float _newMaxLife;
@@ -14,7 +13,6 @@ public class EnemyBuilder
     public EnemyBuilder(Func<Enemy> factoryMethod)
     {
         _newColor = Color.white;
-
         _instantiateMethod = factoryMethod;
         _newMaxLife = 100;
     }
@@ -34,30 +32,26 @@ public class EnemyBuilder
 
     #endregion
 
-    #region Scale
-
-    //public EnemyBuilder SetScale(Vector3 s)
-    //{
-    //    _newScale = s;
-    //    return this;
-    //}
-
-    #endregion
-
     #region Color
+
     public EnemyBuilder SetColor(Color c)
     {
+        // 🔧 Aseguramos que el color tenga alpha completo (visible)
+        c.a = 1f;
         _newColor = c;
         return this;
     }
+
     #endregion
 
     #region Max Life
+
     public EnemyBuilder SetMaxLife(float l)
     {
         _newMaxLife = l;
         return this;
     }
+
     #endregion
 
     public Enemy Done()
@@ -71,11 +65,8 @@ public class EnemyBuilder
         }
 
         e.transform.position = _newPosition;
-        //e.transform.localScale = _newScale;
         e.GetComponent<SpriteRenderer>().color = _newColor;
-
         e.hp = _newMaxLife;
-
         e.instantiateMethod = _instantiateMethod;
 
         return e;
