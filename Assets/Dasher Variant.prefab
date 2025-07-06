@@ -30,11 +30,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3007568046640348146, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.99
+      value: 4.337226
       objectReference: {fileID: 0}
     - target: {fileID: 3007568046640348146, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.56
+      value: -5.178176
       objectReference: {fileID: 0}
     - target: {fileID: 3007568046640348146, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
       propertyPath: m_LocalPosition.z
@@ -106,6 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c4524ee0f71a040a7407833a167141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
+  hp: 100
+  _enemyType: 2
   moveSpeed: 2
   detectionRange: 5
   dashSpeed: 10
