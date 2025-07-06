@@ -132,10 +132,6 @@ public class GameManager : MonoBehaviour
         {
             NotificationManager.Instance.CancelNotification(id);
         }
-        else
-        {
-            Debug.LogWarning("NotificationManager.Instance is null!");
-        }
 
         recharging = false;
     }
@@ -162,15 +158,7 @@ public class GameManager : MonoBehaviour
 
                     id = NotificationToSend();
                 }
-                else
-                {
-                    Debug.LogWarning("NotificationManager.Instance is null!");
-                }
             }
-        }
-        else
-        {
-            Debug.Log("You don't have enough Stamina");
         }
     }
 
@@ -184,8 +172,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("NotificationManager.Instance is null! Notification not sent.");
-            return -1; 
+            return -1;
         }
     }
 
@@ -194,10 +181,6 @@ public class GameManager : MonoBehaviour
         if (_staminaText != null)
         {
             _staminaText.text = $"{_currentStamina} / {_maxStamina}";
-        }
-        else
-        {
-            Debug.LogWarning("_staminaText is null!");
         }
     }
 
@@ -214,10 +197,6 @@ public class GameManager : MonoBehaviour
             TimeSpan timer = _nextStaminaTime - DateTime.Now;
 
             _timerText.text = $"{timer.Hours.ToString("00")} : {timer.Minutes.ToString("00")} : {timer.Seconds.ToString("00")}";
-        }
-        else
-        {
-            Debug.LogWarning("_timerText is null!");
         }
     }
 
@@ -246,13 +225,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        // Park Timer
         if (SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 5)
         {
             ParkTimer();
         }
 
-        // Energy Recovery
         if (_energy < 10)
         {
             _timer += Time.deltaTime;
@@ -286,23 +263,23 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    #region Lose/Win Conditions
-    // Lose Condition
     public void Lose()
     {
         TogglePause();
         _loseCanvas.SetActive(true);
     }
 
-    // Win Condition
     public void Win()
     {
         TogglePause();
         _winCanvas.SetActive(true);
-    }
-    #endregion
 
-    #region PowerUps
+        if (SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            PlayerPrefs.SetInt("Level1Completed", 1);
+        }
+    }
+
     public bool PowerUpBought(PowerUpType powerUpType)
     {
         return _boughtPowerUp.Contains(powerUpType);
@@ -313,7 +290,6 @@ public class GameManager : MonoBehaviour
         _boughtPowerUp.Add(powerUpType);
     }
 
-    #region Shield
     public void BuyShield()
     {
         if (shieldLevel < _shieldCosts.Length && _currency >= _shieldCosts[shieldLevel])
@@ -322,12 +298,9 @@ public class GameManager : MonoBehaviour
             shieldLevel++;
             _shieldBought = true;
             BuyPowerUp(PowerUpType.Shield);
-            Debug.Log($"Escudo nivel {shieldLevel} comprado");
             SaveGame();
         }
     }
-    #endregion
-    #endregion
 
     public void RestartLevel()
     {
@@ -338,7 +311,6 @@ public class GameManager : MonoBehaviour
         isPaused = false;
     }
 
-    #region Game Paused
     public void TogglePause()
     {
         isPaused = !isPaused;
@@ -349,9 +321,7 @@ public class GameManager : MonoBehaviour
     {
         return isPaused;
     }
-    #endregion
 
-    #region Save, Load, Delete Game
     private void SaveGame()
     {
         PlayerPrefs.SetInt("Data_Currency", _currency);
@@ -360,8 +330,6 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("Data_ShieldBought", _shieldBought ? 1 : 0);
         PlayerPrefs.SetInt("Data_ShieldLevel", _shieldBought ? shieldLevel : 0);
         PlayerPrefs.Save();
-
-        Debug.Log("Game Saved");
     }
 
     private void LoadGame()
@@ -371,8 +339,6 @@ public class GameManager : MonoBehaviour
         _playerName = PlayerPrefs.GetString("Data_Name", "Default");
         _shieldBought = PlayerPrefs.GetInt("Data_ShieldBought", 0) == 1;
         shieldLevel = PlayerPrefs.GetInt("Data_ShieldLevel", 0);
-
-        Debug.Log("Game Loaded");
     }
 
     public void DeleteGame()
@@ -385,7 +351,6 @@ public class GameManager : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
         PlayerPrefs.DeleteAll();
-        Debug.Log("Game Deleted");
         LoadGame();
         _deleteConfirmationPanel.SetActive(false);
         _canvasMainMenu.SetActive(true);
@@ -402,9 +367,7 @@ public class GameManager : MonoBehaviour
     {
         if (pause) SaveGame();
     }
-    #endregion
 
-    #region Get, Take Currency/Energy
     public void GiveCurrency(int add)
     {
         _currency += add;
@@ -424,20 +387,33 @@ public class GameManager : MonoBehaviour
     {
         _energy -= take;
     }
-    #endregion
 
-    #region Buttons
-    // Play Button
+    
     public void PlayButton()
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
         TakeEnergy(1);
         AudioManager.Instance.ChangeMusic(SoundType.MainTheme_2, 100);
         SaveGame();
-        SceneManager.LoadScene(5);
+
+        int hasPlayed = PlayerPrefs.GetInt("HasPlayed", 0);
+        int level1Completed = PlayerPrefs.GetInt("Level1Completed", 0);
+
+        if (hasPlayed == 0)
+        {
+            PlayerPrefs.SetInt("HasPlayed", 1);
+            SceneManager.LoadScene(2); // Tutorial
+        }
+        else if (level1Completed == 0)
+        {
+            SceneManager.LoadScene(5); // Nivel 1
+        }
+        else
+        {
+            SceneManager.LoadScene(3); // Nivel 2
+        }
     }
 
-    // Store Button
     public void StoreButton()
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
@@ -445,7 +421,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    // Options Button
     public void OptionsButton()
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
@@ -453,7 +428,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
-    // Tutorial Button
     public void TutorialButton()
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
@@ -469,7 +443,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
-    // Main Menu Button
     public void MainMenuButton()
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
@@ -479,15 +452,12 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    // Application Quit
     public void QuitGame()
     {
         SaveGame();
         Application.Quit();
     }
-    #endregion
 
-    // Park Timer
     private void ParkTimer()
     {
         if (isCounting)

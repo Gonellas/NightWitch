@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _initialLifeTime: 2
-  _speed: 2
+  _speed: 5
   _damage: 20
   _bulletType: 2
 --- !u!58 &6298330697464772683
