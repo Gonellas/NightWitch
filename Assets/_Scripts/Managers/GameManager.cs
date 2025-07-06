@@ -269,7 +269,7 @@ public class GameManager : MonoBehaviour
 
     private void UpdateUI()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 5)
+        if (SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 2)
         {
             if (_textShowingStats.Length >= 4)
             {
