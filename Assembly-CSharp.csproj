@@ -89,6 +89,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\_Scripts\Ads\AdButton.cs" />
     <Compile Include="Assets\_Scripts\Player\PowerUps\Shield.cs" />
+    <Compile Include="Assets\_Scripts\Managers\SceneTransitionManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\_Scripts\SaveWithPlayerPrefs.cs" />

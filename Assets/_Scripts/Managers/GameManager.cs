@@ -402,15 +402,18 @@ public class GameManager : MonoBehaviour
         if (hasPlayed == 0)
         {
             PlayerPrefs.SetInt("HasPlayed", 1);
-            SceneManager.LoadScene(2); // Tutorial
+            /*SceneManager.LoadScene(2);*/ // Tutorial
+            SceneTransitionManager.Instance.LoadSceneWithLoadingScreen("Tutorial");
         }
         else if (level1Completed == 0)
         {
-            SceneManager.LoadScene(5); // Nivel 1
+            /*SceneManager.LoadScene(5);*/ // Nivel 1
+            SceneTransitionManager.Instance.LoadSceneWithLoadingScreen("Graveyard");
         }
         else
         {
-            SceneManager.LoadScene(3); // Nivel 2
+            /*SceneManager.LoadScene(3);*/ // Nivel 2
+            SceneTransitionManager.Instance.LoadSceneWithLoadingScreen("Park");
         }
     }
 
