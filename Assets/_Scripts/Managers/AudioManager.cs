@@ -9,7 +9,7 @@ public enum SoundType
     Player_MovementL,
     Zombie_MovementR,
     Zombie_MovementL,
-    Click, 
+    Click,
     Rawr,
     Coin,
     Explosion,
@@ -19,7 +19,6 @@ public enum SoundType
     Fire,
     Shield
 }
-
 
 public class AudioManager : MonoBehaviour
 {
@@ -47,20 +46,14 @@ public class AudioManager : MonoBehaviour
             if (instance == null)
             {
                 instance = FindObjectOfType<AudioManager>();
-
                 if (instance == null)
                 {
                     instance = new GameObject("AudioManager", typeof(AudioManager)).GetComponent<AudioManager>();
                 }
             }
-
             return instance;
         }
-
-        private set
-        {
-            instance = value;
-        }
+        private set { instance = value; }
     }
 
     private void Awake()
@@ -76,6 +69,15 @@ public class AudioManager : MonoBehaviour
 
             audioSource.loop = true;
             audioSource2.loop = true;
+
+            
+            _musicVolume = PlayerPrefs.GetFloat("MusicVolume", 1.0f);
+            _sfxVolume = PlayerPrefs.GetFloat("SFXVolume", 1.0f);
+
+            
+            audioSource.volume = _musicVolume;
+            audioSource2.volume = _musicVolume;
+            sfxSource.volume = _sfxVolume;
         }
         else
         {
@@ -96,8 +98,12 @@ public class AudioManager : MonoBehaviour
     public void SetMusicVolume(float volume)
     {
         _musicVolume = Mathf.Clamp01(volume);
+
         audioSource.volume = _musicVolume;
         audioSource2.volume = _musicVolume;
+
+        PlayerPrefs.SetFloat("MusicVolume", _musicVolume);
+        PlayerPrefs.Save();
     }
 
     public float GetSFXVolume()
@@ -109,11 +115,15 @@ public class AudioManager : MonoBehaviour
     {
         _sfxVolume = Mathf.Clamp01(volume);
         sfxSource.volume = _sfxVolume;
+
+        PlayerPrefs.SetFloat("SFXVolume", _sfxVolume);
+        PlayerPrefs.Save();
     }
 
-    public void PlayMusic(SoundType soundType, float volume) 
+    public void PlayMusic(SoundType soundType, float volume)
     {
         AudioSource activeSource = _firstAudioSourceIsPlaying ? audioSource : audioSource2;
+
         activeSource.clip = _soundList[(int)soundType];
         activeSource.volume = _musicVolume;
         activeSource.Play();
@@ -138,9 +148,8 @@ public class AudioManager : MonoBehaviour
         AudioSource activeSource = _firstAudioSourceIsPlaying ? audioSource : audioSource2;
 
         activeSource.Stop();
-
         activeSource.clip = _soundList[(int)newSoundType];
-        activeSource.volume = volume;
+        activeSource.volume = _musicVolume;
         activeSource.Play();
     }
 
@@ -152,26 +161,11 @@ public class AudioManager : MonoBehaviour
 
         for (int i = 0; i < _soundList.Length; i++)
         {
-            _soundList[i].name = names[i];
+            if (_soundList[i] != null)
+            {
+                _soundList[i].name = names[i];
+            }
         }
     }
 #endif
 }
-
-//Fire_Attack,
-//Ice_Attack,
-//GroundAttack,
-//ThunderAttack,
-//Shield,
-//Player_Movement,
-//Player_Damaged,
-//Player_Die,
-//Zombie_Movement,
-//Zombie_Damaged,
-//Zombie_Die,
-//Zombie_Attack,
-//Fairy_Movement,
-//Fairy_Damaged,
-//Fairy_Die,
-//Fairy_Bomb,
-
