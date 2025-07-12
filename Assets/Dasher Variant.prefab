@@ -69,6 +69,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8396920192025251671, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1891526574, guid: 54f4bd5bb0577024a90ba59c4bb65ca0, type: 3}
+    - target: {fileID: 8396920192025251671, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -80,6 +84,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8938593589926856869, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a2fe66f43bcace24c8d872f59f4557a2, type: 2}
     m_RemovedComponents:
     - {fileID: 1002506527854456097, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
     m_RemovedGameObjects: []
@@ -107,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
+  _animator: {fileID: 5955270346182894358}
   hp: 100
   _enemyType: 2
   moveSpeed: 2
@@ -115,3 +124,8 @@ MonoBehaviour:
   dashDistance: 2
   attackCooldown: 2
   damage: 10
+--- !u!95 &5955270346182894358 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8938593589926856869, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
+  m_PrefabInstance: {fileID: 3362250831386291123}
+  m_PrefabAsset: {fileID: 0}

@@ -16,6 +16,7 @@ public class Dasher : Enemy
     private bool isDashing = false;
     private bool onCooldown = false;
     private Vector2 dashDirection;
+    private Animator _animator;
 
 
     protected override void SteeringBehaviour()
@@ -32,6 +33,7 @@ public class Dasher : Enemy
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        _animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -46,15 +48,21 @@ public class Dasher : Enemy
         {
             if (distanceToPlayer <= detectionRange)
             {
-                
+                Vector2 direction = (player.position - transform.position).normalized;
+
                 transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+
+                UpdateAnimations(direction);
             }
+            else UpdateAnimations(Vector2.zero);
 
             if (distanceToPlayer <= dashDistance)
             {
                 StartDash();
             }
         }
+        else UpdateAnimations(Vector2.zero);
+
     }
 
     void StartDash()
@@ -84,6 +92,22 @@ public class Dasher : Enemy
         {
             
             other.GetComponent<PlayerHealth>()?.TakeDamage(damage);
+        }
+    }
+
+    void UpdateAnimations(Vector2 movement)
+    {
+        if (movement.magnitude > 0)
+        {
+            _animator.SetBool("isWalking", true);
+            _animator.SetFloat("HAx", movement.x);
+            _animator.SetFloat("VAx", movement.y);
+        }
+        else
+        {
+            _animator.SetBool("isWalking", false);
+            _animator.SetFloat("HAx", movement.x);
+            _animator.SetFloat("VAx", movement.y);
         }
     }
 }
