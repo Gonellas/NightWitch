@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: _damage
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1002506527854456097, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 7823313111116748607, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+    - target: {fileID: 1002506527854456097, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 5955270346182894358}
     - target: {fileID: 1050187405185942177, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
       propertyPath: m_Name
       value: Zombie Variant
@@ -73,3 +81,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
+--- !u!95 &5955270346182894358 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8938593589926856869, guid: 929a3eb8aa8b26f4f84bbaffaf995879, type: 3}
+  m_PrefabInstance: {fileID: 3362250831386291123}
+  m_PrefabAsset: {fileID: 0}
