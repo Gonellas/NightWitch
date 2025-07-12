@@ -99,9 +99,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f72ce06f50d303e4a958f4590dca1a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
   _coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
-  _player: {fileID: 0}
+  _animator: {fileID: 2713606533979879127}
+  hp: 100
+  _enemyType: 1
+  _player: {fileID: 7823313111116748607, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
   _colliders:
     serializedVersion: 2
     m_Bits: 64

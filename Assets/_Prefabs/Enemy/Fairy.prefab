@@ -98,16 +98,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f72ce06f50d303e4a958f4590dca1a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coin: {fileID: 7908999994189360707, guid: 09c3450c1e00903489fb2a7f064bb7d1, type: 3}
+  _animator: {fileID: 1534837959182373363}
   hp: 0
-  _coin: {fileID: 0}
-  _player: {fileID: 0}
+  _enemyType: 1
+  _player: {fileID: 7823313111116748607, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
   _colliders:
     serializedVersion: 2
     m_Bits: 64
   _speed: 1.5
   _detectionRadius: 3
   _isFleeing: 0
-  _bomb: {fileID: 0}
+  _bomb: {fileID: 3482510219627398589, guid: a49bdbd262001cd46bbebdb72e89e425, type: 3}
   _bombDamage: 25
   _canSpawnBomb: 1
   _bombCooldown: 10

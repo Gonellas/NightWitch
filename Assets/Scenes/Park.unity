@@ -38245,6 +38245,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2316586904264852032, guid: b3553fe8e72ac9543a3ad28174f5da2c, type: 3}
   m_PrefabInstance: {fileID: 1018738389552147940}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1683694655 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8896709739029217286, guid: b3553fe8e72ac9543a3ad28174f5da2c, type: 3}
+  m_PrefabInstance: {fileID: 1018738389552147940}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1690802908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57062,6 +57067,14 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 1612753676}
+    - target: {fileID: 1873500652419261819, guid: b3553fe8e72ac9543a3ad28174f5da2c, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 1683694655}
+    - target: {fileID: 1873500652419261819, guid: b3553fe8e72ac9543a3ad28174f5da2c, type: 3}
+      propertyPath: _enemyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2316586904264852032, guid: b3553fe8e72ac9543a3ad28174f5da2c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.4239345

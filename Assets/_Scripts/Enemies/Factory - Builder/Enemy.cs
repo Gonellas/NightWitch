@@ -11,6 +11,7 @@ public enum EnemyType
 public abstract class Enemy : MonoBehaviour, IEnemy
 {
     [SerializeField] GameObject _coin;
+    [SerializeField] protected Animator _animator;
     Enemy enemy;
     public float hp;
 
@@ -30,11 +31,23 @@ public abstract class Enemy : MonoBehaviour, IEnemy
     {
         hp -= damage;
 
+        PlayDamageAnim();
+
         if (hp <= 0)
         {
             Die();
         }
     }
+
+    protected virtual void PlayDamageAnim()
+    {
+        if (_animator != null)
+        {
+            _animator.SetTrigger("isDamaged");
+        }
+        else Debug.Log("Animator not found");
+    }
+        
 
     public void Die()
     {
