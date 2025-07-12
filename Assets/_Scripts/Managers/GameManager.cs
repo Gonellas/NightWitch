@@ -250,8 +250,8 @@ public class GameManager : MonoBehaviour
         {
             if (_textShowingStats.Length >= 4)
             {
-                _textShowingStats[0].text = $"Currency: {_currency}";
-                _textShowingStats[1].text = $"Energy: {_energy}";
+                _textShowingStats[0].text = $"{_currency}";
+                _textShowingStats[1].text = $"{_energy}";
                 _textShowingStats[2].text = $"Player Name: {_playerName}";
                 _textShowingStats[3].text = $"Time: {(int)timer}";
 
