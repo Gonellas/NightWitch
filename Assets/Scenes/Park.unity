@@ -56912,6 +56912,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7526273194066573711, guid: 7876607d4e6eac14987062d7b5663850, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.1274414
+      objectReference: {fileID: 0}
     - target: {fileID: 8782136916184100690, guid: 7876607d4e6eac14987062d7b5663850, type: 3}
       propertyPath: m_fontAsset
       value: 
