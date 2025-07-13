@@ -37635,6 +37635,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 510061679218430017, guid: 635ec81ee972880438b753811900adac, type: 3}
   m_PrefabInstance: {fileID: 1577991217}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1387955917 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9202325453665179724, guid: d75c2b1af12623648a178acafd34f856, type: 3}
+  m_PrefabInstance: {fileID: 8810655456004908413}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a4c3ffa21b48a40baad7771cfa7b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1402422867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8528048147129745492, guid: d541cf6890c88ef45b9b11adfeb81e2e, type: 3}
@@ -56607,7 +56618,11 @@ PrefabInstance:
     - target: {fileID: 4807856562073986382, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: _controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1387955917}
+    - target: {fileID: 4807856562073986382, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
+      propertyPath: _playerHealth
+      value: 
+      objectReference: {fileID: 253614470787470976}
     - target: {fileID: 7823313111116748607, guid: 1661c8af4478ebf4197d1705eeef9e49, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21
