@@ -246,8 +246,13 @@ public class GameManager : MonoBehaviour
 
     private void UpdateUI()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 2)
-        {
+        //if (SceneManager.GetActiveScene().buildIndex == 0 ||
+        //    SceneManager.GetActiveScene().buildIndex == 1 ||
+        //    SceneManager.GetActiveScene().buildIndex == 2 ||
+        //    SceneManager.GetActiveScene().buildIndex == 3 ||
+        //    SceneManager.GetActiveScene().buildIndex == 4 ||
+        //    SceneManager.GetActiveScene().buildIndex == 5) 
+        //{
             if (_textShowingStats.Length >= 4)
             {
                 _textShowingStats[0].text = $"{_currency}";
@@ -260,7 +265,7 @@ public class GameManager : MonoBehaviour
                     _shieldButton.SetActive(_shieldBought);
                 }
             }
-        }
+        //}
     }
 
     public void Lose()

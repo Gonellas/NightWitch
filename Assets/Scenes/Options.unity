@@ -2665,6 +2665,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 78395010683914697, guid: cb50fd399c5eca54aafffe41425362ae, type: 3}
+      propertyPath: _staminaText
+      value: 
+      objectReference: {fileID: 5222889142286924683}
+    - target: {fileID: 78395010683914697, guid: cb50fd399c5eca54aafffe41425362ae, type: 3}
       propertyPath: _canvasMainMenu
       value: 
       objectReference: {fileID: 1265887133}
@@ -2672,6 +2676,10 @@ PrefabInstance:
       propertyPath: _deleteConfirmationPanel
       value: 
       objectReference: {fileID: 515059751}
+    - target: {fileID: 78395010683914697, guid: cb50fd399c5eca54aafffe41425362ae, type: 3}
+      propertyPath: _textShowingStats.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 78395010683914697, guid: cb50fd399c5eca54aafffe41425362ae, type: 3}
       propertyPath: _textShowingStats.Array.data[0]
       value: 
