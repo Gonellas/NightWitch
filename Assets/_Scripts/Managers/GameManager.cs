@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject _winCanvas;
     [SerializeField] Button _storeShieldButton;
 
-    [Header("Buy Shield Options")]
+    [Header("STORE")]
     [SerializeField] private TextMeshProUGUI _shieldLevelToBuy;
     [SerializeField] private TextMeshProUGUI _shieldCostText;
     [SerializeField] private GameObject _shieldCostTextObject;
@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _confirmShieldPanel;
     [SerializeField] private Button _buyButton;
     [SerializeField] private GameObject _buyButtonObject;
+    [SerializeField] private GameObject _confirmEnergyPanel;
 
 
 
@@ -368,6 +369,20 @@ public class GameManager : MonoBehaviour
         {
             _confirmShieldPanel.SetActive(false);
             _noCurrencyPanel.SetActive(true); 
+        }
+    }
+
+    public void TryBuyEnergy()
+    {
+       if (_currency >= 100) 
+        {
+            TakeCurrency(100);
+            GiveEnergy(1);
+        }
+        else
+        {
+            _confirmEnergyPanel.SetActive(false);
+            _noCurrencyPanel.SetActive(true);
         }
     }
 
