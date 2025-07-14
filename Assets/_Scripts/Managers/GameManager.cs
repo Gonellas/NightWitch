@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] PlayerHealth _playerHealth;
 
     [Header("Save, Load, Delete Game Values")]
-    public int _currency = 0;
+    public int _currency = 200;
     [SerializeField] int _energy = 10;
     [SerializeField] string _playerName = "Default";
     [SerializeField] TextMeshProUGUI[] _textShowingStats;
@@ -30,6 +30,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject _loseCanvas;
     [SerializeField] GameObject _winCanvas;
     [SerializeField] Button _storeShieldButton;
+
+    [Header("Buy Shield Options")]
+    [SerializeField] private TextMeshProUGUI _shieldLevelToBuy;
+    [SerializeField] private TextMeshProUGUI _shieldCostText;
+    [SerializeField] private GameObject _shieldCostTextObject;
+    [SerializeField] private GameObject _noCurrencyPanel;
+    [SerializeField] private GameObject _confirmShieldPanel;
+    [SerializeField] private Button _buyButton;
+    [SerializeField] private GameObject _buyButtonObject;
+
+
 
     [Header("PowerUps")]
     [SerializeField] GameObject _shieldButton;
@@ -285,6 +296,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    #region STORE
     public bool PowerUpBought(PowerUpType powerUpType)
     {
         return _boughtPowerUp.Contains(powerUpType);
@@ -306,6 +318,60 @@ public class GameManager : MonoBehaviour
             SaveGame();
         }
     }
+
+    public void UpdateShieldPanelText()
+    {
+        int level = shieldLevel;
+
+        if (level >= _shieldCosts.Length)
+        {
+            _shieldLevelToBuy.text = "Shield Max Level";
+            _shieldCostTextObject.SetActive(false);
+            _buyButtonObject.SetActive(false);
+            return;
+        }
+
+        int cost = _shieldCosts[level];
+        _shieldLevelToBuy.text = $"Shield Lvl{level + 1}";
+        _shieldCostText.text = $"{cost}";
+
+        if (_currency < cost)
+        {
+            _noCurrencyPanel.SetActive(true);
+        }
+        else
+        {
+            _noCurrencyPanel.SetActive(false);
+        }
+    }
+
+    public void OpenShieldConfirmPanel()
+    {
+        UpdateShieldPanelText();
+        _confirmShieldPanel.SetActive(true); 
+    }
+
+    public void TryBuyShield()
+    {
+        int level = shieldLevel;
+
+        if (level >= _shieldCosts.Length) return;
+
+        int cost = _shieldCosts[level];
+
+        if (_currency >= cost)
+        {
+            BuyShield();
+            _confirmShieldPanel.SetActive(false);
+        }
+        else
+        {
+            _confirmShieldPanel.SetActive(false);
+            _noCurrencyPanel.SetActive(true); 
+        }
+    }
+
+    #endregion
 
     public void RestartLevel()
     {

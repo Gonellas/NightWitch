@@ -827,7 +827,7 @@ MonoBehaviour:
   isCounting: 1
   player: {fileID: 0}
   _playerHealth: {fileID: 0}
-  _currency: 0
+  _currency: 200
   _energy: 10
   _playerName: Default
   _textShowingStats:
