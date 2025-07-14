@@ -56505,6 +56505,14 @@ MonoBehaviour:
   _loseCanvas: {fileID: 952846716}
   _winCanvas: {fileID: 619633577}
   _storeShieldButton: {fileID: 1699005832}
+  _shieldLevelToBuy: {fileID: 0}
+  _shieldCostText: {fileID: 0}
+  _shieldCostTextObject: {fileID: 0}
+  _noCurrencyPanel: {fileID: 0}
+  _confirmShieldPanel: {fileID: 0}
+  _buyButton: {fileID: 0}
+  _buyButtonObject: {fileID: 0}
+  _confirmEnergyPanel: {fileID: 0}
   _shieldButton: {fileID: 2049390081}
   _shieldBought: 0
   shieldLevel: 0
@@ -57061,6 +57069,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 585117708}
+    - target: {fileID: 3106239926099240956, guid: d75c2b1af12623648a178acafd34f856, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3130155038792545850, guid: d75c2b1af12623648a178acafd34f856, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -57068,6 +57080,10 @@ PrefabInstance:
     - target: {fileID: 3716808308136948419, guid: d75c2b1af12623648a178acafd34f856, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 797
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127069800638906697, guid: d75c2b1af12623648a178acafd34f856, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5440849522757961282, guid: d75c2b1af12623648a178acafd34f856, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -57085,6 +57101,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2072003353}
+    - target: {fileID: 6176887847909415456, guid: d75c2b1af12623648a178acafd34f856, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6490563058787225759, guid: d75c2b1af12623648a178acafd34f856, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 4
@@ -57132,6 +57152,14 @@ PrefabInstance:
     - target: {fileID: 7977194785308379431, guid: d75c2b1af12623648a178acafd34f856, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.77249146
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061798739339621945, guid: d75c2b1af12623648a178acafd34f856, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513094724966026911, guid: d75c2b1af12623648a178acafd34f856, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8528140756043147295, guid: d75c2b1af12623648a178acafd34f856, type: 3}
       propertyPath: m_HorizontalAlignment
