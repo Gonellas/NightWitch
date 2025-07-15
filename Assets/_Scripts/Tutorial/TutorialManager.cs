@@ -55,8 +55,8 @@ public class TutorialManager : MonoBehaviour
     public void OnTrigger4Hit()
     {
         tutorialText.text = text4;
-        spawner.SetActive(true);
-        factory.SetActive(true);
+        //spawner.SetActive(true);
+        //factory.SetActive(true);
     }
 
     public void OnTrigger5Hit()

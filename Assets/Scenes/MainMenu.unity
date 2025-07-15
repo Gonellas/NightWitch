@@ -834,12 +834,20 @@ MonoBehaviour:
   - {fileID: 1916580484}
   - {fileID: 1948274209}
   - {fileID: 1165762846}
-  - {fileID: 0}
+  - {fileID: 499477276}
   _deleteConfirmationPanel: {fileID: 5166756570180164217, guid: 58a5ffb63bbaa55479990154c8310e09, type: 3}
   _canvasMainMenu: {fileID: 482446220473924424, guid: c9373aa66fd39fe4fa63539b8ec09fc9, type: 3}
   _loseCanvas: {fileID: 4446307252358388927, guid: 508ec4ae1bdcd524c8c04ccb2cdccc18, type: 3}
   _winCanvas: {fileID: 8916749379299342229, guid: 36439a2a9a5ed4b48a9aae320cb3f9ae, type: 3}
   _storeShieldButton: {fileID: 2720658106501139828, guid: efc05e0e3eef86443a6824434efe8b15, type: 3}
+  _shieldLevelToBuy: {fileID: 0}
+  _shieldCostText: {fileID: 0}
+  _shieldCostTextObject: {fileID: 0}
+  _noCurrencyPanel: {fileID: 0}
+  _confirmShieldPanel: {fileID: 0}
+  _buyButton: {fileID: 0}
+  _buyButtonObject: {fileID: 0}
+  _confirmEnergyPanel: {fileID: 0}
   _shieldButton: {fileID: 5409455383471333868, guid: 1cda810934c3cfc4b803984cdb852007, type: 3}
   _shieldBought: 0
   shieldLevel: 0
@@ -1025,6 +1033,10 @@ PrefabInstance:
       propertyPath: _localization
       value: 
       objectReference: {fileID: 377734645}
+    - target: {fileID: 7708507830983815444, guid: 4d4e29755a3dc034c90c1aea35ac07d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8803303982461581078, guid: 4d4e29755a3dc034c90c1aea35ac07d8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

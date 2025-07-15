@@ -82849,8 +82849,8 @@ MonoBehaviour:
   _buyButtonObject: {fileID: 0}
   _confirmEnergyPanel: {fileID: 0}
   _shieldButton: {fileID: 2049390081}
-  _shieldBought: 0
-  shieldLevel: 0
+  _shieldBought: 1
+  shieldLevel: 1
   _interval: 60
   _timer: 0
   _maxStamina: 10

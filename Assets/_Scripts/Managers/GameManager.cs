@@ -45,8 +45,8 @@ public class GameManager : MonoBehaviour
 
     [Header("PowerUps")]
     [SerializeField] GameObject _shieldButton;
-    public bool _shieldBought = false;
-    public int shieldLevel = 0;
+    public bool _shieldBought;
+    public int shieldLevel;
     private readonly int[] _shieldCosts = { 50, 100, 150 };
 
     private List<PowerUpType> _boughtPowerUp = new List<PowerUpType>();
@@ -423,6 +423,10 @@ public class GameManager : MonoBehaviour
         _currency = PlayerPrefs.GetInt("Data_Currency", 0);
         _energy = PlayerPrefs.GetInt("Data_Energy", 10);
         _playerName = PlayerPrefs.GetString("Data_Name", "Default");
+
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+            return;
+
         _shieldBought = PlayerPrefs.GetInt("Data_ShieldBought", 0) == 1;
         shieldLevel = PlayerPrefs.GetInt("Data_ShieldLevel", 0);
     }
