@@ -200,8 +200,10 @@ public class GameManager : MonoBehaviour
     {
         if (_timerText != null)
         {
-            if (_currentStamina >= _maxStamina)
+            Debug.Log("HOLAAA" + _energy + _maxStamina);
+            if (_energy >= _maxStamina)
             {
+                Debug.Log("HOLAAA2222");
                 _timerText.text = "Full Stamina!";
                 return;
             }
@@ -252,32 +254,28 @@ public class GameManager : MonoBehaviour
                 SaveGame();
             }
         }
-
+        UpdateTimer();
         UpdateUI();
     }
 
     private void UpdateUI()
     {
-        //if (SceneManager.GetActiveScene().buildIndex == 0 ||
-        //    SceneManager.GetActiveScene().buildIndex == 1 ||
-        //    SceneManager.GetActiveScene().buildIndex == 2 ||
-        //    SceneManager.GetActiveScene().buildIndex == 3 ||
-        //    SceneManager.GetActiveScene().buildIndex == 4 ||
-        //    SceneManager.GetActiveScene().buildIndex == 5) 
-        //{
-            if (_textShowingStats.Length >= 4)
-            {
-                _textShowingStats[0].text = $"{_currency}";
-                _textShowingStats[1].text = $"{_energy}";
+
+        if (_textShowingStats.Length >= 4)
+        {
+            _textShowingStats[0].text = $"{_currency}";
+            _textShowingStats[1].text = $"{_energy}";
+            if (_textShowingStats[2])
                 _textShowingStats[2].text = $"Player Name: {_playerName}";
+            if (_textShowingStats[3])
                 _textShowingStats[3].text = $"Time: {(int)timer}";
 
-                if (shieldLevel > 0)
-                {
-                    _shieldButton.SetActive(_shieldBought);
-                }
+            if (shieldLevel > 0)
+            {
+                _shieldButton.SetActive(_shieldBought);
             }
-        //}
+        }
+
     }
 
     public void Lose()
@@ -349,7 +347,7 @@ public class GameManager : MonoBehaviour
     public void OpenShieldConfirmPanel()
     {
         UpdateShieldPanelText();
-        _confirmShieldPanel.SetActive(true); 
+        _confirmShieldPanel.SetActive(true);
     }
 
     public void TryBuyShield()
@@ -368,13 +366,13 @@ public class GameManager : MonoBehaviour
         else
         {
             _confirmShieldPanel.SetActive(false);
-            _noCurrencyPanel.SetActive(true); 
+            _noCurrencyPanel.SetActive(true);
         }
     }
 
     public void TryBuyEnergy()
     {
-       if (_currency >= 100) 
+        if (_currency >= 100)
         {
             TakeCurrency(100);
             GiveEnergy(1);
@@ -473,16 +471,27 @@ public class GameManager : MonoBehaviour
         _energy += add;
     }
 
-    public void TakeEnergy(int take)
+    public bool TakeEnergy(int take)
     {
+        if (_energy <= 0)
+        {
+            return false;
+        }
+        UseStamina(take);
         _energy -= take;
+
+        return true;
     }
 
-    
+
     public void PlayButton()
     {
         AudioManager.Instance.PlaySFX(SoundType.Click, 1);
-        TakeEnergy(1);
+        if (!TakeEnergy(1))
+        {
+            return;
+        }
+
         AudioManager.Instance.ChangeMusic(SoundType.MainTheme_2, 100);
         SaveGame();
 
