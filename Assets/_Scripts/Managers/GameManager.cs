@@ -84,6 +84,7 @@ public class GameManager : MonoBehaviour
         _currentStamina = _maxStamina;
         _nextStaminaTime = DateTime.Now;
         _lastStaminaTime = DateTime.Now;
+        _nextStaminaTime = AddDuration(DateTime.Now, _interval);
 
         LoadGame();
     }
@@ -129,7 +130,7 @@ public class GameManager : MonoBehaviour
 
             if (addingStamina)
             {
-                _nextStaminaTime = nextTime;
+                //_nextStaminaTime = nextTime;
                 _lastStaminaTime = DateTime.Now;
             }
 
@@ -155,13 +156,14 @@ public class GameManager : MonoBehaviour
 
     public void UseStamina(int staminaToUse)
     {
-        if (_currentStamina - staminaToUse >= 0)
+        Debug.Log(DateTime.Now);
+        _nextStaminaTime = AddDuration(DateTime.Now, _interval);
+        if (_energy - staminaToUse >= 0)
         {
-            _currentStamina -= staminaToUse;
+            _energy -= staminaToUse;
 
-            if (!recharging)
+            //if (!recharging)
             {
-                _nextStaminaTime = AddDuration(DateTime.Now, _timer2ToRecharge);
                 StartCoroutine(RechargeStamina());
 
                 if (NotificationManager.Instance != null)
@@ -203,7 +205,6 @@ public class GameManager : MonoBehaviour
             Debug.Log("HOLAAA" + _energy + _maxStamina);
             if (_energy >= _maxStamina)
             {
-                Debug.Log("HOLAAA2222");
                 _timerText.text = "Full Stamina!";
                 return;
             }
@@ -249,6 +250,7 @@ public class GameManager : MonoBehaviour
             _timer += Time.deltaTime;
             if (_timer >= _interval)
             {
+                _nextStaminaTime = AddDuration(DateTime.Now, _interval);
                 _timer = 0f;
                 GiveEnergy(1);
                 SaveGame();
@@ -478,7 +480,7 @@ public class GameManager : MonoBehaviour
             return false;
         }
         UseStamina(take);
-        _energy -= take;
+
 
         return true;
     }
