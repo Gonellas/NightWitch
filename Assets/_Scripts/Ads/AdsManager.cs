@@ -41,6 +41,12 @@ public class AdsManager : MonoBehaviour
         StartCoroutine(InterstitialAd());
     }
 
+    public void CoinsAd()
+    {
+        GameManager.instance.GiveCurrency(10);
+        StartCoroutine(InterstitialAd());
+    }
+
     IEnumerator InterstitialAd()
     {
         _intestitialAds.LoadInterstitialAd();

@@ -55,11 +55,11 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
             {
                 if (isEnergyAd)
                 {
-                    GameManager.instance.GiveEnergy(10);
+                    GameManager.instance.GiveEnergy(1);
                 }
                 else
                 {
-                    GameManager.instance.GiveCurrency(100);
+                    GameManager.instance.GiveCurrency(10);
                 }
             }
 
@@ -67,11 +67,11 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
             {
                 if (isEnergyAd)
                 {
-                    GameManager.instance.GiveEnergy(2);
+                    GameManager.instance.GiveEnergy(1);
                 }
                 else
                 {
-                    GameManager.instance.GiveCurrency(50);
+                    GameManager.instance.GiveCurrency(10);
                 }
             }
 
