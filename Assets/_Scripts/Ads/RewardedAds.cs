@@ -7,11 +7,11 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
 {
     [SerializeField] string _rewardedID = "Rewarded_Android";
 
-    [SerializeField] GameManager gamemanager;
+    public static bool isEnergyAd;
 
     public void LoadRewardedAd()
     {
-        Advertisement.Load(_rewardedID,this);
+        Advertisement.Load(_rewardedID, this);
     }
 
     public void ShowRewardedAd()
@@ -33,7 +33,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
 
 
     public void OnUnityAdsShowClick(string placementId)
-    {}
+    { }
 
     public void OnUnityAdsShowFailure(string placementId, UnityAdsShowError error, string message)
     {
@@ -47,14 +47,41 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
 
     public void OnUnityAdsShowComplete(string placementId, UnityAdsShowCompletionState showCompletionState)
     {
-        if(placementId == _rewardedID)
+
+        if (placementId == _rewardedID)
         {
+            Debug.Log("me da algo");
             if (showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
-                gamemanager.GiveCurrency(100);
+            {
+                if (isEnergyAd)
+                {
+                    GameManager.instance.GiveEnergy(10);
+                }
+                else
+                {
+                    GameManager.instance.GiveCurrency(100);
+                }
+            }
+
             else if (showCompletionState.Equals(UnityAdsShowCompletionState.SKIPPED))
-                gamemanager.GiveEnergy(10);
+            {
+                if (isEnergyAd)
+                {
+                    GameManager.instance.GiveEnergy(2);
+                }
+                else
+                {
+                    GameManager.instance.GiveCurrency(50);
+                }
+            }
+
             else if (showCompletionState.Equals(UnityAdsShowCompletionState.UNKNOWN))
                 Debug.Log("Something is wrong");
+        }
+
+       else
+        {
+            Debug.Log("no me da nada");
         }
     }
 }

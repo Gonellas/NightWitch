@@ -190,6 +190,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void OnApplicationFocus(bool focus)
+    {
+        if (!focus)
+        {
+            NotificationToSend();
+        }
+    }
+
+
+
     void UpdateStamina()
     {
         if (_staminaText != null)
@@ -202,7 +212,6 @@ public class GameManager : MonoBehaviour
     {
         if (_timerText != null)
         {
-            Debug.Log("HOLAAA" + _energy + _maxStamina);
             if (_energy >= _maxStamina)
             {
                 _timerText.text = "Full Stamina!";
@@ -455,7 +464,11 @@ public class GameManager : MonoBehaviour
 
     private void OnApplicationPause(bool pause)
     {
-        if (pause) SaveGame();
+
+        if (pause)
+        {
+            NotificationToSend(); SaveGame();
+        }
     }
 
     public void GiveCurrency(int add)
@@ -580,6 +593,7 @@ public class GameManager : MonoBehaviour
 
     private void OnApplicationQuit()
     {
+        NotificationToSend();
         SaveGame();
     }
 }

@@ -10,8 +10,12 @@ public class AdsManager : MonoBehaviour
     public IntestitialAds _intestitialAds;
     public BannerAd _bannerAd;
 
+    
+
     private void Awake()
     {
+        RewardedAds.isEnergyAd = false;
+
         if (Instance == null)
         {
             Instance = this;
@@ -30,6 +34,12 @@ public class AdsManager : MonoBehaviour
         _rewardedAds.ShowRewardedAd();
     }
 
+    public void EnergyAd()
+    {
+        RewardedAds.isEnergyAd = true;
+        GameManager.instance.GiveEnergy(1);
+        StartCoroutine(InterstitialAd());
+    }
 
     IEnumerator InterstitialAd()
     {
