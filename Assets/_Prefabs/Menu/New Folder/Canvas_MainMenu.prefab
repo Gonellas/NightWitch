@@ -971,6 +971,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8803303982461581078}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: set_interactable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3712883970285143035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,8 +1061,8 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1898,6 +1910,10 @@ PrefabInstance:
       value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 1987496305315367429, guid: 7b8444d36566c2743b3b97e7b46211da, type: 3}
+      propertyPath: m_margin.z
+      value: -130.1574
+      objectReference: {fileID: 0}
+    - target: {fileID: 1987496305315367429, guid: 7b8444d36566c2743b3b97e7b46211da, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 91e9ef34b48507d45a43e8caa669359a, type: 2}
@@ -1947,15 +1963,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6453722705014281194, guid: 7b8444d36566c2743b3b97e7b46211da, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.4
+      value: 1.1584296
       objectReference: {fileID: 0}
     - target: {fileID: 6453722705014281194, guid: 7b8444d36566c2743b3b97e7b46211da, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.4
+      value: 1.1584296
       objectReference: {fileID: 0}
     - target: {fileID: 6453722705014281194, guid: 7b8444d36566c2743b3b97e7b46211da, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.4
+      value: 1.1584296
       objectReference: {fileID: 0}
     - target: {fileID: 6453722705014281194, guid: 7b8444d36566c2743b3b97e7b46211da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1987,11 +2003,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6453722705014281194, guid: 7b8444d36566c2743b3b97e7b46211da, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -952
+      value: -835
       objectReference: {fileID: 0}
     - target: {fileID: 6453722705014281194, guid: 7b8444d36566c2743b3b97e7b46211da, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 93
+      value: 444
       objectReference: {fileID: 0}
     - target: {fileID: 6453722705014281194, guid: 7b8444d36566c2743b3b97e7b46211da, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -182,7 +182,7 @@ public class GameManager : MonoBehaviour
         {
             return NotificationManager.Instance.DisplayNotification(_titleNotif,
                         _textNotif, _smallIcon, _largeIcon,
-                        AddDuration(DateTime.Now, ((_maxStamina - _currentStamina + 1) * _timer2ToRecharge) + 1 + (float)timer2.TotalSeconds));
+                        AddDuration(DateTime.Now, ((_maxStamina - _energy + 1) * _interval)));
         }
         else
         {
